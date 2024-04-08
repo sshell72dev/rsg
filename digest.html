@@ -1,0 +1,2353 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Дайджест проектов</title>
+    <script>document.getElementsByTagName("html")[0].className += " js";</script>
+    <link rel="stylesheet" href="assets/css/style.css">
+
+
+    <link rel="stylesheet" type="text/css" href="<?=$get_template_directory_uri?>/template-rsg/styles/slick.css">
+    <link rel="stylesheet" type="text/css" href="<?=$get_template_directory_uri?>/template-rsg/styles/slick-theme.css"/>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script type="text/javascript" src="<?=$get_template_directory_uri?>/template-rsg/scripts/slick.js"></script>    
+    <script src="https://unpkg.com/imask"></script>
+    <link rel="stylesheet" href="<?=$get_template_directory_uri?>/template-rsg/fonts/fonts.css">
+    <link rel="stylesheet" href="<?=$get_template_directory_uri?>/template-rsg/styles/style.css">
+    
+
+    
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__all">
+            <a class="header__logo" href="#">
+                <img class="header__logo-img" src="<?=$get_template_directory_uri?>/template-rsg/images/logo_header.svg" alt="Логотип РСГ ГРУПП" />
+                <img class="header__logo-img header__logo-img-blue" src="<?=$get_template_directory_uri?>/template-rsg/images/logo_header-blue.svg" alt="Логотип РСГ ГРУПП" />
+            </a>
+
+            <nav class="header__menu">
+                <ul class="header__links-list level_1">
+                    <li class="header__links-list-item level_1 header__links-list-item-arrow">
+                        <a class="header__link level_1">услуги</a>
+                        <div class="header__links-dropdown level_2">
+                            <ul class="header__links-list level_2">
+                                <li class="header__links-list-item level_2">
+                                    <a class="header__link level_2">Снос и демонтаж «под ключ»</a>
+                                </li>
+                                <li class="header__links-list-item level_2">
+                                    <a class="header__link level_2">Земляные работы</a>
+                                </li>
+                                <li class="header__links-list-item level_2">
+                                    <a class="header__link level_2">Разработка проектной документации</a>
+                                </li>
+                                <li class="header__links-list-item level_2">
+                                    <a class="header__link level_2">Металлоконструкции</a>
+                                </li>
+                                <li class="header__links-list-item level_2">
+                                    <a class="header__link level_2">Благоустройство территорий</a>
+                                </li>
+                                <li class="header__links-list-item level_2">
+                                    <a class="header__link level_2">Рециклинг</a>
+                                </li>
+                                <li class="header__links-list-item level_2">
+                                    <a class="header__link level_2">Транспортная логистика</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="header__links-list-item level_1 header__links-list-item-arrow">
+                        <a class="header__link level_1">аренда техники</a>
+                        <div class="header__links-dropdown level_2">
+                            <ul class="header__links-list level_2">
+                                <li class="header__links-list-item level_2 header__links-list-item-arrow-right">
+                                    <a class="header__link level_2 ">Аренда техники</a>
+                                    <div class="header__links-dropdown level_3">
+                                        <ul class="header__links-list level_3">
+                                            <li class="header__links-list-item level_3">
+                                                <a class="header__link level_3">Экскаваторы</a>
+                                            </li>
+                                            <li class="header__links-list-item level_3">
+                                                <a class="header__link level_3">Специализированное навесное оборудование</a>
+                                            </li>
+                                            <li class="header__links-list-item level_3">
+                                                <a class="header__link level_3">Погрузчики</a>
+                                            </li>
+                                            <li class="header__links-list-item level_3">
+                                                <a class="header__link level_3">Бульдозеры и катки</a>
+                                            </li>
+                                            <li class="header__links-list-item level_3">
+                                                <a class="header__link level_3">Машины и спецтехника</a>
+                                            </li>
+                                            <li class="header__links-list-item level_3">
+                                                <a class="header__link level_3">Сортировочное оборудование</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="header__links-list-item level_2">
+                                    <a class="header__link level_2">Транспортная логистика</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="header__links-list-item level_1 header__links-list-item-mobile__hiden">
+                        <a class="header__link level_1">дайджест</a>
+                    </li>
+                    <li class="header__links-list-item level_1 header__links-list-item-arrow header__links-list-item-mobile__hiden">
+                        <a class="header__link level_1">о компании</a>
+                        <div class="header__links-dropdown level_2">
+                            <ul class="header__links-list level_2">
+                                <li class="header__links-list-item level_2">
+                                    <a class="header__link level_2">О компании</a>
+                                </li>
+                                <li class="header__links-list-item level_2">
+                                    <a class="header__link level_2">Парк техники</a>
+                                </li>
+                                <li class="header__links-list-item level_2">
+                                    <a class="header__link level_2">Наша команда</a>
+                                </li>
+                                <li class="header__links-list-item level_2">
+                                    <a class="header__link level_2">Лицензии и сертификаты</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="header__links-list-item level_1 header__links-list-item-mobile__hiden">
+                        <a class="header__link level_1">вакансии</a>
+                    </li>
+                    <li class="header__links-list-item level_1">
+                        <a class="header__link level_1">контакты</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <address class="address">
+                <a class="address-link" href="tel:+74959605051">+7 495 960-50-51</a>
+            </address>
+
+            <div class="menu__and__phone">
+                <a class="mobile__phone-src" href="tel:+74959605051">
+                    <img class="mobile__phone-icon" src="<?=$get_template_directory_uri?>/template-rsg/icons/phone-icon-menu.svg">
+                </a>
+                <div class="menu">
+                    <input type="checkbox" id="burger-checkbox" class="burger-checkbox">
+                    <label for="burger-checkbox" class="burger"></label>
+                    <ul class="menu-list">
+                        <li class="burger__logo">
+                            <a class="burger__logo_url" href="#">
+                                <img class="header__logo-img header__logo-img-blue" src="<?=$get_template_directory_uri?>/template-rsg/images/logo_header-blue.svg" alt="Логотип РСГ ГРУПП" />
+                            </a>
+                            <div class="border-1px calculate__rent-border"></div>
+                        </li>
+                        <li class="burger__menu-item-check level_1 burger__manu__links-list-item-arrow burger__menu-mobile">
+                            <a href="#" class="menu-item">УСЛУГИ</a>
+                            <div class="header__links-dropdown level_2">
+                                <ul class="header__links-list level_2">
+                                    <li class="header__links-list-item level_2">
+                                        <a class="header__link level_2">Снос и демонтаж «под ключ»</a>
+                                    </li>
+                                    <li class="header__links-list-item level_2">
+                                        <a class="header__link level_2">Земляные работы</a>
+                                    </li>
+                                    <li class="header__links-list-item level_2">
+                                        <a class="header__link level_2">Разработка проектной документации</a>
+                                    </li>
+                                    <li class="header__links-list-item level_2">
+                                        <a class="header__link level_2">Металлоконструкции</a>
+                                    </li>
+                                    <li class="header__links-list-item level_2">
+                                        <a class="header__link level_2">Благоустройство территорий</a>
+                                    </li>
+                                    <li class="header__links-list-item level_2">
+                                        <a class="header__link level_2">Рециклинг</a>
+                                    </li>
+                                    <li class="header__links-list-item level_2">
+                                        <a class="header__link level_2">Транспортная логистика</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        <li>
+                        <li class="burger__menu-item-check level_1 burger__manu__links-list-item-arrow burger__menu-mobile">
+                            <a href="#" class="menu-item">АРЕНДА ТЕХНИКИ</a>
+                            <div class="header__links-dropdown level_2">
+                                <ul class="header__links-list level_2">
+                                    <li class="header__links-list-item level_2">
+                                        <a class="header__link level_2">Экскаваторы</a>
+                                    </li>
+                                    <li class="header__links-list-item level_2">
+                                        <a class="header__link level_2">Специализированное навесное оборудование</a>
+                                    </li>
+                                    <li class="header__links-list-item level_2">
+                                        <a class="header__link level_2">Погрузчики</a>
+                                    </li>
+                                    <li class="header__links-list-item level_2">
+                                        <a class="header__link level_2">Бульдозеры и катки</a>
+                                    </li>
+                                    <li class="header__links-list-item level_2">
+                                        <a class="header__link level_2">Машины и спецтехника</a>
+                                    </li>
+                                    <li class="header__links-list-item level_2">
+                                        <a class="header__link level_2">Сортировочное оборудование</a>
+                                    </li>
+                                    <li class="header__links-list-item level_2">
+                                        <a class="header__link level_2">Транспортная логистика</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        <li>
+                        <li>
+                            <a href="#" class="menu-item">ДАЙДЖЕСТ</a>
+                        <li>
+                        <li class="burger__menu-item-check level_1 burger__manu__links-list-item-arrow">
+                            <a href="#" class="menu-item">О КОМПАНИИ</a>
+                            <div class="header__links-dropdown level_2">
+                                <ul class="header__links-list level_2">
+                                    <li class="header__links-list-item level_2">
+                                        <a class="header__link level_2">О компании</a>
+                                    </li>
+                                    <li class="header__links-list-item level_2">
+                                        <a class="header__link level_2">Парк техники</a>
+                                    </li>
+                                    <li class="header__links-list-item level_2">
+                                        <a class="header__link level_2">Наша команда</a>
+                                    </li>
+                                    <li class="header__links-list-item level_2">
+                                        <a class="header__link level_2">Лицензии и сертификаты</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        <li>
+                        <li>
+                            <a href="#" class="menu-item">ВАКАНСИИ</a>
+                        <li>
+                        <li class="burger__menu-mobile">
+                            <a href="#" class="menu-item">КОНТАКТЫ</a>
+                        <li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <section class="breadcrumbs">
+            <div class="my_breadcrumbs">
+                <span property="itemListElement" typeof="ListItem" class="taxonomy">
+                    <a property="item" typeof="WebPage" title="Перейти к главной" href="#" class="taxonomy-link">
+                        <span property="name">Главная</span>
+                    </a>
+                </span>
+                <i class="breadcrumbs-line"></i>
+                <span property="itemListElement" typeof="ListItem" class="taxonomy taxonomy-end">
+                    <a property="item" typeof="WebPage" title="Перейти к вакансии" href="#" class="taxonomy-link">
+                        <span property="name">Дайджест проектов</span>
+                    </a>
+                </span>
+            </div>
+        </section>
+        <section class="about">
+            <div class="about__all">
+                <h1 class="about__title">Дайджест проектов</h1>
+                <p class="about__description">РСГ ГРУПП сегодня — девелоперская компания полного цикла,наша миссия: воплощать в жизнь мечты современного человека. Высокотехнологичная реализация проектов.</p>     
+                
+                <div class="about__digest-button">
+                    <a class="cover__button digest-button digest-button-active" href="#">ВСЕ ПРОЕКТЫ</a>
+                    <a class="cover__button digest-button" href="#">ПРОЕКТНЫЕ РАБОТЫ</a>
+                    <a class="cover__button digest-button" href="#">СНОС И ДЕМОНТАЖ</a>
+                    <a class="cover__button digest-button" href="#">ПРОЧИЕ РАБОТЫ</a>
+                </div>    
+            </div>
+        </section>
+        <section class="cd-h-timeline js-cd-h-timeline margin-bottom--md">
+    
+            <div class="cd-h-timeline__container container">
+              <div class="cd-h-timeline__dates">
+                <div class="cd-h-timeline__line">
+                  <ol>
+                    <li><a href="#0" data-date="01/01/2023" class="cd-h-timeline__date cd-h-timeline__date--selected">2023</a></li>
+                    <li><a href="#0" data-date="01/01/2022" class="cd-h-timeline__date">2022</a></li>
+                    <li><a href="#0" data-date="01/01/2021" class="cd-h-timeline__date">2021</a></li>
+                    <li><a href="#0" data-date="01/01/2020" class="cd-h-timeline__date">2020</a></li>
+                    <li><a href="#0" data-date="01/01/2019" class="cd-h-timeline__date">2019</a></li>
+                    <li><a href="#0" data-date="01/01/2018" class="cd-h-timeline__date">2018</a></li>
+                    <li><a href="#0" data-date="01/01/2017" class="cd-h-timeline__date">2017</a></li>
+                  </ol>
+        
+                  <span class="cd-h-timeline__filling-line" aria-hidden="true"></span>
+                </div> <!-- .cd-h-timeline__line -->
+              </div> <!-- .cd-h-timeline__dates -->
+                
+              <ul>
+                <li><a href="#0" class="text--replace cd-h-timeline__navigation cd-h-timeline__navigation--prev cd-h-timeline__navigation--inactive">Prev</a></li>
+                <li><a href="#0" class="text--replace cd-h-timeline__navigation cd-h-timeline__navigation--next">Next</a></li>
+              </ul>
+            </div> <!-- .cd-h-timeline__container -->
+        
+            <div class="cd-h-timeline__events">
+              <ol>
+                <li class="cd-h-timeline__event cd-h-timeline__event--selected text-component">
+                  <div class="cd-h-timeline__event-content container">
+                    <div class="digest__cart">
+                        <ul class="digest__cart-items">
+                            <li class="digest__cart-item">
+                                <article class="digest__cart-item__cart">
+                                    <div class="digest-cover__image-container">
+                                        <img class="digest-cover__image" src="<?=$get_template_directory_uri?>/template-rsg/images/digest/background-1.jpg">
+                                    </div>
+                                    <div class="digest__cart-item-heading">
+                                        <p class="digest__cart-item-heading-building">Жилой комплекс</p>
+                                        <h2 class="digest__cart-item-heading-name">«Восточное Бутово»</h2>
+                                    </div>
+                                    <div class="digest__cart-item-about">
+                                        <p class="digest__cart-item-about-date">26.04.2022</p>
+                                        <div class="digest__cart-item-about-volume">
+                                            <p class="digest__cart-item-about-volume-item">Объём работ: 23 275 м3</p>
+                                            <p class="digest__cart-item-about-volume-item">Сроки работ: 3 месяца</p>
+                                        </div>
+                                    </div>
+                                </article>
+                            </li>
+                            <li class="digest__cart-item">
+                                <a class="digest__cart-item-url" href="#">
+                                    <article class="digest__cart-item__cart">
+                                        <div class="digest-cover__image-container">
+                                            <img class="digest-cover__image" src="<?=$get_template_directory_uri?>/template-rsg/images/digest/background-1.jpg">
+                                        </div>
+                                        <div class="digest__cart-item-heading">
+                                            <p class="digest__cart-item-heading-building">Жилой комплекс</p>
+                                            <h2 class="digest__cart-item-heading-name">«Восточное Бутово»</h2>
+                                        </div>
+                                        <div class="digest__cart-item-about">
+                                            <p class="digest__cart-item-about-date">26.04.2022</p>
+                                            <div class="digest__cart-item-about-volume">
+                                                <p class="digest__cart-item-about-volume-item">Объём работ: 23 275 м3</p>
+                                                <p class="digest__cart-item-about-volume-item">Сроки работ: 3 месяца</p>
+                                            </div>
+                                        </div>
+                                    </article>
+                                </a>
+                            </li>
+                            <li class="digest__cart-item">
+                                <a class="digest__cart-item-url" href="#">
+                                    <article class="digest__cart-item__cart">
+                                        <div class="digest-cover__image-container">
+                                            <img class="digest-cover__image" src="<?=$get_template_directory_uri?>/template-rsg/images/digest/background-1.jpg">
+                                        </div>
+                                        <div class="digest__cart-item-heading">
+                                            <p class="digest__cart-item-heading-building">Жилой комплекс</p>
+                                            <h2 class="digest__cart-item-heading-name">«Восточное Бутово»</h2>
+                                        </div>
+                                        <div class="digest__cart-item-about">
+                                            <p class="digest__cart-item-about-date">26.04.2022</p>
+                                            <div class="digest__cart-item-about-volume">
+                                                <p class="digest__cart-item-about-volume-item">Объём работ: 23 275 м3</p>
+                                                <p class="digest__cart-item-about-volume-item">Сроки работ: 3 месяца</p>
+                                            </div>
+                                        </div>
+                                    </article>
+                                </a>
+                            </li>
+                            <li class="digest__cart-item">
+                                <a class="digest__cart-item-url" href="#">
+                                    <article class="digest__cart-item__cart">
+                                        <div class="digest-cover__image-container">
+                                            <img class="digest-cover__image" src="<?=$get_template_directory_uri?>/template-rsg/images/digest/background-1.jpg">
+                                        </div>
+                                        <div class="digest__cart-item-heading">
+                                            <p class="digest__cart-item-heading-building">Жилой комплекс</p>
+                                            <h2 class="digest__cart-item-heading-name">«Восточное Бутово»</h2>
+                                        </div>
+                                        <div class="digest__cart-item-about">
+                                            <p class="digest__cart-item-about-date">26.04.2022</p>
+                                            <div class="digest__cart-item-about-volume">
+                                                <p class="digest__cart-item-about-volume-item">Объём работ: 23 275 м3</p>
+                                                <p class="digest__cart-item-about-volume-item">Сроки работ: 3 месяца</p>
+                                            </div>
+                                        </div>
+                                    </article>
+                                </a>
+                            </li>
+                            <li class="digest__cart-item">
+                                <a class="digest__cart-item-url" href="#">
+                                    <article class="digest__cart-item__cart">
+                                        <div class="digest-cover__image-container">
+                                            <img class="digest-cover__image" src="<?=$get_template_directory_uri?>/template-rsg/images/digest/background-1.jpg">
+                                        </div>
+                                        <div class="digest__cart-item-heading">
+                                            <p class="digest__cart-item-heading-building">Жилой комплекс</p>
+                                            <h2 class="digest__cart-item-heading-name">«Восточное Бутово»</h2>
+                                        </div>
+                                        <div class="digest__cart-item-about">
+                                            <p class="digest__cart-item-about-date">26.04.2022</p>
+                                            <div class="digest__cart-item-about-volume">
+                                                <p class="digest__cart-item-about-volume-item">Объём работ: 23 275 м3</p>
+                                                <p class="digest__cart-item-about-volume-item">Сроки работ: 3 месяца</p>
+                                            </div>
+                                        </div>
+                                    </article>
+                                </a>
+                            </li>
+                            <li class="digest__cart-item">
+                                <a class="digest__cart-item-url" href="#">
+                                    <article class="digest__cart-item__cart">
+                                        <div class="digest-cover__image-container">
+                                            <img class="digest-cover__image" src="<?=$get_template_directory_uri?>/template-rsg/images/digest/background-1.jpg">
+                                        </div>
+                                        <div class="digest__cart-item-heading">
+                                            <p class="digest__cart-item-heading-building">Жилой комплекс</p>
+                                            <h2 class="digest__cart-item-heading-name">«Восточное Бутово»</h2>
+                                        </div>
+                                        <div class="digest__cart-item-about">
+                                            <p class="digest__cart-item-about-date">26.04.2022</p>
+                                            <div class="digest__cart-item-about-volume">
+                                                <p class="digest__cart-item-about-volume-item">Объём работ: 23 275 м3</p>
+                                                <p class="digest__cart-item-about-volume-item">Сроки работ: 3 месяца</p>
+                                            </div>
+                                        </div>
+                                    </article>
+                                </a>
+                            </li>                            
+                        </ul>
+                    </div>
+                    <div class="digest__cart">
+                        <ul class="digest__cart-items digest__cart-items-second">
+                            <li class="digest__cart-item">
+                                <a class="digest__cart-item-url" href="#">
+                                    <article class="digest__cart-item__cart">
+                                        <div class="digest-cover__image-container">
+                                            <img class="digest-cover__image" src="<?=$get_template_directory_uri?>/template-rsg/images/digest/background-1.jpg">
+                                        </div>
+                                        <div class="digest__cart-item-heading">
+                                            <p class="digest__cart-item-heading-building">Жилой комплекс</p>
+                                            <h2 class="digest__cart-item-heading-name">«Восточное Бутово»</h2>
+                                        </div>
+                                        <div class="digest__cart-item-about">
+                                            <p class="digest__cart-item-about-date">26.04.2022</p>
+                                            <div class="digest__cart-item-about-volume">
+                                                <p class="digest__cart-item-about-volume-item">Объём работ: 23 275 м3</p>
+                                                <p class="digest__cart-item-about-volume-item">Сроки работ: 3 месяца</p>
+                                            </div>
+                                        </div>
+                                    </article>
+                                </a>
+                            </li>
+                            <li class="digest__cart-item">
+                                <a class="digest__cart-item-url" href="#">
+                                    <article class="digest__cart-item__cart">
+                                        <div class="digest-cover__image-container">
+                                            <img class="digest-cover__image" src="<?=$get_template_directory_uri?>/template-rsg/images/digest/background-1.jpg">
+                                        </div>
+                                        <div class="digest__cart-item-heading">
+                                            <p class="digest__cart-item-heading-building">Жилой комплекс</p>
+                                            <h2 class="digest__cart-item-heading-name">«Восточное Бутово»</h2>
+                                        </div>
+                                        <div class="digest__cart-item-about">
+                                            <p class="digest__cart-item-about-date">26.04.2022</p>
+                                            <div class="digest__cart-item-about-volume">
+                                                <p class="digest__cart-item-about-volume-item">Объём работ: 23 275 м3</p>
+                                                <p class="digest__cart-item-about-volume-item">Сроки работ: 3 месяца</p>
+                                            </div>
+                                        </div>
+                                    </article>
+                                </a>
+                            </li>
+                            <li class="digest__cart-item">
+                                <a class="digest__cart-item-url" href="#">
+                                    <article class="digest__cart-item__cart">
+                                        <div class="digest-cover__image-container">
+                                            <img class="digest-cover__image" src="<?=$get_template_directory_uri?>/template-rsg/images/digest/background-1.jpg">
+                                        </div>
+                                        <div class="digest__cart-item-heading">
+                                            <p class="digest__cart-item-heading-building">Жилой комплекс</p>
+                                            <h2 class="digest__cart-item-heading-name">«Восточное Бутово»</h2>
+                                        </div>
+                                        <div class="digest__cart-item-about">
+                                            <p class="digest__cart-item-about-date">26.04.2022</p>
+                                            <div class="digest__cart-item-about-volume">
+                                                <p class="digest__cart-item-about-volume-item">Объём работ: 23 275 м3</p>
+                                                <p class="digest__cart-item-about-volume-item">Сроки работ: 3 месяца</p>
+                                            </div>
+                                        </div>
+                                    </article>
+                                </a>
+                            </li>
+                            <li class="digest__cart-item">
+                                <a class="digest__cart-item-url" href="#">
+                                    <article class="digest__cart-item__cart">
+                                        <div class="digest-cover__image-container">
+                                            <img class="digest-cover__image" src="<?=$get_template_directory_uri?>/template-rsg/images/digest/background-1.jpg">
+                                        </div>
+                                        <div class="digest__cart-item-heading">
+                                            <p class="digest__cart-item-heading-building">Жилой комплекс</p>
+                                            <h2 class="digest__cart-item-heading-name">«Восточное Бутово»</h2>
+                                        </div>
+                                        <div class="digest__cart-item-about">
+                                            <p class="digest__cart-item-about-date">26.04.2022</p>
+                                            <div class="digest__cart-item-about-volume">
+                                                <p class="digest__cart-item-about-volume-item">Объём работ: 23 275 м3</p>
+                                                <p class="digest__cart-item-about-volume-item">Сроки работ: 3 месяца</p>
+                                            </div>
+                                        </div>
+                                    </article>
+                                </a>
+                            </li>
+                            <li class="digest__cart-item">
+                                <a class="digest__cart-item-url" href="#">
+                                    <article class="digest__cart-item__cart">
+                                        <div class="digest-cover__image-container">
+                                            <img class="digest-cover__image" src="<?=$get_template_directory_uri?>/template-rsg/images/digest/background-1.jpg">
+                                            </div>
+                                        <div class="digest__cart-item-heading">
+                                            <p class="digest__cart-item-heading-building">Жилой комплекс</p>
+                                            <h2 class="digest__cart-item-heading-name">«Восточное Бутово»</h2>
+                                        </div>
+                                        <div class="digest__cart-item-about">
+                                            <p class="digest__cart-item-about-date">26.04.2022</p>
+                                            <div class="digest__cart-item-about-volume">
+                                                <p class="digest__cart-item-about-volume-item">Объём работ: 23 275 м3</p>
+                                                <p class="digest__cart-item-about-volume-item">Сроки работ: 3 месяца</p>
+                                            </div>
+                                        </div>
+                                    </article>
+                                </a>
+                            </li>
+                            <li class="digest__cart-item">
+                                <a class="digest__cart-item-url" href="#">
+                                    <article class="digest__cart-item__cart">
+                                        <div class="digest-cover__image-container">
+                                            <img class="digest-cover__image" src="<?=$get_template_directory_uri?>/template-rsg/images/digest/background-1.jpg">
+                                        </div>
+                                        <div class="digest__cart-item-heading">
+                                            <p class="digest__cart-item-heading-building">Жилой комплекс</p>
+                                            <h2 class="digest__cart-item-heading-name">«Восточное Бутово»</h2>
+                                        </div>
+                                        <div class="digest__cart-item-about">
+                                            <p class="digest__cart-item-about-date">26.04.2022</p>
+                                            <div class="digest__cart-item-about-volume">
+                                                <p class="digest__cart-item-about-volume-item">Объём работ: 23 275 м3</p>
+                                                <p class="digest__cart-item-about-volume-item">Сроки работ: 3 месяца</p>
+                                            </div>
+                                        </div>
+                                    </article>
+                                </a>
+                            </li>                            
+                        </ul>
+                    </div>
+                    <div class="digest__cart-navigations">
+                        <a class="similar__vacancy-button" href="#">Показать ещё</a>
+                        <ul class="digest__cart-navigations-pages">
+                            <li class="page_previous disabled alpha">
+                                <a class="page_previous-btn" href="#">
+                                  <img class="pagination_arrow_left" loading="lazy" src="<?=$get_template_directory_uri?>/template-rsg/icons/leftArrow.svg" alt="Left Arrow" data-title="" title="">
+                                  <p>Назад</p>
+                                </a>
+                            </li>
+                            <li class="page_number"><a class="page_number-btn" href="#">1</a></li>
+                            <li class="page_number"><a class="page_number-btn page_number-btn-active" href="#">2</a></li>
+                            <li class="page_number"><a class="page_number-btn" href="#">3</a></li>
+                            <li class="page_next omega">
+                                <a class="page_next-btn" href="#">
+                                    <p>Вперёд</p>
+                                    <img class="pagination_arrow_right" loading="lazy" alt="Right Arrow" src="<?=$get_template_directory_uri?>/template-rsg/icons/rightArrow.svg" data-title="" title="">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                  </div>
+                </li>
+        
+                <li class="cd-h-timeline__event text-component">
+                    <div class="cd-h-timeline__event-content container">
+                        <div class="digest__cart">
+                            <ul class="digest__cart-items">
+                                <li class="digest__cart-item">
+                                    <article class="digest__cart-item__cart">
+                                        <div class="digest-cover__image-container">
+                                            <img class="digest-cover__image" src="<?=$get_template_directory_uri?>/template-rsg/images/digest/background-1.jpg">
+                                        </div>
+                                        <div class="digest__cart-item-heading">
+                                            <p class="digest__cart-item-heading-building">Жилой комплекс</p>
+                                            <h2 class="digest__cart-item-heading-name">«Восточное Бутово»</h2>
+                                        </div>
+                                        <div class="digest__cart-item-about">
+                                            <p class="digest__cart-item-about-date">26.04.2022</p>
+                                            <div class="digest__cart-item-about-volume">
+                                                <p class="digest__cart-item-about-volume-item">Объём работ: 23 275 м3</p>
+                                                <p class="digest__cart-item-about-volume-item">Сроки работ: 3 месяца</p>
+                                            </div>
+                                        </div>
+                                    </article>
+                                </li>
+                                <li class="digest__cart-item">
+                                    <a class="digest__cart-item-url" href="#">
+                                        <article class="digest__cart-item__cart">
+                                            <div class="digest-cover__image-container">
+                                                <img class="digest-cover__image" src="<?=$get_template_directory_uri?>/template-rsg/images/digest/background-1.jpg">
+                                            </div>
+                                            <div class="digest__cart-item-heading">
+                                                <p class="digest__cart-item-heading-building">Жилой комплекс</p>
+                                                <h2 class="digest__cart-item-heading-name">«Восточное Бутово»</h2>
+                                            </div>
+                                            <div class="digest__cart-item-about">
+                                                <p class="digest__cart-item-about-date">26.04.2022</p>
+                                                <div class="digest__cart-item-about-volume">
+                                                    <p class="digest__cart-item-about-volume-item">Объём работ: 23 275 м3</p>
+                                                    <p class="digest__cart-item-about-volume-item">Сроки работ: 3 месяца</p>
+                                                </div>
+                                            </div>
+                                        </article>
+                                    </a>
+                                </li>
+                                <li class="digest__cart-item">
+                                    <a class="digest__cart-item-url" href="#">
+                                        <article class="digest__cart-item__cart">
+                                            <div class="digest-cover__image-container">
+                                                <img class="digest-cover__image" src="<?=$get_template_directory_uri?>/template-rsg/images/digest/background-1.jpg">
+                                            </div>
+                                            <div class="digest__cart-item-heading">
+                                                <p class="digest__cart-item-heading-building">Жилой комплекс</p>
+                                                <h2 class="digest__cart-item-heading-name">«Восточное Бутово»</h2>
+                                            </div>
+                                            <div class="digest__cart-item-about">
+                                                <p class="digest__cart-item-about-date">26.04.2022</p>
+                                                <div class="digest__cart-item-about-volume">
+                                                    <p class="digest__cart-item-about-volume-item">Объём работ: 23 275 м3</p>
+                                                    <p class="digest__cart-item-about-volume-item">Сроки работ: 3 месяца</p>
+                                                </div>
+                                            </div>
+                                        </article>
+                                    </a>
+                                </li>
+                                <li class="digest__cart-item">
+                                    <a class="digest__cart-item-url" href="#">
+                                        <article class="digest__cart-item__cart">
+                                            <div class="digest-cover__image-container">
+                                                <img class="digest-cover__image" src="<?=$get_template_directory_uri?>/template-rsg/images/digest/background-1.jpg">
+                                            </div>
+                                            <div class="digest__cart-item-heading">
+                                                <p class="digest__cart-item-heading-building">Жилой комплекс</p>
+                                                <h2 class="digest__cart-item-heading-name">«Восточное Бутово»</h2>
+                                            </div>
+                                            <div class="digest__cart-item-about">
+                                                <p class="digest__cart-item-about-date">26.04.2022</p>
+                                                <div class="digest__cart-item-about-volume">
+                                                    <p class="digest__cart-item-about-volume-item">Объём работ: 23 275 м3</p>
+                                                    <p class="digest__cart-item-about-volume-item">Сроки работ: 3 месяца</p>
+                                                </div>
+                                            </div>
+                                        </article>
+                                    </a>
+                                </li>
+                                <li class="digest__cart-item">
+                                    <a class="digest__cart-item-url" href="#">
+                                        <article class="digest__cart-item__cart">
+                                            <div class="digest-cover__image-container">
+                                                <img class="digest-cover__image" src="<?=$get_template_directory_uri?>/template-rsg/images/digest/background-1.jpg">
+                                            </div>
+                                            <div class="digest__cart-item-heading">
+                                                <p class="digest__cart-item-heading-building">Жилой комплекс</p>
+                                                <h2 class="digest__cart-item-heading-name">«Восточное Бутово»</h2>
+                                            </div>
+                                            <div class="digest__cart-item-about">
+                                                <p class="digest__cart-item-about-date">26.04.2022</p>
+                                                <div class="digest__cart-item-about-volume">
+                                                    <p class="digest__cart-item-about-volume-item">Объём работ: 23 275 м3</p>
+                                                    <p class="digest__cart-item-about-volume-item">Сроки работ: 3 месяца</p>
+                                                </div>
+                                            </div>
+                                        </article>
+                                    </a>
+                                </li>
+                                <li class="digest__cart-item">
+                                    <a class="digest__cart-item-url" href="#">
+                                        <article class="digest__cart-item__cart">
+                                            <div class="digest-cover__image-container">
+                                                <img class="digest-cover__image" src="<?=$get_template_directory_uri?>/template-rsg/images/digest/background-1.jpg">
+                                            </div>
+                                            <div class="digest__cart-item-heading">
+                                                <p class="digest__cart-item-heading-building">Жилой комплекс</p>
+                                                <h2 class="digest__cart-item-heading-name">«Восточное Бутово»</h2>
+                                            </div>
+                                            <div class="digest__cart-item-about">
+                                                <p class="digest__cart-item-about-date">26.04.2022</p>
+                                                <div class="digest__cart-item-about-volume">
+                                                    <p class="digest__cart-item-about-volume-item">Объём работ: 23 275 м3</p>
+                                                    <p class="digest__cart-item-about-volume-item">Сроки работ: 3 месяца</p>
+                                                </div>
+                                            </div>
+                                        </article>
+                                    </a>
+                                </li>                            
+                            </ul>
+                        </div>
+                        <div class="digest__cart">
+                            <ul class="digest__cart-items digest__cart-items-second">
+                                <li class="digest__cart-item">
+                                    <a class="digest__cart-item-url" href="#">
+                                        <article class="digest__cart-item__cart">
+                                            <div class="digest-cover__image-container">
+                                                <img class="digest-cover__image" src="<?=$get_template_directory_uri?>/template-rsg/images/digest/background-1.jpg">
+                                            </div>
+                                            <div class="digest__cart-item-heading">
+                                                <p class="digest__cart-item-heading-building">Жилой комплекс</p>
+                                                <h2 class="digest__cart-item-heading-name">«Восточное Бутово»</h2>
+                                            </div>
+                                            <div class="digest__cart-item-about">
+                                                <p class="digest__cart-item-about-date">26.04.2022</p>
+                                                <div class="digest__cart-item-about-volume">
+                                                    <p class="digest__cart-item-about-volume-item">Объём работ: 23 275 м3</p>
+                                                    <p class="digest__cart-item-about-volume-item">Сроки работ: 3 месяца</p>
+                                                </div>
+                                            </div>
+                                        </article>
+                                    </a>
+                                </li>
+                                <li class="digest__cart-item">
+                                    <a class="digest__cart-item-url" href="#">
+                                        <article class="digest__cart-item__cart">
+                                            <div class="digest-cover__image-container">
+                                                <img class="digest-cover__image" src="<?=$get_template_directory_uri?>/template-rsg/images/digest/background-1.jpg">
+                                            </div>
+                                            <div class="digest__cart-item-heading">
+                                                <p class="digest__cart-item-heading-building">Жилой комплекс</p>
+                                                <h2 class="digest__cart-item-heading-name">«Восточное Бутово»</h2>
+                                            </div>
+                                            <div class="digest__cart-item-about">
+                                                <p class="digest__cart-item-about-date">26.04.2022</p>
+                                                <div class="digest__cart-item-about-volume">
+                                                    <p class="digest__cart-item-about-volume-item">Объём работ: 23 275 м3</p>
+                                                    <p class="digest__cart-item-about-volume-item">Сроки работ: 3 месяца</p>
+                                                </div>
+                                            </div>
+                                        </article>
+                                    </a>
+                                </li>
+                                <li class="digest__cart-item">
+                                    <a class="digest__cart-item-url" href="#">
+                                        <article class="digest__cart-item__cart">
+                                            <div class="digest-cover__image-container">
+                                                <img class="digest-cover__image" src="<?=$get_template_directory_uri?>/template-rsg/images/digest/background-1.jpg">
+                                            </div>
+                                            <div class="digest__cart-item-heading">
+                                                <p class="digest__cart-item-heading-building">Жилой комплекс</p>
+                                                <h2 class="digest__cart-item-heading-name">«Восточное Бутово»</h2>
+                                            </div>
+                                            <div class="digest__cart-item-about">
+                                                <p class="digest__cart-item-about-date">26.04.2022</p>
+                                                <div class="digest__cart-item-about-volume">
+                                                    <p class="digest__cart-item-about-volume-item">Объём работ: 23 275 м3</p>
+                                                    <p class="digest__cart-item-about-volume-item">Сроки работ: 3 месяца</p>
+                                                </div>
+                                            </div>
+                                        </article>
+                                    </a>
+                                </li>
+                                <li class="digest__cart-item">
+                                    <a class="digest__cart-item-url" href="#">
+                                        <article class="digest__cart-item__cart">
+                                            <div class="digest-cover__image-container">
+                                                <img class="digest-cover__image" src="<?=$get_template_directory_uri?>/template-rsg/images/digest/background-1.jpg">
+                                            </div>
+                                            <div class="digest__cart-item-heading">
+                                                <p class="digest__cart-item-heading-building">Жилой комплекс</p>
+                                                <h2 class="digest__cart-item-heading-name">«Восточное Бутово»</h2>
+                                            </div>
+                                            <div class="digest__cart-item-about">
+                                                <p class="digest__cart-item-about-date">26.04.2022</p>
+                                                <div class="digest__cart-item-about-volume">
+                                                    <p class="digest__cart-item-about-volume-item">Объём работ: 23 275 м3</p>
+                                                    <p class="digest__cart-item-about-volume-item">Сроки работ: 3 месяца</p>
+                                                </div>
+                                            </div>
+                                        </article>
+                                    </a>
+                                </li>
+                                <li class="digest__cart-item">
+                                    <a class="digest__cart-item-url" href="#">
+                                        <article class="digest__cart-item__cart">
+                                            <div class="digest-cover__image-container">
+                                                <img class="digest-cover__image" src="<?=$get_template_directory_uri?>/template-rsg/images/digest/background-1.jpg">
+                                                </div>
+                                            <div class="digest__cart-item-heading">
+                                                <p class="digest__cart-item-heading-building">Жилой комплекс</p>
+                                                <h2 class="digest__cart-item-heading-name">«Восточное Бутово»</h2>
+                                            </div>
+                                            <div class="digest__cart-item-about">
+                                                <p class="digest__cart-item-about-date">26.04.2022</p>
+                                                <div class="digest__cart-item-about-volume">
+                                                    <p class="digest__cart-item-about-volume-item">Объём работ: 23 275 м3</p>
+                                                    <p class="digest__cart-item-about-volume-item">Сроки работ: 3 месяца</p>
+                                                </div>
+                                            </div>
+                                        </article>
+                                    </a>
+                                </li>
+                                <li class="digest__cart-item">
+                                    <a class="digest__cart-item-url" href="#">
+                                        <article class="digest__cart-item__cart">
+                                            <div class="digest-cover__image-container">
+                                                <img class="digest-cover__image" src="<?=$get_template_directory_uri?>/template-rsg/images/digest/background-1.jpg">
+                                            </div>
+                                            <div class="digest__cart-item-heading">
+                                                <p class="digest__cart-item-heading-building">Жилой комплекс</p>
+                                                <h2 class="digest__cart-item-heading-name">«Восточное Бутово»</h2>
+                                            </div>
+                                            <div class="digest__cart-item-about">
+                                                <p class="digest__cart-item-about-date">26.04.2022</p>
+                                                <div class="digest__cart-item-about-volume">
+                                                    <p class="digest__cart-item-about-volume-item">Объём работ: 23 275 м3</p>
+                                                    <p class="digest__cart-item-about-volume-item">Сроки работ: 3 месяца</p>
+                                                </div>
+                                            </div>
+                                        </article>
+                                    </a>
+                                </li>                            
+                            </ul>
+                        </div>
+                        <div class="digest__cart-navigations">
+                            <a class="similar__vacancy-button" href="#">Показать ещё</a>
+                            <ul class="digest__cart-navigations-pages">
+                                <li class="page_previous disabled alpha">
+                                    <a class="page_previous-btn" href="#">
+                                      <img class="pagination_arrow_left" loading="lazy" src="<?=$get_template_directory_uri?>/template-rsg/icons/leftArrow.svg" alt="Left Arrow" data-title="" title="">
+                                      <p>Назад</p>
+                                    </a>
+                                </li>
+                                <li class="page_number"><a class="page_number-btn" href="#">1</a></li>
+                                <li class="page_number"><a class="page_number-btn page_number-btn-active" href="#">2</a></li>
+                                <li class="page_number"><a class="page_number-btn" href="#">3</a></li>
+                                <li class="page_next omega">
+                                    <a class="page_next-btn" href="#">
+                                        <p>Вперёд</p>
+                                        <img class="pagination_arrow_right" loading="lazy" alt="Right Arrow" src="<?=$get_template_directory_uri?>/template-rsg/icons/rightArrow.svg" data-title="" title="">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+        
+                <li class="cd-h-timeline__event text-component">
+                    <div class="cd-h-timeline__event-content container">
+                        <div class="digest__cart">
+                            <ul class="digest__cart-items">
+                                <li class="digest__cart-item">
+                                    <article class="digest__cart-item__cart">
+                                        <div class="digest-cover__image-container">
+                                            <img class="digest-cover__image" src="<?=$get_template_directory_uri?>/template-rsg/images/digest/background-1.jpg">
+                                        </div>
+                                        <div class="digest__cart-item-heading">
+                                            <p class="digest__cart-item-heading-building">Жилой комплекс</p>
+                                            <h2 class="digest__cart-item-heading-name">«Восточное Бутово»</h2>
+                                        </div>
+                                        <div class="digest__cart-item-about">
+                                            <p class="digest__cart-item-about-date">26.04.2022</p>
+                                            <div class="digest__cart-item-about-volume">
+                                                <p class="digest__cart-item-about-volume-item">Объём работ: 23 275 м3</p>
+                                                <p class="digest__cart-item-about-volume-item">Сроки работ: 3 месяца</p>
+                                            </div>
+                                        </div>
+                                    </article>
+                                </li>
+                                <li class="digest__cart-item">
+                                    <a class="digest__cart-item-url" href="#">
+                                        <article class="digest__cart-item__cart">
+                                            <div class="digest-cover__image-container">
+                                                <img class="digest-cover__image" src="<?=$get_template_directory_uri?>/template-rsg/images/digest/background-1.jpg">
+                                            </div>
+                                            <div class="digest__cart-item-heading">
+                                                <p class="digest__cart-item-heading-building">Жилой комплекс</p>
+                                                <h2 class="digest__cart-item-heading-name">«Восточное Бутово»</h2>
+                                            </div>
+                                            <div class="digest__cart-item-about">
+                                                <p class="digest__cart-item-about-date">26.04.2022</p>
+                                                <div class="digest__cart-item-about-volume">
+                                                    <p class="digest__cart-item-about-volume-item">Объём работ: 23 275 м3</p>
+                                                    <p class="digest__cart-item-about-volume-item">Сроки работ: 3 месяца</p>
+                                                </div>
+                                            </div>
+                                        </article>
+                                    </a>
+                                </li>
+                                <li class="digest__cart-item">
+                                    <a class="digest__cart-item-url" href="#">
+                                        <article class="digest__cart-item__cart">
+                                            <div class="digest-cover__image-container">
+                                                <img class="digest-cover__image" src="<?=$get_template_directory_uri?>/template-rsg/images/digest/background-1.jpg">
+                                            </div>
+                                            <div class="digest__cart-item-heading">
+                                                <p class="digest__cart-item-heading-building">Жилой комплекс</p>
+                                                <h2 class="digest__cart-item-heading-name">«Восточное Бутово»</h2>
+                                            </div>
+                                            <div class="digest__cart-item-about">
+                                                <p class="digest__cart-item-about-date">26.04.2022</p>
+                                                <div class="digest__cart-item-about-volume">
+                                                    <p class="digest__cart-item-about-volume-item">Объём работ: 23 275 м3</p>
+                                                    <p class="digest__cart-item-about-volume-item">Сроки работ: 3 месяца</p>
+                                                </div>
+                                            </div>
+                                        </article>
+                                    </a>
+                                </li>
+                                <li class="digest__cart-item">
+                                    <a class="digest__cart-item-url" href="#">
+                                        <article class="digest__cart-item__cart">
+                                            <div class="digest-cover__image-container">
+                                                <img class="digest-cover__image" src="<?=$get_template_directory_uri?>/template-rsg/images/digest/background-1.jpg">
+                                            </div>
+                                            <div class="digest__cart-item-heading">
+                                                <p class="digest__cart-item-heading-building">Жилой комплекс</p>
+                                                <h2 class="digest__cart-item-heading-name">«Восточное Бутово»</h2>
+                                            </div>
+                                            <div class="digest__cart-item-about">
+                                                <p class="digest__cart-item-about-date">26.04.2022</p>
+                                                <div class="digest__cart-item-about-volume">
+                                                    <p class="digest__cart-item-about-volume-item">Объём работ: 23 275 м3</p>
+                                                    <p class="digest__cart-item-about-volume-item">Сроки работ: 3 месяца</p>
+                                                </div>
+                                            </div>
+                                        </article>
+                                    </a>
+                                </li>
+                                <li class="digest__cart-item">
+                                    <a class="digest__cart-item-url" href="#">
+                                        <article class="digest__cart-item__cart">
+                                            <div class="digest-cover__image-container">
+                                                <img class="digest-cover__image" src="<?=$get_template_directory_uri?>/template-rsg/images/digest/background-1.jpg">
+                                            </div>
+                                            <div class="digest__cart-item-heading">
+                                                <p class="digest__cart-item-heading-building">Жилой комплекс</p>
+                                                <h2 class="digest__cart-item-heading-name">«Восточное Бутово»</h2>
+                                            </div>
+                                            <div class="digest__cart-item-about">
+                                                <p class="digest__cart-item-about-date">26.04.2022</p>
+                                                <div class="digest__cart-item-about-volume">
+                                                    <p class="digest__cart-item-about-volume-item">Объём работ: 23 275 м3</p>
+                                                    <p class="digest__cart-item-about-volume-item">Сроки работ: 3 месяца</p>
+                                                </div>
+                                            </div>
+                                        </article>
+                                    </a>
+                                </li>
+                                <li class="digest__cart-item">
+                                    <a class="digest__cart-item-url" href="#">
+                                        <article class="digest__cart-item__cart">
+                                            <div class="digest-cover__image-container">
+                                                <img class="digest-cover__image" src="<?=$get_template_directory_uri?>/template-rsg/images/digest/background-1.jpg">
+                                            </div>
+                                            <div class="digest__cart-item-heading">
+                                                <p class="digest__cart-item-heading-building">Жилой комплекс</p>
+                                                <h2 class="digest__cart-item-heading-name">«Восточное Бутово»</h2>
+                                            </div>
+                                            <div class="digest__cart-item-about">
+                                                <p class="digest__cart-item-about-date">26.04.2022</p>
+                                                <div class="digest__cart-item-about-volume">
+                                                    <p class="digest__cart-item-about-volume-item">Объём работ: 23 275 м3</p>
+                                                    <p class="digest__cart-item-about-volume-item">Сроки работ: 3 месяца</p>
+                                                </div>
+                                            </div>
+                                        </article>
+                                    </a>
+                                </li>                            
+                            </ul>
+                        </div>
+                        <div class="digest__cart">
+                            <ul class="digest__cart-items digest__cart-items-second">
+                                <li class="digest__cart-item">
+                                    <a class="digest__cart-item-url" href="#">
+                                        <article class="digest__cart-item__cart">
+                                            <div class="digest-cover__image-container">
+                                                <img class="digest-cover__image" src="<?=$get_template_directory_uri?>/template-rsg/images/digest/background-1.jpg">
+                                            </div>
+                                            <div class="digest__cart-item-heading">
+                                                <p class="digest__cart-item-heading-building">Жилой комплекс</p>
+                                                <h2 class="digest__cart-item-heading-name">«Восточное Бутово»</h2>
+                                            </div>
+                                            <div class="digest__cart-item-about">
+                                                <p class="digest__cart-item-about-date">26.04.2022</p>
+                                                <div class="digest__cart-item-about-volume">
+                                                    <p class="digest__cart-item-about-volume-item">Объём работ: 23 275 м3</p>
+                                                    <p class="digest__cart-item-about-volume-item">Сроки работ: 3 месяца</p>
+                                                </div>
+                                            </div>
+                                        </article>
+                                    </a>
+                                </li>
+                                <li class="digest__cart-item">
+                                    <a class="digest__cart-item-url" href="#">
+                                        <article class="digest__cart-item__cart">
+                                            <div class="digest-cover__image-container">
+                                                <img class="digest-cover__image" src="<?=$get_template_directory_uri?>/template-rsg/images/digest/background-1.jpg">
+                                            </div>
+                                            <div class="digest__cart-item-heading">
+                                                <p class="digest__cart-item-heading-building">Жилой комплекс</p>
+                                                <h2 class="digest__cart-item-heading-name">«Восточное Бутово»</h2>
+                                            </div>
+                                            <div class="digest__cart-item-about">
+                                                <p class="digest__cart-item-about-date">26.04.2022</p>
+                                                <div class="digest__cart-item-about-volume">
+                                                    <p class="digest__cart-item-about-volume-item">Объём работ: 23 275 м3</p>
+                                                    <p class="digest__cart-item-about-volume-item">Сроки работ: 3 месяца</p>
+                                                </div>
+                                            </div>
+                                        </article>
+                                    </a>
+                                </li>
+                                <li class="digest__cart-item">
+                                    <a class="digest__cart-item-url" href="#">
+                                        <article class="digest__cart-item__cart">
+                                            <div class="digest-cover__image-container">
+                                                <img class="digest-cover__image" src="<?=$get_template_directory_uri?>/template-rsg/images/digest/background-1.jpg">
+                                            </div>
+                                            <div class="digest__cart-item-heading">
+                                                <p class="digest__cart-item-heading-building">Жилой комплекс</p>
+                                                <h2 class="digest__cart-item-heading-name">«Восточное Бутово»</h2>
+                                            </div>
+                                            <div class="digest__cart-item-about">
+                                                <p class="digest__cart-item-about-date">26.04.2022</p>
+                                                <div class="digest__cart-item-about-volume">
+                                                    <p class="digest__cart-item-about-volume-item">Объём работ: 23 275 м3</p>
+                                                    <p class="digest__cart-item-about-volume-item">Сроки работ: 3 месяца</p>
+                                                </div>
+                                            </div>
+                                        </article>
+                                    </a>
+                                </li>
+                                <li class="digest__cart-item">
+                                    <a class="digest__cart-item-url" href="#">
+                                        <article class="digest__cart-item__cart">
+                                            <div class="digest-cover__image-container">
+                                                <img class="digest-cover__image" src="<?=$get_template_directory_uri?>/template-rsg/images/digest/background-1.jpg">
+                                            </div>
+                                            <div class="digest__cart-item-heading">
+                                                <p class="digest__cart-item-heading-building">Жилой комплекс</p>
+                                                <h2 class="digest__cart-item-heading-name">«Восточное Бутово»</h2>
+                                            </div>
+                                            <div class="digest__cart-item-about">
+                                                <p class="digest__cart-item-about-date">26.04.2022</p>
+                                                <div class="digest__cart-item-about-volume">
+                                                    <p class="digest__cart-item-about-volume-item">Объём работ: 23 275 м3</p>
+                                                    <p class="digest__cart-item-about-volume-item">Сроки работ: 3 месяца</p>
+                                                </div>
+                                            </div>
+                                        </article>
+                                    </a>
+                                </li>
+                                <li class="digest__cart-item">
+                                    <a class="digest__cart-item-url" href="#">
+                                        <article class="digest__cart-item__cart">
+                                            <div class="digest-cover__image-container">
+                                                <img class="digest-cover__image" src="<?=$get_template_directory_uri?>/template-rsg/images/digest/background-1.jpg">
+                                                </div>
+                                            <div class="digest__cart-item-heading">
+                                                <p class="digest__cart-item-heading-building">Жилой комплекс</p>
+                                                <h2 class="digest__cart-item-heading-name">«Восточное Бутово»</h2>
+                                            </div>
+                                            <div class="digest__cart-item-about">
+                                                <p class="digest__cart-item-about-date">26.04.2022</p>
+                                                <div class="digest__cart-item-about-volume">
+                                                    <p class="digest__cart-item-about-volume-item">Объём работ: 23 275 м3</p>
+                                                    <p class="digest__cart-item-about-volume-item">Сроки работ: 3 месяца</p>
+                                                </div>
+                                            </div>
+                                        </article>
+                                    </a>
+                                </li>
+                                <li class="digest__cart-item">
+                                    <a class="digest__cart-item-url" href="#">
+                                        <article class="digest__cart-item__cart">
+                                            <div class="digest-cover__image-container">
+                                                <img class="digest-cover__image" src="<?=$get_template_directory_uri?>/template-rsg/images/digest/background-1.jpg">
+                                            </div>
+                                            <div class="digest__cart-item-heading">
+                                                <p class="digest__cart-item-heading-building">Жилой комплекс</p>
+                                                <h2 class="digest__cart-item-heading-name">«Восточное Бутово»</h2>
+                                            </div>
+                                            <div class="digest__cart-item-about">
+                                                <p class="digest__cart-item-about-date">26.04.2022</p>
+                                                <div class="digest__cart-item-about-volume">
+                                                    <p class="digest__cart-item-about-volume-item">Объём работ: 23 275 м3</p>
+                                                    <p class="digest__cart-item-about-volume-item">Сроки работ: 3 месяца</p>
+                                                </div>
+                                            </div>
+                                        </article>
+                                    </a>
+                                </li>                            
+                            </ul>
+                        </div>
+                        <div class="digest__cart-navigations">
+                            <a class="similar__vacancy-button" href="#">Показать ещё</a>
+                            <ul class="digest__cart-navigations-pages">
+                                <li class="page_previous disabled alpha">
+                                    <a class="page_previous-btn" href="#">
+                                      <img class="pagination_arrow_left" loading="lazy" src="<?=$get_template_directory_uri?>/template-rsg/icons/leftArrow.svg" alt="Left Arrow" data-title="" title="">
+                                      <p>Назад</p>
+                                    </a>
+                                </li>
+                                <li class="page_number"><a class="page_number-btn" href="#">1</a></li>
+                                <li class="page_number"><a class="page_number-btn page_number-btn-active" href="#">2</a></li>
+                                <li class="page_number"><a class="page_number-btn" href="#">3</a></li>
+                                <li class="page_next omega">
+                                    <a class="page_next-btn" href="#">
+                                        <p>Вперёд</p>
+                                        <img class="pagination_arrow_right" loading="lazy" alt="Right Arrow" src="<?=$get_template_directory_uri?>/template-rsg/icons/rightArrow.svg" data-title="" title="">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+        
+                <li class="cd-h-timeline__event text-component">
+                    <div class="cd-h-timeline__event-content container">
+                        <div class="digest__cart">
+                            <ul class="digest__cart-items">
+                                <li class="digest__cart-item">
+                                    <article class="digest__cart-item__cart">
+                                        <div class="digest-cover__image-container">
+                                            <img class="digest-cover__image" src="<?=$get_template_directory_uri?>/template-rsg/images/digest/background-1.jpg">
+                                        </div>
+                                        <div class="digest__cart-item-heading">
+                                            <p class="digest__cart-item-heading-building">Жилой комплекс</p>
+                                            <h2 class="digest__cart-item-heading-name">«Восточное Бутово»</h2>
+                                        </div>
+                                        <div class="digest__cart-item-about">
+                                            <p class="digest__cart-item-about-date">26.04.2022</p>
+                                            <div class="digest__cart-item-about-volume">
+                                                <p class="digest__cart-item-about-volume-item">Объём работ: 23 275 м3</p>
+                                                <p class="digest__cart-item-about-volume-item">Сроки работ: 3 месяца</p>
+                                            </div>
+                                        </div>
+                                    </article>
+                                </li>
+                                <li class="digest__cart-item">
+                                    <a class="digest__cart-item-url" href="#">
+                                        <article class="digest__cart-item__cart">
+                                            <div class="digest-cover__image-container">
+                                                <img class="digest-cover__image" src="<?=$get_template_directory_uri?>/template-rsg/images/digest/background-1.jpg">
+                                            </div>
+                                            <div class="digest__cart-item-heading">
+                                                <p class="digest__cart-item-heading-building">Жилой комплекс</p>
+                                                <h2 class="digest__cart-item-heading-name">«Восточное Бутово»</h2>
+                                            </div>
+                                            <div class="digest__cart-item-about">
+                                                <p class="digest__cart-item-about-date">26.04.2022</p>
+                                                <div class="digest__cart-item-about-volume">
+                                                    <p class="digest__cart-item-about-volume-item">Объём работ: 23 275 м3</p>
+                                                    <p class="digest__cart-item-about-volume-item">Сроки работ: 3 месяца</p>
+                                                </div>
+                                            </div>
+                                        </article>
+                                    </a>
+                                </li>
+                                <li class="digest__cart-item">
+                                    <a class="digest__cart-item-url" href="#">
+                                        <article class="digest__cart-item__cart">
+                                            <div class="digest-cover__image-container">
+                                                <img class="digest-cover__image" src="<?=$get_template_directory_uri?>/template-rsg/images/digest/background-1.jpg">
+                                            </div>
+                                            <div class="digest__cart-item-heading">
+                                                <p class="digest__cart-item-heading-building">Жилой комплекс</p>
+                                                <h2 class="digest__cart-item-heading-name">«Восточное Бутово»</h2>
+                                            </div>
+                                            <div class="digest__cart-item-about">
+                                                <p class="digest__cart-item-about-date">26.04.2022</p>
+                                                <div class="digest__cart-item-about-volume">
+                                                    <p class="digest__cart-item-about-volume-item">Объём работ: 23 275 м3</p>
+                                                    <p class="digest__cart-item-about-volume-item">Сроки работ: 3 месяца</p>
+                                                </div>
+                                            </div>
+                                        </article>
+                                    </a>
+                                </li>
+                                <li class="digest__cart-item">
+                                    <a class="digest__cart-item-url" href="#">
+                                        <article class="digest__cart-item__cart">
+                                            <div class="digest-cover__image-container">
+                                                <img class="digest-cover__image" src="<?=$get_template_directory_uri?>/template-rsg/images/digest/background-1.jpg">
+                                            </div>
+                                            <div class="digest__cart-item-heading">
+                                                <p class="digest__cart-item-heading-building">Жилой комплекс</p>
+                                                <h2 class="digest__cart-item-heading-name">«Восточное Бутово»</h2>
+                                            </div>
+                                            <div class="digest__cart-item-about">
+                                                <p class="digest__cart-item-about-date">26.04.2022</p>
+                                                <div class="digest__cart-item-about-volume">
+                                                    <p class="digest__cart-item-about-volume-item">Объём работ: 23 275 м3</p>
+                                                    <p class="digest__cart-item-about-volume-item">Сроки работ: 3 месяца</p>
+                                                </div>
+                                            </div>
+                                        </article>
+                                    </a>
+                                </li>
+                                <li class="digest__cart-item">
+                                    <a class="digest__cart-item-url" href="#">
+                                        <article class="digest__cart-item__cart">
+                                            <div class="digest-cover__image-container">
+                                                <img class="digest-cover__image" src="<?=$get_template_directory_uri?>/template-rsg/images/digest/background-1.jpg">
+                                            </div>
+                                            <div class="digest__cart-item-heading">
+                                                <p class="digest__cart-item-heading-building">Жилой комплекс</p>
+                                                <h2 class="digest__cart-item-heading-name">«Восточное Бутово»</h2>
+                                            </div>
+                                            <div class="digest__cart-item-about">
+                                                <p class="digest__cart-item-about-date">26.04.2022</p>
+                                                <div class="digest__cart-item-about-volume">
+                                                    <p class="digest__cart-item-about-volume-item">Объём работ: 23 275 м3</p>
+                                                    <p class="digest__cart-item-about-volume-item">Сроки работ: 3 месяца</p>
+                                                </div>
+                                            </div>
+                                        </article>
+                                    </a>
+                                </li>
+                                <li class="digest__cart-item">
+                                    <a class="digest__cart-item-url" href="#">
+                                        <article class="digest__cart-item__cart">
+                                            <div class="digest-cover__image-container">
+                                                <img class="digest-cover__image" src="<?=$get_template_directory_uri?>/template-rsg/images/digest/background-1.jpg">
+                                            </div>
+                                            <div class="digest__cart-item-heading">
+                                                <p class="digest__cart-item-heading-building">Жилой комплекс</p>
+                                                <h2 class="digest__cart-item-heading-name">«Восточное Бутово»</h2>
+                                            </div>
+                                            <div class="digest__cart-item-about">
+                                                <p class="digest__cart-item-about-date">26.04.2022</p>
+                                                <div class="digest__cart-item-about-volume">
+                                                    <p class="digest__cart-item-about-volume-item">Объём работ: 23 275 м3</p>
+                                                    <p class="digest__cart-item-about-volume-item">Сроки работ: 3 месяца</p>
+                                                </div>
+                                            </div>
+                                        </article>
+                                    </a>
+                                </li>                            
+                            </ul>
+                        </div>
+                        <div class="digest__cart">
+                            <ul class="digest__cart-items digest__cart-items-second">
+                                <li class="digest__cart-item">
+                                    <a class="digest__cart-item-url" href="#">
+                                        <article class="digest__cart-item__cart">
+                                            <div class="digest-cover__image-container">
+                                                <img class="digest-cover__image" src="<?=$get_template_directory_uri?>/template-rsg/images/digest/background-1.jpg">
+                                            </div>
+                                            <div class="digest__cart-item-heading">
+                                                <p class="digest__cart-item-heading-building">Жилой комплекс</p>
+                                                <h2 class="digest__cart-item-heading-name">«Восточное Бутово»</h2>
+                                            </div>
+                                            <div class="digest__cart-item-about">
+                                                <p class="digest__cart-item-about-date">26.04.2022</p>
+                                                <div class="digest__cart-item-about-volume">
+                                                    <p class="digest__cart-item-about-volume-item">Объём работ: 23 275 м3</p>
+                                                    <p class="digest__cart-item-about-volume-item">Сроки работ: 3 месяца</p>
+                                                </div>
+                                            </div>
+                                        </article>
+                                    </a>
+                                </li>
+                                <li class="digest__cart-item">
+                                    <a class="digest__cart-item-url" href="#">
+                                        <article class="digest__cart-item__cart">
+                                            <div class="digest-cover__image-container">
+                                                <img class="digest-cover__image" src="<?=$get_template_directory_uri?>/template-rsg/images/digest/background-1.jpg">
+                                            </div>
+                                            <div class="digest__cart-item-heading">
+                                                <p class="digest__cart-item-heading-building">Жилой комплекс</p>
+                                                <h2 class="digest__cart-item-heading-name">«Восточное Бутово»</h2>
+                                            </div>
+                                            <div class="digest__cart-item-about">
+                                                <p class="digest__cart-item-about-date">26.04.2022</p>
+                                                <div class="digest__cart-item-about-volume">
+                                                    <p class="digest__cart-item-about-volume-item">Объём работ: 23 275 м3</p>
+                                                    <p class="digest__cart-item-about-volume-item">Сроки работ: 3 месяца</p>
+                                                </div>
+                                            </div>
+                                        </article>
+                                    </a>
+                                </li>
+                                <li class="digest__cart-item">
+                                    <a class="digest__cart-item-url" href="#">
+                                        <article class="digest__cart-item__cart">
+                                            <div class="digest-cover__image-container">
+                                                <img class="digest-cover__image" src="<?=$get_template_directory_uri?>/template-rsg/images/digest/background-1.jpg">
+                                            </div>
+                                            <div class="digest__cart-item-heading">
+                                                <p class="digest__cart-item-heading-building">Жилой комплекс</p>
+                                                <h2 class="digest__cart-item-heading-name">«Восточное Бутово»</h2>
+                                            </div>
+                                            <div class="digest__cart-item-about">
+                                                <p class="digest__cart-item-about-date">26.04.2022</p>
+                                                <div class="digest__cart-item-about-volume">
+                                                    <p class="digest__cart-item-about-volume-item">Объём работ: 23 275 м3</p>
+                                                    <p class="digest__cart-item-about-volume-item">Сроки работ: 3 месяца</p>
+                                                </div>
+                                            </div>
+                                        </article>
+                                    </a>
+                                </li>
+                                <li class="digest__cart-item">
+                                    <a class="digest__cart-item-url" href="#">
+                                        <article class="digest__cart-item__cart">
+                                            <div class="digest-cover__image-container">
+                                                <img class="digest-cover__image" src="<?=$get_template_directory_uri?>/template-rsg/images/digest/background-1.jpg">
+                                            </div>
+                                            <div class="digest__cart-item-heading">
+                                                <p class="digest__cart-item-heading-building">Жилой комплекс</p>
+                                                <h2 class="digest__cart-item-heading-name">«Восточное Бутово»</h2>
+                                            </div>
+                                            <div class="digest__cart-item-about">
+                                                <p class="digest__cart-item-about-date">26.04.2022</p>
+                                                <div class="digest__cart-item-about-volume">
+                                                    <p class="digest__cart-item-about-volume-item">Объём работ: 23 275 м3</p>
+                                                    <p class="digest__cart-item-about-volume-item">Сроки работ: 3 месяца</p>
+                                                </div>
+                                            </div>
+                                        </article>
+                                    </a>
+                                </li>
+                                <li class="digest__cart-item">
+                                    <a class="digest__cart-item-url" href="#">
+                                        <article class="digest__cart-item__cart">
+                                            <div class="digest-cover__image-container">
+                                                <img class="digest-cover__image" src="<?=$get_template_directory_uri?>/template-rsg/images/digest/background-1.jpg">
+                                                </div>
+                                            <div class="digest__cart-item-heading">
+                                                <p class="digest__cart-item-heading-building">Жилой комплекс</p>
+                                                <h2 class="digest__cart-item-heading-name">«Восточное Бутово»</h2>
+                                            </div>
+                                            <div class="digest__cart-item-about">
+                                                <p class="digest__cart-item-about-date">26.04.2022</p>
+                                                <div class="digest__cart-item-about-volume">
+                                                    <p class="digest__cart-item-about-volume-item">Объём работ: 23 275 м3</p>
+                                                    <p class="digest__cart-item-about-volume-item">Сроки работ: 3 месяца</p>
+                                                </div>
+                                            </div>
+                                        </article>
+                                    </a>
+                                </li>
+                                <li class="digest__cart-item">
+                                    <a class="digest__cart-item-url" href="#">
+                                        <article class="digest__cart-item__cart">
+                                            <div class="digest-cover__image-container">
+                                                <img class="digest-cover__image" src="<?=$get_template_directory_uri?>/template-rsg/images/digest/background-1.jpg">
+                                            </div>
+                                            <div class="digest__cart-item-heading">
+                                                <p class="digest__cart-item-heading-building">Жилой комплекс</p>
+                                                <h2 class="digest__cart-item-heading-name">«Восточное Бутово»</h2>
+                                            </div>
+                                            <div class="digest__cart-item-about">
+                                                <p class="digest__cart-item-about-date">26.04.2022</p>
+                                                <div class="digest__cart-item-about-volume">
+                                                    <p class="digest__cart-item-about-volume-item">Объём работ: 23 275 м3</p>
+                                                    <p class="digest__cart-item-about-volume-item">Сроки работ: 3 месяца</p>
+                                                </div>
+                                            </div>
+                                        </article>
+                                    </a>
+                                </li>                            
+                            </ul>
+                        </div>
+                        <div class="digest__cart-navigations">
+                            <a class="similar__vacancy-button" href="#">Показать ещё</a>
+                            <ul class="digest__cart-navigations-pages">
+                                <li class="page_previous disabled alpha">
+                                    <a class="page_previous-btn" href="#">
+                                      <img class="pagination_arrow_left" loading="lazy" src="<?=$get_template_directory_uri?>/template-rsg/icons/leftArrow.svg" alt="Left Arrow" data-title="" title="">
+                                      <p>Назад</p>
+                                    </a>
+                                </li>
+                                <li class="page_number"><a class="page_number-btn" href="#">1</a></li>
+                                <li class="page_number"><a class="page_number-btn page_number-btn-active" href="#">2</a></li>
+                                <li class="page_number"><a class="page_number-btn" href="#">3</a></li>
+                                <li class="page_next omega">
+                                    <a class="page_next-btn" href="#">
+                                        <p>Вперёд</p>
+                                        <img class="pagination_arrow_right" loading="lazy" alt="Right Arrow" src="<?=$get_template_directory_uri?>/template-rsg/icons/rightArrow.svg" data-title="" title="">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+        
+                <li class="cd-h-timeline__event text-component">
+                    <div class="cd-h-timeline__event-content container">
+                        <div class="digest__cart">
+                            <ul class="digest__cart-items">
+                                <li class="digest__cart-item">
+                                    <article class="digest__cart-item__cart">
+                                        <div class="digest-cover__image-container">
+                                            <img class="digest-cover__image" src="<?=$get_template_directory_uri?>/template-rsg/images/digest/background-1.jpg">
+                                        </div>
+                                        <div class="digest__cart-item-heading">
+                                            <p class="digest__cart-item-heading-building">Жилой комплекс</p>
+                                            <h2 class="digest__cart-item-heading-name">«Восточное Бутово»</h2>
+                                        </div>
+                                        <div class="digest__cart-item-about">
+                                            <p class="digest__cart-item-about-date">26.04.2022</p>
+                                            <div class="digest__cart-item-about-volume">
+                                                <p class="digest__cart-item-about-volume-item">Объём работ: 23 275 м3</p>
+                                                <p class="digest__cart-item-about-volume-item">Сроки работ: 3 месяца</p>
+                                            </div>
+                                        </div>
+                                    </article>
+                                </li>
+                                <li class="digest__cart-item">
+                                    <a class="digest__cart-item-url" href="#">
+                                        <article class="digest__cart-item__cart">
+                                            <div class="digest-cover__image-container">
+                                                <img class="digest-cover__image" src="<?=$get_template_directory_uri?>/template-rsg/images/digest/background-1.jpg">
+                                            </div>
+                                            <div class="digest__cart-item-heading">
+                                                <p class="digest__cart-item-heading-building">Жилой комплекс</p>
+                                                <h2 class="digest__cart-item-heading-name">«Восточное Бутово»</h2>
+                                            </div>
+                                            <div class="digest__cart-item-about">
+                                                <p class="digest__cart-item-about-date">26.04.2022</p>
+                                                <div class="digest__cart-item-about-volume">
+                                                    <p class="digest__cart-item-about-volume-item">Объём работ: 23 275 м3</p>
+                                                    <p class="digest__cart-item-about-volume-item">Сроки работ: 3 месяца</p>
+                                                </div>
+                                            </div>
+                                        </article>
+                                    </a>
+                                </li>
+                                <li class="digest__cart-item">
+                                    <a class="digest__cart-item-url" href="#">
+                                        <article class="digest__cart-item__cart">
+                                            <div class="digest-cover__image-container">
+                                                <img class="digest-cover__image" src="<?=$get_template_directory_uri?>/template-rsg/images/digest/background-1.jpg">
+                                            </div>
+                                            <div class="digest__cart-item-heading">
+                                                <p class="digest__cart-item-heading-building">Жилой комплекс</p>
+                                                <h2 class="digest__cart-item-heading-name">«Восточное Бутово»</h2>
+                                            </div>
+                                            <div class="digest__cart-item-about">
+                                                <p class="digest__cart-item-about-date">26.04.2022</p>
+                                                <div class="digest__cart-item-about-volume">
+                                                    <p class="digest__cart-item-about-volume-item">Объём работ: 23 275 м3</p>
+                                                    <p class="digest__cart-item-about-volume-item">Сроки работ: 3 месяца</p>
+                                                </div>
+                                            </div>
+                                        </article>
+                                    </a>
+                                </li>
+                                <li class="digest__cart-item">
+                                    <a class="digest__cart-item-url" href="#">
+                                        <article class="digest__cart-item__cart">
+                                            <div class="digest-cover__image-container">
+                                                <img class="digest-cover__image" src="<?=$get_template_directory_uri?>/template-rsg/images/digest/background-1.jpg">
+                                            </div>
+                                            <div class="digest__cart-item-heading">
+                                                <p class="digest__cart-item-heading-building">Жилой комплекс</p>
+                                                <h2 class="digest__cart-item-heading-name">«Восточное Бутово»</h2>
+                                            </div>
+                                            <div class="digest__cart-item-about">
+                                                <p class="digest__cart-item-about-date">26.04.2022</p>
+                                                <div class="digest__cart-item-about-volume">
+                                                    <p class="digest__cart-item-about-volume-item">Объём работ: 23 275 м3</p>
+                                                    <p class="digest__cart-item-about-volume-item">Сроки работ: 3 месяца</p>
+                                                </div>
+                                            </div>
+                                        </article>
+                                    </a>
+                                </li>
+                                <li class="digest__cart-item">
+                                    <a class="digest__cart-item-url" href="#">
+                                        <article class="digest__cart-item__cart">
+                                            <div class="digest-cover__image-container">
+                                                <img class="digest-cover__image" src="<?=$get_template_directory_uri?>/template-rsg/images/digest/background-1.jpg">
+                                            </div>
+                                            <div class="digest__cart-item-heading">
+                                                <p class="digest__cart-item-heading-building">Жилой комплекс</p>
+                                                <h2 class="digest__cart-item-heading-name">«Восточное Бутово»</h2>
+                                            </div>
+                                            <div class="digest__cart-item-about">
+                                                <p class="digest__cart-item-about-date">26.04.2022</p>
+                                                <div class="digest__cart-item-about-volume">
+                                                    <p class="digest__cart-item-about-volume-item">Объём работ: 23 275 м3</p>
+                                                    <p class="digest__cart-item-about-volume-item">Сроки работ: 3 месяца</p>
+                                                </div>
+                                            </div>
+                                        </article>
+                                    </a>
+                                </li>
+                                <li class="digest__cart-item">
+                                    <a class="digest__cart-item-url" href="#">
+                                        <article class="digest__cart-item__cart">
+                                            <div class="digest-cover__image-container">
+                                                <img class="digest-cover__image" src="<?=$get_template_directory_uri?>/template-rsg/images/digest/background-1.jpg">
+                                            </div>
+                                            <div class="digest__cart-item-heading">
+                                                <p class="digest__cart-item-heading-building">Жилой комплекс</p>
+                                                <h2 class="digest__cart-item-heading-name">«Восточное Бутово»</h2>
+                                            </div>
+                                            <div class="digest__cart-item-about">
+                                                <p class="digest__cart-item-about-date">26.04.2022</p>
+                                                <div class="digest__cart-item-about-volume">
+                                                    <p class="digest__cart-item-about-volume-item">Объём работ: 23 275 м3</p>
+                                                    <p class="digest__cart-item-about-volume-item">Сроки работ: 3 месяца</p>
+                                                </div>
+                                            </div>
+                                        </article>
+                                    </a>
+                                </li>                            
+                            </ul>
+                        </div>
+                        <div class="digest__cart">
+                            <ul class="digest__cart-items digest__cart-items-second">
+                                <li class="digest__cart-item">
+                                    <a class="digest__cart-item-url" href="#">
+                                        <article class="digest__cart-item__cart">
+                                            <div class="digest-cover__image-container">
+                                                <img class="digest-cover__image" src="<?=$get_template_directory_uri?>/template-rsg/images/digest/background-1.jpg">
+                                            </div>
+                                            <div class="digest__cart-item-heading">
+                                                <p class="digest__cart-item-heading-building">Жилой комплекс</p>
+                                                <h2 class="digest__cart-item-heading-name">«Восточное Бутово»</h2>
+                                            </div>
+                                            <div class="digest__cart-item-about">
+                                                <p class="digest__cart-item-about-date">26.04.2022</p>
+                                                <div class="digest__cart-item-about-volume">
+                                                    <p class="digest__cart-item-about-volume-item">Объём работ: 23 275 м3</p>
+                                                    <p class="digest__cart-item-about-volume-item">Сроки работ: 3 месяца</p>
+                                                </div>
+                                            </div>
+                                        </article>
+                                    </a>
+                                </li>
+                                <li class="digest__cart-item">
+                                    <a class="digest__cart-item-url" href="#">
+                                        <article class="digest__cart-item__cart">
+                                            <div class="digest-cover__image-container">
+                                                <img class="digest-cover__image" src="<?=$get_template_directory_uri?>/template-rsg/images/digest/background-1.jpg">
+                                            </div>
+                                            <div class="digest__cart-item-heading">
+                                                <p class="digest__cart-item-heading-building">Жилой комплекс</p>
+                                                <h2 class="digest__cart-item-heading-name">«Восточное Бутово»</h2>
+                                            </div>
+                                            <div class="digest__cart-item-about">
+                                                <p class="digest__cart-item-about-date">26.04.2022</p>
+                                                <div class="digest__cart-item-about-volume">
+                                                    <p class="digest__cart-item-about-volume-item">Объём работ: 23 275 м3</p>
+                                                    <p class="digest__cart-item-about-volume-item">Сроки работ: 3 месяца</p>
+                                                </div>
+                                            </div>
+                                        </article>
+                                    </a>
+                                </li>
+                                <li class="digest__cart-item">
+                                    <a class="digest__cart-item-url" href="#">
+                                        <article class="digest__cart-item__cart">
+                                            <div class="digest-cover__image-container">
+                                                <img class="digest-cover__image" src="<?=$get_template_directory_uri?>/template-rsg/images/digest/background-1.jpg">
+                                            </div>
+                                            <div class="digest__cart-item-heading">
+                                                <p class="digest__cart-item-heading-building">Жилой комплекс</p>
+                                                <h2 class="digest__cart-item-heading-name">«Восточное Бутово»</h2>
+                                            </div>
+                                            <div class="digest__cart-item-about">
+                                                <p class="digest__cart-item-about-date">26.04.2022</p>
+                                                <div class="digest__cart-item-about-volume">
+                                                    <p class="digest__cart-item-about-volume-item">Объём работ: 23 275 м3</p>
+                                                    <p class="digest__cart-item-about-volume-item">Сроки работ: 3 месяца</p>
+                                                </div>
+                                            </div>
+                                        </article>
+                                    </a>
+                                </li>
+                                <li class="digest__cart-item">
+                                    <a class="digest__cart-item-url" href="#">
+                                        <article class="digest__cart-item__cart">
+                                            <div class="digest-cover__image-container">
+                                                <img class="digest-cover__image" src="<?=$get_template_directory_uri?>/template-rsg/images/digest/background-1.jpg">
+                                            </div>
+                                            <div class="digest__cart-item-heading">
+                                                <p class="digest__cart-item-heading-building">Жилой комплекс</p>
+                                                <h2 class="digest__cart-item-heading-name">«Восточное Бутово»</h2>
+                                            </div>
+                                            <div class="digest__cart-item-about">
+                                                <p class="digest__cart-item-about-date">26.04.2022</p>
+                                                <div class="digest__cart-item-about-volume">
+                                                    <p class="digest__cart-item-about-volume-item">Объём работ: 23 275 м3</p>
+                                                    <p class="digest__cart-item-about-volume-item">Сроки работ: 3 месяца</p>
+                                                </div>
+                                            </div>
+                                        </article>
+                                    </a>
+                                </li>
+                                <li class="digest__cart-item">
+                                    <a class="digest__cart-item-url" href="#">
+                                        <article class="digest__cart-item__cart">
+                                            <div class="digest-cover__image-container">
+                                                <img class="digest-cover__image" src="<?=$get_template_directory_uri?>/template-rsg/images/digest/background-1.jpg">
+                                                </div>
+                                            <div class="digest__cart-item-heading">
+                                                <p class="digest__cart-item-heading-building">Жилой комплекс</p>
+                                                <h2 class="digest__cart-item-heading-name">«Восточное Бутово»</h2>
+                                            </div>
+                                            <div class="digest__cart-item-about">
+                                                <p class="digest__cart-item-about-date">26.04.2022</p>
+                                                <div class="digest__cart-item-about-volume">
+                                                    <p class="digest__cart-item-about-volume-item">Объём работ: 23 275 м3</p>
+                                                    <p class="digest__cart-item-about-volume-item">Сроки работ: 3 месяца</p>
+                                                </div>
+                                            </div>
+                                        </article>
+                                    </a>
+                                </li>
+                                <li class="digest__cart-item">
+                                    <a class="digest__cart-item-url" href="#">
+                                        <article class="digest__cart-item__cart">
+                                            <div class="digest-cover__image-container">
+                                                <img class="digest-cover__image" src="<?=$get_template_directory_uri?>/template-rsg/images/digest/background-1.jpg">
+                                            </div>
+                                            <div class="digest__cart-item-heading">
+                                                <p class="digest__cart-item-heading-building">Жилой комплекс</p>
+                                                <h2 class="digest__cart-item-heading-name">«Восточное Бутово»</h2>
+                                            </div>
+                                            <div class="digest__cart-item-about">
+                                                <p class="digest__cart-item-about-date">26.04.2022</p>
+                                                <div class="digest__cart-item-about-volume">
+                                                    <p class="digest__cart-item-about-volume-item">Объём работ: 23 275 м3</p>
+                                                    <p class="digest__cart-item-about-volume-item">Сроки работ: 3 месяца</p>
+                                                </div>
+                                            </div>
+                                        </article>
+                                    </a>
+                                </li>                            
+                            </ul>
+                        </div>
+                        <div class="digest__cart-navigations">
+                            <a class="similar__vacancy-button" href="#">Показать ещё</a>
+                            <ul class="digest__cart-navigations-pages">
+                                <li class="page_previous disabled alpha">
+                                    <a class="page_previous-btn" href="#">
+                                      <img class="pagination_arrow_left" loading="lazy" src="<?=$get_template_directory_uri?>/template-rsg/icons/leftArrow.svg" alt="Left Arrow" data-title="" title="">
+                                      <p>Назад</p>
+                                    </a>
+                                </li>
+                                <li class="page_number"><a class="page_number-btn" href="#">1</a></li>
+                                <li class="page_number"><a class="page_number-btn page_number-btn-active" href="#">2</a></li>
+                                <li class="page_number"><a class="page_number-btn" href="#">3</a></li>
+                                <li class="page_next omega">
+                                    <a class="page_next-btn" href="#">
+                                        <p>Вперёд</p>
+                                        <img class="pagination_arrow_right" loading="lazy" alt="Right Arrow" src="<?=$get_template_directory_uri?>/template-rsg/icons/rightArrow.svg" data-title="" title="">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+        
+                <li class="cd-h-timeline__event text-component">
+                    <div class="cd-h-timeline__event-content container">
+                        <div class="digest__cart">
+                            <ul class="digest__cart-items">
+                                <li class="digest__cart-item">
+                                    <article class="digest__cart-item__cart">
+                                        <div class="digest-cover__image-container">
+                                            <img class="digest-cover__image" src="<?=$get_template_directory_uri?>/template-rsg/images/digest/background-1.jpg">
+                                        </div>
+                                        <div class="digest__cart-item-heading">
+                                            <p class="digest__cart-item-heading-building">Жилой комплекс</p>
+                                            <h2 class="digest__cart-item-heading-name">«Восточное Бутово»</h2>
+                                        </div>
+                                        <div class="digest__cart-item-about">
+                                            <p class="digest__cart-item-about-date">26.04.2022</p>
+                                            <div class="digest__cart-item-about-volume">
+                                                <p class="digest__cart-item-about-volume-item">Объём работ: 23 275 м3</p>
+                                                <p class="digest__cart-item-about-volume-item">Сроки работ: 3 месяца</p>
+                                            </div>
+                                        </div>
+                                    </article>
+                                </li>
+                                <li class="digest__cart-item">
+                                    <a class="digest__cart-item-url" href="#">
+                                        <article class="digest__cart-item__cart">
+                                            <div class="digest-cover__image-container">
+                                                <img class="digest-cover__image" src="<?=$get_template_directory_uri?>/template-rsg/images/digest/background-1.jpg">
+                                            </div>
+                                            <div class="digest__cart-item-heading">
+                                                <p class="digest__cart-item-heading-building">Жилой комплекс</p>
+                                                <h2 class="digest__cart-item-heading-name">«Восточное Бутово»</h2>
+                                            </div>
+                                            <div class="digest__cart-item-about">
+                                                <p class="digest__cart-item-about-date">26.04.2022</p>
+                                                <div class="digest__cart-item-about-volume">
+                                                    <p class="digest__cart-item-about-volume-item">Объём работ: 23 275 м3</p>
+                                                    <p class="digest__cart-item-about-volume-item">Сроки работ: 3 месяца</p>
+                                                </div>
+                                            </div>
+                                        </article>
+                                    </a>
+                                </li>
+                                <li class="digest__cart-item">
+                                    <a class="digest__cart-item-url" href="#">
+                                        <article class="digest__cart-item__cart">
+                                            <div class="digest-cover__image-container">
+                                                <img class="digest-cover__image" src="<?=$get_template_directory_uri?>/template-rsg/images/digest/background-1.jpg">
+                                            </div>
+                                            <div class="digest__cart-item-heading">
+                                                <p class="digest__cart-item-heading-building">Жилой комплекс</p>
+                                                <h2 class="digest__cart-item-heading-name">«Восточное Бутово»</h2>
+                                            </div>
+                                            <div class="digest__cart-item-about">
+                                                <p class="digest__cart-item-about-date">26.04.2022</p>
+                                                <div class="digest__cart-item-about-volume">
+                                                    <p class="digest__cart-item-about-volume-item">Объём работ: 23 275 м3</p>
+                                                    <p class="digest__cart-item-about-volume-item">Сроки работ: 3 месяца</p>
+                                                </div>
+                                            </div>
+                                        </article>
+                                    </a>
+                                </li>
+                                <li class="digest__cart-item">
+                                    <a class="digest__cart-item-url" href="#">
+                                        <article class="digest__cart-item__cart">
+                                            <div class="digest-cover__image-container">
+                                                <img class="digest-cover__image" src="<?=$get_template_directory_uri?>/template-rsg/images/digest/background-1.jpg">
+                                            </div>
+                                            <div class="digest__cart-item-heading">
+                                                <p class="digest__cart-item-heading-building">Жилой комплекс</p>
+                                                <h2 class="digest__cart-item-heading-name">«Восточное Бутово»</h2>
+                                            </div>
+                                            <div class="digest__cart-item-about">
+                                                <p class="digest__cart-item-about-date">26.04.2022</p>
+                                                <div class="digest__cart-item-about-volume">
+                                                    <p class="digest__cart-item-about-volume-item">Объём работ: 23 275 м3</p>
+                                                    <p class="digest__cart-item-about-volume-item">Сроки работ: 3 месяца</p>
+                                                </div>
+                                            </div>
+                                        </article>
+                                    </a>
+                                </li>
+                                <li class="digest__cart-item">
+                                    <a class="digest__cart-item-url" href="#">
+                                        <article class="digest__cart-item__cart">
+                                            <div class="digest-cover__image-container">
+                                                <img class="digest-cover__image" src="<?=$get_template_directory_uri?>/template-rsg/images/digest/background-1.jpg">
+                                            </div>
+                                            <div class="digest__cart-item-heading">
+                                                <p class="digest__cart-item-heading-building">Жилой комплекс</p>
+                                                <h2 class="digest__cart-item-heading-name">«Восточное Бутово»</h2>
+                                            </div>
+                                            <div class="digest__cart-item-about">
+                                                <p class="digest__cart-item-about-date">26.04.2022</p>
+                                                <div class="digest__cart-item-about-volume">
+                                                    <p class="digest__cart-item-about-volume-item">Объём работ: 23 275 м3</p>
+                                                    <p class="digest__cart-item-about-volume-item">Сроки работ: 3 месяца</p>
+                                                </div>
+                                            </div>
+                                        </article>
+                                    </a>
+                                </li>
+                                <li class="digest__cart-item">
+                                    <a class="digest__cart-item-url" href="#">
+                                        <article class="digest__cart-item__cart">
+                                            <div class="digest-cover__image-container">
+                                                <img class="digest-cover__image" src="<?=$get_template_directory_uri?>/template-rsg/images/digest/background-1.jpg">
+                                            </div>
+                                            <div class="digest__cart-item-heading">
+                                                <p class="digest__cart-item-heading-building">Жилой комплекс</p>
+                                                <h2 class="digest__cart-item-heading-name">«Восточное Бутово»</h2>
+                                            </div>
+                                            <div class="digest__cart-item-about">
+                                                <p class="digest__cart-item-about-date">26.04.2022</p>
+                                                <div class="digest__cart-item-about-volume">
+                                                    <p class="digest__cart-item-about-volume-item">Объём работ: 23 275 м3</p>
+                                                    <p class="digest__cart-item-about-volume-item">Сроки работ: 3 месяца</p>
+                                                </div>
+                                            </div>
+                                        </article>
+                                    </a>
+                                </li>                            
+                            </ul>
+                        </div>
+                        <div class="digest__cart">
+                            <ul class="digest__cart-items digest__cart-items-second">
+                                <li class="digest__cart-item">
+                                    <a class="digest__cart-item-url" href="#">
+                                        <article class="digest__cart-item__cart">
+                                            <div class="digest-cover__image-container">
+                                                <img class="digest-cover__image" src="<?=$get_template_directory_uri?>/template-rsg/images/digest/background-1.jpg">
+                                            </div>
+                                            <div class="digest__cart-item-heading">
+                                                <p class="digest__cart-item-heading-building">Жилой комплекс</p>
+                                                <h2 class="digest__cart-item-heading-name">«Восточное Бутово»</h2>
+                                            </div>
+                                            <div class="digest__cart-item-about">
+                                                <p class="digest__cart-item-about-date">26.04.2022</p>
+                                                <div class="digest__cart-item-about-volume">
+                                                    <p class="digest__cart-item-about-volume-item">Объём работ: 23 275 м3</p>
+                                                    <p class="digest__cart-item-about-volume-item">Сроки работ: 3 месяца</p>
+                                                </div>
+                                            </div>
+                                        </article>
+                                    </a>
+                                </li>
+                                <li class="digest__cart-item">
+                                    <a class="digest__cart-item-url" href="#">
+                                        <article class="digest__cart-item__cart">
+                                            <div class="digest-cover__image-container">
+                                                <img class="digest-cover__image" src="<?=$get_template_directory_uri?>/template-rsg/images/digest/background-1.jpg">
+                                            </div>
+                                            <div class="digest__cart-item-heading">
+                                                <p class="digest__cart-item-heading-building">Жилой комплекс</p>
+                                                <h2 class="digest__cart-item-heading-name">«Восточное Бутово»</h2>
+                                            </div>
+                                            <div class="digest__cart-item-about">
+                                                <p class="digest__cart-item-about-date">26.04.2022</p>
+                                                <div class="digest__cart-item-about-volume">
+                                                    <p class="digest__cart-item-about-volume-item">Объём работ: 23 275 м3</p>
+                                                    <p class="digest__cart-item-about-volume-item">Сроки работ: 3 месяца</p>
+                                                </div>
+                                            </div>
+                                        </article>
+                                    </a>
+                                </li>
+                                <li class="digest__cart-item">
+                                    <a class="digest__cart-item-url" href="#">
+                                        <article class="digest__cart-item__cart">
+                                            <div class="digest-cover__image-container">
+                                                <img class="digest-cover__image" src="<?=$get_template_directory_uri?>/template-rsg/images/digest/background-1.jpg">
+                                            </div>
+                                            <div class="digest__cart-item-heading">
+                                                <p class="digest__cart-item-heading-building">Жилой комплекс</p>
+                                                <h2 class="digest__cart-item-heading-name">«Восточное Бутово»</h2>
+                                            </div>
+                                            <div class="digest__cart-item-about">
+                                                <p class="digest__cart-item-about-date">26.04.2022</p>
+                                                <div class="digest__cart-item-about-volume">
+                                                    <p class="digest__cart-item-about-volume-item">Объём работ: 23 275 м3</p>
+                                                    <p class="digest__cart-item-about-volume-item">Сроки работ: 3 месяца</p>
+                                                </div>
+                                            </div>
+                                        </article>
+                                    </a>
+                                </li>
+                                <li class="digest__cart-item">
+                                    <a class="digest__cart-item-url" href="#">
+                                        <article class="digest__cart-item__cart">
+                                            <div class="digest-cover__image-container">
+                                                <img class="digest-cover__image" src="<?=$get_template_directory_uri?>/template-rsg/images/digest/background-1.jpg">
+                                            </div>
+                                            <div class="digest__cart-item-heading">
+                                                <p class="digest__cart-item-heading-building">Жилой комплекс</p>
+                                                <h2 class="digest__cart-item-heading-name">«Восточное Бутово»</h2>
+                                            </div>
+                                            <div class="digest__cart-item-about">
+                                                <p class="digest__cart-item-about-date">26.04.2022</p>
+                                                <div class="digest__cart-item-about-volume">
+                                                    <p class="digest__cart-item-about-volume-item">Объём работ: 23 275 м3</p>
+                                                    <p class="digest__cart-item-about-volume-item">Сроки работ: 3 месяца</p>
+                                                </div>
+                                            </div>
+                                        </article>
+                                    </a>
+                                </li>
+                                <li class="digest__cart-item">
+                                    <a class="digest__cart-item-url" href="#">
+                                        <article class="digest__cart-item__cart">
+                                            <div class="digest-cover__image-container">
+                                                <img class="digest-cover__image" src="<?=$get_template_directory_uri?>/template-rsg/images/digest/background-1.jpg">
+                                                </div>
+                                            <div class="digest__cart-item-heading">
+                                                <p class="digest__cart-item-heading-building">Жилой комплекс</p>
+                                                <h2 class="digest__cart-item-heading-name">«Восточное Бутово»</h2>
+                                            </div>
+                                            <div class="digest__cart-item-about">
+                                                <p class="digest__cart-item-about-date">26.04.2022</p>
+                                                <div class="digest__cart-item-about-volume">
+                                                    <p class="digest__cart-item-about-volume-item">Объём работ: 23 275 м3</p>
+                                                    <p class="digest__cart-item-about-volume-item">Сроки работ: 3 месяца</p>
+                                                </div>
+                                            </div>
+                                        </article>
+                                    </a>
+                                </li>
+                                <li class="digest__cart-item">
+                                    <a class="digest__cart-item-url" href="#">
+                                        <article class="digest__cart-item__cart">
+                                            <div class="digest-cover__image-container">
+                                                <img class="digest-cover__image" src="<?=$get_template_directory_uri?>/template-rsg/images/digest/background-1.jpg">
+                                            </div>
+                                            <div class="digest__cart-item-heading">
+                                                <p class="digest__cart-item-heading-building">Жилой комплекс</p>
+                                                <h2 class="digest__cart-item-heading-name">«Восточное Бутово»</h2>
+                                            </div>
+                                            <div class="digest__cart-item-about">
+                                                <p class="digest__cart-item-about-date">26.04.2022</p>
+                                                <div class="digest__cart-item-about-volume">
+                                                    <p class="digest__cart-item-about-volume-item">Объём работ: 23 275 м3</p>
+                                                    <p class="digest__cart-item-about-volume-item">Сроки работ: 3 месяца</p>
+                                                </div>
+                                            </div>
+                                        </article>
+                                    </a>
+                                </li>                            
+                            </ul>
+                        </div>
+                        <div class="digest__cart-navigations">
+                            <a class="similar__vacancy-button" href="#">Показать ещё</a>
+                            <ul class="digest__cart-navigations-pages">
+                                <li class="page_previous disabled alpha">
+                                    <a class="page_previous-btn" href="#">
+                                      <img class="pagination_arrow_left" loading="lazy" src="<?=$get_template_directory_uri?>/template-rsg/icons/leftArrow.svg" alt="Left Arrow" data-title="" title="">
+                                      <p>Назад</p>
+                                    </a>
+                                </li>
+                                <li class="page_number"><a class="page_number-btn" href="#">1</a></li>
+                                <li class="page_number"><a class="page_number-btn page_number-btn-active" href="#">2</a></li>
+                                <li class="page_number"><a class="page_number-btn" href="#">3</a></li>
+                                <li class="page_next omega">
+                                    <a class="page_next-btn" href="#">
+                                        <p>Вперёд</p>
+                                        <img class="pagination_arrow_right" loading="lazy" alt="Right Arrow" src="<?=$get_template_directory_uri?>/template-rsg/icons/rightArrow.svg" data-title="" title="">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+        
+                <li class="cd-h-timeline__event text-component">
+                    <div class="cd-h-timeline__event-content container">
+                        <div class="digest__cart">
+                            <ul class="digest__cart-items">
+                                <li class="digest__cart-item">
+                                    <article class="digest__cart-item__cart">
+                                        <div class="digest-cover__image-container">
+                                            <img class="digest-cover__image" src="<?=$get_template_directory_uri?>/template-rsg/images/digest/background-1.jpg">
+                                        </div>
+                                        <div class="digest__cart-item-heading">
+                                            <p class="digest__cart-item-heading-building">Жилой комплекс</p>
+                                            <h2 class="digest__cart-item-heading-name">«Восточное Бутово»</h2>
+                                        </div>
+                                        <div class="digest__cart-item-about">
+                                            <p class="digest__cart-item-about-date">26.04.2022</p>
+                                            <div class="digest__cart-item-about-volume">
+                                                <p class="digest__cart-item-about-volume-item">Объём работ: 23 275 м3</p>
+                                                <p class="digest__cart-item-about-volume-item">Сроки работ: 3 месяца</p>
+                                            </div>
+                                        </div>
+                                    </article>
+                                </li>
+                                <li class="digest__cart-item">
+                                    <a class="digest__cart-item-url" href="#">
+                                        <article class="digest__cart-item__cart">
+                                            <div class="digest-cover__image-container">
+                                                <img class="digest-cover__image" src="<?=$get_template_directory_uri?>/template-rsg/images/digest/background-1.jpg">
+                                            </div>
+                                            <div class="digest__cart-item-heading">
+                                                <p class="digest__cart-item-heading-building">Жилой комплекс</p>
+                                                <h2 class="digest__cart-item-heading-name">«Восточное Бутово»</h2>
+                                            </div>
+                                            <div class="digest__cart-item-about">
+                                                <p class="digest__cart-item-about-date">26.04.2022</p>
+                                                <div class="digest__cart-item-about-volume">
+                                                    <p class="digest__cart-item-about-volume-item">Объём работ: 23 275 м3</p>
+                                                    <p class="digest__cart-item-about-volume-item">Сроки работ: 3 месяца</p>
+                                                </div>
+                                            </div>
+                                        </article>
+                                    </a>
+                                </li>
+                                <li class="digest__cart-item">
+                                    <a class="digest__cart-item-url" href="#">
+                                        <article class="digest__cart-item__cart">
+                                            <div class="digest-cover__image-container">
+                                                <img class="digest-cover__image" src="<?=$get_template_directory_uri?>/template-rsg/images/digest/background-1.jpg">
+                                            </div>
+                                            <div class="digest__cart-item-heading">
+                                                <p class="digest__cart-item-heading-building">Жилой комплекс</p>
+                                                <h2 class="digest__cart-item-heading-name">«Восточное Бутово»</h2>
+                                            </div>
+                                            <div class="digest__cart-item-about">
+                                                <p class="digest__cart-item-about-date">26.04.2022</p>
+                                                <div class="digest__cart-item-about-volume">
+                                                    <p class="digest__cart-item-about-volume-item">Объём работ: 23 275 м3</p>
+                                                    <p class="digest__cart-item-about-volume-item">Сроки работ: 3 месяца</p>
+                                                </div>
+                                            </div>
+                                        </article>
+                                    </a>
+                                </li>
+                                <li class="digest__cart-item">
+                                    <a class="digest__cart-item-url" href="#">
+                                        <article class="digest__cart-item__cart">
+                                            <div class="digest-cover__image-container">
+                                                <img class="digest-cover__image" src="<?=$get_template_directory_uri?>/template-rsg/images/digest/background-1.jpg">
+                                            </div>
+                                            <div class="digest__cart-item-heading">
+                                                <p class="digest__cart-item-heading-building">Жилой комплекс</p>
+                                                <h2 class="digest__cart-item-heading-name">«Восточное Бутово»</h2>
+                                            </div>
+                                            <div class="digest__cart-item-about">
+                                                <p class="digest__cart-item-about-date">26.04.2022</p>
+                                                <div class="digest__cart-item-about-volume">
+                                                    <p class="digest__cart-item-about-volume-item">Объём работ: 23 275 м3</p>
+                                                    <p class="digest__cart-item-about-volume-item">Сроки работ: 3 месяца</p>
+                                                </div>
+                                            </div>
+                                        </article>
+                                    </a>
+                                </li>
+                                <li class="digest__cart-item">
+                                    <a class="digest__cart-item-url" href="#">
+                                        <article class="digest__cart-item__cart">
+                                            <div class="digest-cover__image-container">
+                                                <img class="digest-cover__image" src="<?=$get_template_directory_uri?>/template-rsg/images/digest/background-1.jpg">
+                                            </div>
+                                            <div class="digest__cart-item-heading">
+                                                <p class="digest__cart-item-heading-building">Жилой комплекс</p>
+                                                <h2 class="digest__cart-item-heading-name">«Восточное Бутово»</h2>
+                                            </div>
+                                            <div class="digest__cart-item-about">
+                                                <p class="digest__cart-item-about-date">26.04.2022</p>
+                                                <div class="digest__cart-item-about-volume">
+                                                    <p class="digest__cart-item-about-volume-item">Объём работ: 23 275 м3</p>
+                                                    <p class="digest__cart-item-about-volume-item">Сроки работ: 3 месяца</p>
+                                                </div>
+                                            </div>
+                                        </article>
+                                    </a>
+                                </li>
+                                <li class="digest__cart-item">
+                                    <a class="digest__cart-item-url" href="#">
+                                        <article class="digest__cart-item__cart">
+                                            <div class="digest-cover__image-container">
+                                                <img class="digest-cover__image" src="<?=$get_template_directory_uri?>/template-rsg/images/digest/background-1.jpg">
+                                            </div>
+                                            <div class="digest__cart-item-heading">
+                                                <p class="digest__cart-item-heading-building">Жилой комплекс</p>
+                                                <h2 class="digest__cart-item-heading-name">«Восточное Бутово»</h2>
+                                            </div>
+                                            <div class="digest__cart-item-about">
+                                                <p class="digest__cart-item-about-date">26.04.2022</p>
+                                                <div class="digest__cart-item-about-volume">
+                                                    <p class="digest__cart-item-about-volume-item">Объём работ: 23 275 м3</p>
+                                                    <p class="digest__cart-item-about-volume-item">Сроки работ: 3 месяца</p>
+                                                </div>
+                                            </div>
+                                        </article>
+                                    </a>
+                                </li>                            
+                            </ul>
+                        </div>
+                        <div class="digest__cart">
+                            <ul class="digest__cart-items digest__cart-items-second">
+                                <li class="digest__cart-item">
+                                    <a class="digest__cart-item-url" href="#">
+                                        <article class="digest__cart-item__cart">
+                                            <div class="digest-cover__image-container">
+                                                <img class="digest-cover__image" src="<?=$get_template_directory_uri?>/template-rsg/images/digest/background-1.jpg">
+                                            </div>
+                                            <div class="digest__cart-item-heading">
+                                                <p class="digest__cart-item-heading-building">Жилой комплекс</p>
+                                                <h2 class="digest__cart-item-heading-name">«Восточное Бутово»</h2>
+                                            </div>
+                                            <div class="digest__cart-item-about">
+                                                <p class="digest__cart-item-about-date">26.04.2022</p>
+                                                <div class="digest__cart-item-about-volume">
+                                                    <p class="digest__cart-item-about-volume-item">Объём работ: 23 275 м3</p>
+                                                    <p class="digest__cart-item-about-volume-item">Сроки работ: 3 месяца</p>
+                                                </div>
+                                            </div>
+                                        </article>
+                                    </a>
+                                </li>
+                                <li class="digest__cart-item">
+                                    <a class="digest__cart-item-url" href="#">
+                                        <article class="digest__cart-item__cart">
+                                            <div class="digest-cover__image-container">
+                                                <img class="digest-cover__image" src="<?=$get_template_directory_uri?>/template-rsg/images/digest/background-1.jpg">
+                                            </div>
+                                            <div class="digest__cart-item-heading">
+                                                <p class="digest__cart-item-heading-building">Жилой комплекс</p>
+                                                <h2 class="digest__cart-item-heading-name">«Восточное Бутово»</h2>
+                                            </div>
+                                            <div class="digest__cart-item-about">
+                                                <p class="digest__cart-item-about-date">26.04.2022</p>
+                                                <div class="digest__cart-item-about-volume">
+                                                    <p class="digest__cart-item-about-volume-item">Объём работ: 23 275 м3</p>
+                                                    <p class="digest__cart-item-about-volume-item">Сроки работ: 3 месяца</p>
+                                                </div>
+                                            </div>
+                                        </article>
+                                    </a>
+                                </li>
+                                <li class="digest__cart-item">
+                                    <a class="digest__cart-item-url" href="#">
+                                        <article class="digest__cart-item__cart">
+                                            <div class="digest-cover__image-container">
+                                                <img class="digest-cover__image" src="<?=$get_template_directory_uri?>/template-rsg/images/digest/background-1.jpg">
+                                            </div>
+                                            <div class="digest__cart-item-heading">
+                                                <p class="digest__cart-item-heading-building">Жилой комплекс</p>
+                                                <h2 class="digest__cart-item-heading-name">«Восточное Бутово»</h2>
+                                            </div>
+                                            <div class="digest__cart-item-about">
+                                                <p class="digest__cart-item-about-date">26.04.2022</p>
+                                                <div class="digest__cart-item-about-volume">
+                                                    <p class="digest__cart-item-about-volume-item">Объём работ: 23 275 м3</p>
+                                                    <p class="digest__cart-item-about-volume-item">Сроки работ: 3 месяца</p>
+                                                </div>
+                                            </div>
+                                        </article>
+                                    </a>
+                                </li>
+                                <li class="digest__cart-item">
+                                    <a class="digest__cart-item-url" href="#">
+                                        <article class="digest__cart-item__cart">
+                                            <div class="digest-cover__image-container">
+                                                <img class="digest-cover__image" src="<?=$get_template_directory_uri?>/template-rsg/images/digest/background-1.jpg">
+                                            </div>
+                                            <div class="digest__cart-item-heading">
+                                                <p class="digest__cart-item-heading-building">Жилой комплекс</p>
+                                                <h2 class="digest__cart-item-heading-name">«Восточное Бутово»</h2>
+                                            </div>
+                                            <div class="digest__cart-item-about">
+                                                <p class="digest__cart-item-about-date">26.04.2022</p>
+                                                <div class="digest__cart-item-about-volume">
+                                                    <p class="digest__cart-item-about-volume-item">Объём работ: 23 275 м3</p>
+                                                    <p class="digest__cart-item-about-volume-item">Сроки работ: 3 месяца</p>
+                                                </div>
+                                            </div>
+                                        </article>
+                                    </a>
+                                </li>
+                                <li class="digest__cart-item">
+                                    <a class="digest__cart-item-url" href="#">
+                                        <article class="digest__cart-item__cart">
+                                            <div class="digest-cover__image-container">
+                                                <img class="digest-cover__image" src="<?=$get_template_directory_uri?>/template-rsg/images/digest/background-1.jpg">
+                                                </div>
+                                            <div class="digest__cart-item-heading">
+                                                <p class="digest__cart-item-heading-building">Жилой комплекс</p>
+                                                <h2 class="digest__cart-item-heading-name">«Восточное Бутово»</h2>
+                                            </div>
+                                            <div class="digest__cart-item-about">
+                                                <p class="digest__cart-item-about-date">26.04.2022</p>
+                                                <div class="digest__cart-item-about-volume">
+                                                    <p class="digest__cart-item-about-volume-item">Объём работ: 23 275 м3</p>
+                                                    <p class="digest__cart-item-about-volume-item">Сроки работ: 3 месяца</p>
+                                                </div>
+                                            </div>
+                                        </article>
+                                    </a>
+                                </li>
+                                <li class="digest__cart-item">
+                                    <a class="digest__cart-item-url" href="#">
+                                        <article class="digest__cart-item__cart">
+                                            <div class="digest-cover__image-container">
+                                                <img class="digest-cover__image" src="<?=$get_template_directory_uri?>/template-rsg/images/digest/background-1.jpg">
+                                            </div>
+                                            <div class="digest__cart-item-heading">
+                                                <p class="digest__cart-item-heading-building">Жилой комплекс</p>
+                                                <h2 class="digest__cart-item-heading-name">«Восточное Бутово»</h2>
+                                            </div>
+                                            <div class="digest__cart-item-about">
+                                                <p class="digest__cart-item-about-date">26.04.2022</p>
+                                                <div class="digest__cart-item-about-volume">
+                                                    <p class="digest__cart-item-about-volume-item">Объём работ: 23 275 м3</p>
+                                                    <p class="digest__cart-item-about-volume-item">Сроки работ: 3 месяца</p>
+                                                </div>
+                                            </div>
+                                        </article>
+                                    </a>
+                                </li>                            
+                            </ul>
+                        </div>
+                        <div class="digest__cart-navigations">
+                            <a class="similar__vacancy-button" href="#">Показать ещё</a>
+                            <ul class="digest__cart-navigations-pages">
+                                <li class="page_previous disabled alpha">
+                                    <a class="page_previous-btn" href="#">
+                                      <img class="pagination_arrow_left" loading="lazy" src="<?=$get_template_directory_uri?>/template-rsg/icons/leftArrow.svg" alt="Left Arrow" data-title="" title="">
+                                      <p>Назад</p>
+                                    </a>
+                                </li>
+                                <li class="page_number"><a class="page_number-btn" href="#">1</a></li>
+                                <li class="page_number"><a class="page_number-btn page_number-btn-active" href="#">2</a></li>
+                                <li class="page_number"><a class="page_number-btn" href="#">3</a></li>
+                                <li class="page_next omega">
+                                    <a class="page_next-btn" href="#">
+                                        <p>Вперёд</p>
+                                        <img class="pagination_arrow_right" loading="lazy" alt="Right Arrow" src="<?=$get_template_directory_uri?>/template-rsg/icons/rightArrow.svg" data-title="" title="">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+              </ol>
+            </div> <!-- .cd-h-timeline__events -->
+          </section>
+        <section class="feedback">
+            <div class="feedback__all">
+                <div class="feedback__first">
+                    <div class="feedback__first-top">
+                        <h2 class="feedback__title">Коммерческое предложение на особых условиях</h2>
+                        <p class="feedback__description">за заявку отправленную прямо здесь и сейчас.</p>
+                    </div>
+                    <address class="feedback__first-bot">
+                        <a class="feedback-link mail" href="mailto:info@rsg-grupp.ru">info@rsg-grupp.ru</a>
+                        <a class="feedback-link telephone" href="tel:+74959605051">+7 495 960-50-51</a>
+                    </address>
+                </div>
+                <div class="feedback__second">
+                    <form class="feedback__form" action="#" method="post" enctype="multipart/form-data">
+                        <div class="feedback__form-item feedback__name">
+                            <label class="feedback__label" for="name">Имя*:</label>
+                            <input class="feedback__input" type="text" id="name" name="name" placeholder="Ваше имя" required>
+                        </div>
+                        <div class="feedback__form-item feedback__phone">
+                            <label class="feedback__label" for="phone">Телефон*:</label>
+                            <input class="feedback__input" type="tel" id="phone" name="phone" placeholder="+7 (___) ___-__-__"  required>
+                        </div>
+                        <div class="feedback__form-item feedback__mail">
+                            <label class="feedback__label" for="email">Почта*:</label>
+                            <input class="feedback__input" type="email" id="email" name="email" placeholder="___@__" required>
+                        </div>
+                        <div class="feedback__form-item feedback__file-first">
+                            <label class="feedback__label feedback__label-input__file-visible" for="attachment">Прикрепить файл</label>
+                            <input class="feedback__input feedback__input-file" type="file" id="input__file" name="file">
+
+
+                            <label for="input__file" class="input__file-button">
+                                <span class="input__file-icon-wrapper"><img class="input__file-icon" src="<?=$get_template_directory_uri?>/template-rsg/icons/feedback-file-icon.svg" alt="Выбрать файл" width="25"></span>
+                                <span class="input__file-button-text">Прикрепить файл</span>
+                             </label>
+                        </div>
+                        <div class="feedback__form-textarea ">
+                            <label class="feedback__label feedback__label-message" for="message">Сообщение:</label>
+                            <textarea class="feedback__input feedback__input-textarea" id="message" name="message" placeholder="Ваше сообщение" rows="4"></textarea>
+                        </div>
+                        <div class="feedback__form-button">
+                            <div class="feedback__form-item feedback__file-second">
+                                <input class="feedback__input feedback__input-file" type="file" id="input__file" name="file">
+
+
+                                <label for="input__file" class="input__file-button">
+                                    <span class="input__file-icon-wrapper"><img class="input__file-icon" src="<?=$get_template_directory_uri?>/template-rsg/icons/feedback-file-icon.svg" alt="Выбрать файл" width="25"></span>
+                                    <span class="input__file-button-text">Прикрепить файл</span>
+                                 </label>
+                            </div>
+                            <button class="feedback__form-button-item" type="submit">Отправить</button>
+                            <p class="feedback__form-agree">Нажимая кнопку «Отправить» вы соглашаетесь на <a class="feedback__form-agree-url" href="#">обработку персональных данных</a></p>
+                        </div>
+                      </form>
+                </div>
+            </div>
+        </section>  
+    </main>
+     
+    <footer class="footer">
+        <div class="footer__all">
+            <div class="footer__main">
+                <div class="footer__address">
+                    <img class="footer__logo-img" src="<?=$get_template_directory_uri?>/template-rsg/images/logo_header.svg">
+                    <address class="footer__address">
+                        <a class="address-mail footer__menu-item-color__url" href="#">info@rsg-grupp.ru</a>
+                        <a class="address-mail footer__menu-item-color__url" href="#">dor@rsg-grupp.ru</a>
+                        <a class="address-phone footer__menu-item-color__url" href="#">+7 495 960-50-51</a>
+                        <div class="footer__social-feedback footer__social-feedback-mobile">
+                            <a class="social-feedback-form__btn open-popup" href="#" data-popup-id="APP-popup">ОТПРАВИТЬ ЗАЯВКУ</a>
+                            <p class="social-feedback-txt">Отправляя заявку я соглашаюсь на <a class="feedback__form-agree-url" href="#">обработку персональных данных</a> и принимаю <a class="feedback__form-agree-url" href="#">условия политики конфиденциальности</a></p>
+                        </div>
+                        <p class="address-address">г. Москва, ул. Красноармейская, д. 11, корп. 2, офис 26</p>
+                    </address>
+                </div>
+                <nav class="footer__menu">
+                    <ul class="footer__menu-items">
+                        <li class="footer__menu-item menu-item-first"> <a class="footer__menu-item-first-color__url" href="#">О КОМПАНИИ</a>
+                            <ul class="footer__menu-items footer__menu-items-second">
+                                <li class="footer__menu-item menu-item-second"><a class="footer__menu-item-color__url" href="#"> О компании</a></li>
+                                <li class="footer__menu-item menu-item-second"><a class="footer__menu-item-color__url" href="#">Команда</a></li>
+                                <li class="footer__menu-item menu-item-second"><a class="footer__menu-item-color__url" href="#">Парк спецтехники</a></li>
+                                <li class="footer__menu-item menu-item-second"><a class="footer__menu-item-color__url" href="#">Дайджест проектов</a></li>
+                                <li class="footer__menu-item menu-item-second"><a class="footer__menu-item-color__url" href="#">Лицензии и сертификаты</a></li>
+                            </ul>
+                        </li>
+                        <li class="footer__menu-item menu-item-first"><a class="footer__menu-item-first-color__url" href="#">ПРОЕКТЫ</a></li>
+                        <li class="footer__menu-item menu-item-first"><a class="footer__menu-item-first-color__url" href="#">ВАКАНСИИ</a></li>
+                    </ul>
+                    <div class="footer__social-links footer__social-links-mobile">
+                        <h3 class="social-links-title">МЫ В СОЦИАЛЬНЫХ СЕТЯХ</h3>
+                        <ul class="social-links">
+                            <li>
+                                <a class="social-links-item" href="#">
+                                    <img class="social-links-item-color" src="<?=$get_template_directory_uri?>/template-rsg/icons/Instagram.svg">
+                                </a>
+                            </li>
+                            <li>
+                                <a class="social-links-item" href="#">
+                                    <img class="social-links-item-color" src="<?=$get_template_directory_uri?>/template-rsg/icons/telegram.svg">
+                                </a>
+                            </li>
+                            <li>
+                                <a class="social-links-item" href="#">
+                                    <img class="social-links-item-color" src="<?=$get_template_directory_uri?>/template-rsg/icons/vk.svg">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+                <div class="footer__social">
+                    <div class="footer__social-links">
+                        <h3 class="social-links-title">МЫ В СОЦИАЛЬНЫХ СЕТЯХ</h3>
+                        <ul class="social-links">
+                            <li>
+                                <a class="social-links-item" href="#">
+                                    <img class="social-links-item-color" src="<?=$get_template_directory_uri?>/template-rsg/icons/Instagram.svg">
+                                </a>
+                            </li>
+                            <li>
+                                <a class="social-links-item" href="#">
+                                    <img class="social-links-item-color" src="<?=$get_template_directory_uri?>/template-rsg/icons/telegram.svg">
+                                </a>
+                            </li>
+                            <li>
+                                <a class="social-links-item" href="#">
+                                    <img class="social-links-item-color" src="<?=$get_template_directory_uri?>/template-rsg/icons/vk.svg">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer__social-feedback">
+                        <a class="social-feedback-form__btn open-popup" href="#" data-popup-id="APP-popup">ОТПРАВИТЬ ЗАЯВКУ</a>
+                        <p class="social-feedback-txt">Отправляя заявку я соглашаюсь на <a class="feedback__form-agree-url" href="#">обработку персональных данных</a> и принимаю <a class="feedback__form-agree-url" href="#">условия политики конфиденциальности</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__copyright">
+                <ul class="footer__copyright-items">
+                    <li class="footer__copyright-item">
+                        <p class="copyright-name">© RSG Group - 2023</p>
+                    </li>
+                    <li class="footer__copyright-item">
+                        <a class="footer-documents" href="#">Политика конфиденциальности</a>
+                        <a class="footer-documents footer-documents-mobile" href="#">Пользовательское соглашение</a>
+                    </li>
+                    <li class="footer__copyright-item footer__copyright-item-desktop">
+                        <a class="footer-documents" href="#">Пользовательское соглашение</a>
+                    </li>
+                    <li class="footer__copyright-item">
+                        <img class="technofix-logo" src="<?=$get_template_directory_uri?>/template-rsg/images/technofix-logo.svg">
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script src="assets/js/util.js"></script> <!-- util functions included in the CodyHouse framework -->
+    <script src="assets/js/swipe-content.js"></script> <!-- A Vanilla JavaScript plugin to detect touch interactions -->
+    <script src="assets/js/main.js"></script>
+    <script src="<?=$get_template_directory_uri?>/template-rsg/scripts/test.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,854 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Аренда экскаваторов</title>
+    <link rel="stylesheet" type="text/css" href="<?=$get_template_directory_uri?>/template-rsg/styles/slick.css">
+    <link rel="stylesheet" type="text/css" href="<?=$get_template_directory_uri?>/template-rsg/styles/slick-theme.css"/>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.11/vue.min.js"></script>
+    <script type="text/javascript" src="<?=$get_template_directory_uri?>/template-rsg/scripts/slick.js"></script>
+    <script src="https://unpkg.com/imask"></script>     
+    <link rel="stylesheet" href="<?=$get_template_directory_uri?>/template-rsg/fonts/fonts.css" />
+    <link rel="stylesheet" href="<?=$get_template_directory_uri?>/template-rsg/styles/style.css" />
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="header__all">
+            <a class="header__logo" href="#">
+                <img class="header__logo-img" src="<?=$get_template_directory_uri?>/template-rsg/images/logo_header.svg" alt="Логотип РСГ ГРУПП" />
+                <img class="header__logo-img header__logo-img-blue" src="<?=$get_template_directory_uri?>/template-rsg/images/logo_header-blue.svg" alt="Логотип РСГ ГРУПП" />
+            </a>
+            <nav class="header__menu">
+                <ul class="header__links-list level_1">
+                    <li class="header__links-list-item level_1 header__links-list-item-arrow">
+                        <a class="header__link level_1">услуги</a>
+                        <div class="header__links-dropdown level_2">
+                            <ul class="header__links-list level_2">
+                                <li class="header__links-list-item level_2">
+                                    <a class="header__link level_2">Снос и демонтаж «под ключ»</a>
+                                </li>
+                                <li class="header__links-list-item level_2">
+                                    <a class="header__link level_2">Земляные работы</a>
+                                </li>
+                                <li class="header__links-list-item level_2">
+                                    <a class="header__link level_2">Разработка проектной документации</a>
+                                </li>
+                                <li class="header__links-list-item level_2">
+                                    <a class="header__link level_2">Металлоконструкции</a>
+                                </li>
+                                <li class="header__links-list-item level_2">
+                                    <a class="header__link level_2">Благоустройство территорий</a>
+                                </li>
+                                <li class="header__links-list-item level_2">
+                                    <a class="header__link level_2">Рециклинг</a>
+                                </li>
+                                <li class="header__links-list-item level_2">
+                                    <a class="header__link level_2">Транспортная логистика</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="header__links-list-item level_1 header__links-list-item-arrow">
+                        <a class="header__link level_1">аренда техники</a>
+                        <div class="header__links-dropdown level_2">
+                            <ul class="header__links-list level_2">
+                                <li class="header__links-list-item level_2 header__links-list-item-arrow-right">
+                                    <a class="header__link level_2 ">Аренда техники</a>
+                                    <div class="header__links-dropdown level_3">
+                                        <ul class="header__links-list level_3">
+                                            <li class="header__links-list-item level_3">
+                                                <a class="header__link level_3">Экскаваторы</a>
+                                            </li>
+                                            <li class="header__links-list-item level_3">
+                                                <a class="header__link level_3">Специализированное навесное оборудование</a>
+                                            </li>
+                                            <li class="header__links-list-item level_3">
+                                                <a class="header__link level_3">Погрузчики</a>
+                                            </li>
+                                            <li class="header__links-list-item level_3">
+                                                <a class="header__link level_3">Бульдозеры и катки</a>
+                                            </li>
+                                            <li class="header__links-list-item level_3">
+                                                <a class="header__link level_3">Машины и спецтехника</a>
+                                            </li>
+                                            <li class="header__links-list-item level_3">
+                                                <a class="header__link level_3">Сортировочное оборудование</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="header__links-list-item level_2">
+                                    <a class="header__link level_2">Транспортная логистика</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="header__links-list-item level_1 header__links-list-item-mobile__hiden">
+                        <a class="header__link level_1">дайджест</a>
+                    </li>
+                    <li class="header__links-list-item level_1 header__links-list-item-arrow header__links-list-item-mobile__hiden">
+                        <a class="header__link level_1">о компании</a>
+                        <div class="header__links-dropdown level_2">
+                            <ul class="header__links-list level_2">
+                                <li class="header__links-list-item level_2">
+                                    <a class="header__link level_2">О компании</a>
+                                </li>
+                                <li class="header__links-list-item level_2">
+                                    <a class="header__link level_2">Парк техники</a>
+                                </li>
+                                <li class="header__links-list-item level_2">
+                                    <a class="header__link level_2">Наша команда</a>
+                                </li>
+                                <li class="header__links-list-item level_2">
+                                    <a class="header__link level_2">Лицензии и сертификаты</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="header__links-list-item level_1 header__links-list-item-mobile__hiden">
+                        <a class="header__link level_1">вакансии</a>
+                    </li>
+                    <li class="header__links-list-item level_1">
+                        <a class="header__link level_1">контакты</a>
+                    </li>
+                </ul>
+            </nav>
+            <address class="address">
+                <a class="address-link" href="tel:+74959605051">+7 495 960-50-51</a>
+            </address>
+        </div>
+    </header>
+
+
+<body>
+
+    <main class="main">
+
+        <section class="breadcrumbs">
+            <div class="my_breadcrumbs">
+                <span property="itemListElement" typeof="ListItem" class="taxonomy">
+                    <a property="item" typeof="WebPage" title="Перейти к главной" href="#" class="taxonomy-link">
+                        <span property="name">Главная</span>
+                    </a>
+                </span>
+                <i class="breadcrumbs-line"></i>
+                <span property="itemListElement" typeof="ListItem" class="taxonomy">
+                    <a property="item" typeof="WebPage" title="Перейти к вакансии" href="#" class="taxonomy-link">
+                        <span property="name">Аренда экскаваторов</span>
+                    </a>
+                </span>
+            </div>
+        </section>
+        <section class="our__team-about">
+            <div class="our__team-about__all">
+                <h1 class="track__title">Аренда экскаваторов</h1>
+                <p class="track__description">«ПИК» — российская девелоперская и строительная компания, крупнейший девелопер России. Штаб-квартира — в Москве. Полное наименование — публичное акционерное общество «ПИК-специализированный застройщик».</p>
+              
+
+
+                <div class="technic-catalog__all">
+                    <div class="technic-catalog__sort">
+
+
+                        <label class="technic-catalog__menu-sort-title-mobile  close-sort-title-mobile" for="menu-sort-title-mobile-checkbox"><img class="img-close-sort-title-mobile" src="<?=$get_template_directory_uri?>/template-rsg/icons/close-button-sort.svg"></label>
+                            
+                        <ul class="technic-catalog__menu-list__switch">
+                            <li class="technic-catalog__menu-item__switch">
+                              <span class="menu-item__switch-title">Со скидкой:</span>
+                              <label class="menu-item__switch-switch">
+                                <input type="checkbox">
+                                <span class="menu-item__switch-slider menu-item__switch-round"></span>
+                              </label>
+                            </li>
+                            <li class="technic-catalog__menu-item__switch">
+                                <span class="menu-item__switch-title">Со скидкой:</span>
+                                <label class="menu-item__switch-switch">
+                                  <input type="checkbox">
+                                  <span class="menu-item__switch-slider menu-item__switch-round"></span>
+                                </label>
+                              </li>
+                          </ul>
+
+                          <div class="technic-catalog__menu-block__switch-point">
+                            <h3 class="technic-catalog__menu-block__switch-title">Тип</h3>
+                            <ul class="technic-catalog__menu-list__switch-point">
+                                <li class="technic-catalog__menu-item__switch-point">
+                                  <label class="technic-catalog__menu-item__switch-checkbox-other">
+                                    <input type="checkbox" checked>
+                                    <span>Гусеничный</span>
+                                  </label>
+                                </li>
+                                <li class="technic-catalog__menu-item__switch-point">
+                                  <label class="technic-catalog__menu-item__switch-checkbox-other">
+                                    <input type="checkbox">
+                                    <span>Колёсный</span>
+                                  </label>
+                                </li>
+                                <li class="technic-catalog__menu-item__switch-point">
+                                  <label class="technic-catalog__menu-item__switch-checkbox-other">
+                                    <input type="checkbox" disabled>
+                                    <span>С гидромолотом</span>
+                                  </label>
+                                </li>
+                                <li class="technic-catalog__menu-item__switch-point">
+                                  <label class="technic-catalog__menu-item__switch-checkbox-other">
+                                    <input type="checkbox" checked disabled>
+                                    <span>С грейфером</span>
+                                  </label>
+                                </li>
+                              </ul>
+                          </div>
+
+                          <div class="technic-catalog__menu-block__switch-point">
+                            <h3 class="technic-catalog__menu-block__switch-title">Тип</h3>
+                            <ul class="technic-catalog__menu-list__switch-point">
+                                <li class="technic-catalog__menu-item__switch-point">
+                                  <label class="technic-catalog__menu-item__switch-checkbox-other">
+                                    <input type="checkbox" checked>
+                                    <span>Гусеничный</span>
+                                  </label>
+                                </li>
+                                <li class="technic-catalog__menu-item__switch-point">
+                                  <label class="technic-catalog__menu-item__switch-checkbox-other">
+                                    <input type="checkbox">
+                                    <span>Колёсный</span>
+                                  </label>
+                                </li>
+                                <li class="technic-catalog__menu-item__switch-point">
+                                  <label class="technic-catalog__menu-item__switch-checkbox-other">
+                                    <input type="checkbox" disabled>
+                                    <span>С гидромолотом</span>
+                                  </label>
+                                </li>
+                                <li class="technic-catalog__menu-item__switch-point">
+                                  <label class="technic-catalog__menu-item__switch-checkbox-other">
+                                    <input type="checkbox" checked disabled>
+                                    <span>С грейфером</span>
+                                  </label>
+                                </li>
+                              </ul>
+                          </div>
+
+
+                          <div id="app" class='range-slider-app'>
+                            <h3 class="technic-catalog__menu-block__switch-title">Тип1</h3>
+                            <div class='range-slider'>
+                              <input class="range-range__catalog" type="range" min="0" max="180" step="1" v-model="sliderMin">
+                              <input class="number-range__catalog" type="number" min="0" max="180" step="1" v-model="sliderMin">
+                              <input class="range-range__catalog" type="range" min="0" max="180" step="1" v-model="sliderMax">
+                              <input class="number-range__catalog" type="number" min="0" max="180" step="1" v-model="sliderMax">
+                            </div>
+                          </div>
+                          
+                          <div id="app1" class='range-slider-app'>
+                            <h3 class="technic-catalog__menu-block__switch-title">Тип</h3>
+                            <div class='range-slider'>
+                              <input class="range-range__catalog" type="range" min="0" max="180" step="1" v-model="sliderMin">
+                              <input class="number-range__catalog" type="number" min="0" max="180" step="1" v-model="sliderMin">
+                              <input class="range-range__catalog" type="range" min="0" max="180" step="1" v-model="sliderMax">
+                              <input class="number-range__catalog" type="number" min="0" max="180" step="1" v-model="sliderMax">
+                            </div>
+                          </div>
+                          
+                          <div id="app2" class='range-slider-app'>
+                            <h3 class="technic-catalog__menu-block__switch-title">Тип</h3>
+                            <div class='range-slider'>
+                              <input class="range-range__catalog" type="range" min="0" max="180" step="1" v-model="sliderMin">
+                              <input class="number-range__catalog" type="number" min="0" max="180" step="1" v-model="sliderMin">
+                              <input class="range-range__catalog" type="range" min="0" max="180" step="1" v-model="sliderMax">
+                              <input class="number-range__catalog" type="number" min="0" max="180" step="1" v-model="sliderMax">
+                            </div>
+                          </div>
+                          
+                          <div id="app3" class='range-slider-app'>
+                            <h3 class="technic-catalog__menu-block__switch-title">Тип</h3>
+                            <div class='range-slider'>
+                              <input class="range-range__catalog" type="range" min="0" max="180" step="1" v-model="sliderMin">
+                              <input class="number-range__catalog" type="number" min="0" max="180" step="1" v-model="sliderMin" suffix="м">
+                              <input class="range-range__catalog" type="range" min="0" max="180" step="1" v-model="sliderMax">
+                              <input class="number-range__catalog" type="number" min="0" max="180" step="1" v-model="sliderMax">
+                            </div>
+                          </div>
+
+
+
+
+
+                          <div class="technic-catalog__menu-block__button">
+                            <button type="button" id="button-show" class="technic-catalog__menu__button">Показать</button>
+                          </div>
+                          <div class="technic-catalog__menu-block__button menu-block__button-reset">
+                            <a href="" id="button-reset" class="technic-catalog__menu__button-reset"><img class="" src="<?=$get_template_directory_uri?>/template-rsg/icons/reset-btn.svg"> Сбросить фильтр</a>
+                          </div>
+                    </div>
+                    <div class="technic-catalog">
+                        <div class="technic-catalog__menu">
+
+                            <p class="technic-catalog__menu-sort-title">Сортировать:</p>
+                            <div class="technic-catalog__menu-sort-all">
+                                <ul class="technic-catalog__menu-sort">
+                                    <li class="technic-catalog__menu-sort-title-list sort-title-list-active">
+                                        <p class="technic-catalog__menu-sort-title-item">По возрастанию цены</p>
+                                    </li>   
+                                    <li class="technic-catalog__menu-sort-title-list">
+                                        <p class="technic-catalog__menu-sort-title-item">Ёмкость ковша</p>
+                                    </li>
+                                    <li class="technic-catalog__menu-sort-title-list">
+                                        <p class="technic-catalog__menu-sort-title-item">Глубина копания</p>
+                                    </li> 
+                                </ul>
+                            </div>
+                            
+                            <input type="checkbox" id="menu-sort-title-mobile-checkbox" class="menu-sort-title-mobile-checkbox">
+                            <label class="technic-catalog__menu-sort-title-mobile" for="menu-sort-title-mobile-checkbox">Фильтр</label>
+                            
+                        </div>
+                        <ul class="technic-catalog__products-list">
+                            <li class="technic-catalog__products-item">                                
+                                    <article class="technic-catalog__product">
+                                        <img class="technic-catalog__products-img" src="<?=$get_template_directory_uri?>/template-rsg/images/rent-catalog/72d573f0e8bdac24e2c08c668e1c2511.png" alt="Мини-экскаватор JCB 8018 CTS">
+                                        <h3 class="technic-catalog__products-about-title technic-catalog__products-about-title-mobile">Мини-экскаватор JCB 8018 CTS</h3>
+                                        <div class="technic-catalog__products-img__and__price">
+                                            <img class="technic-catalog__products-img" src="<?=$get_template_directory_uri?>/template-rsg/images/rent-catalog/72d573f0e8bdac24e2c08c668e1c2511.png" alt="Мини-экскаватор JCB 8018 CTS">
+                                            <div class="technic-catalog__products-price">
+                                                <div class="technic-catalog__products-price-info">
+                                                    <p class="technic-catalog__products-price__hour">Цена за час:</p>
+                                                    <h3 class="technic-catalog__products-price__hour-title">1 625 ₽</h3>
+                                                </div>
+                                                <div class="technic-catalog__products-price-info">
+                                                    <p class="technic-catalog__products-price__day">Цена за смену:</p>
+                                                    <h3 class="technic-catalog__products-price__day-title">13 000 ₽</h3>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        
+                                        <div class="technic-catalog__products-about">
+                                            <h3 class="technic-catalog__products-about-title">Мини-экскаватор JCB 8018 CTS</h3>
+                                            <ul class="technic-catalog__products-about-specifications-list">
+                                                <li class="technic-catalog__products-about-specifications-item">
+                                                    <p class="technic-catalog__products-about-specifications-item-text">Эксплуатационная масса</p>
+                                                    <p class="technic-catalog__products-about-specifications-item-unit">1662 кг</p>
+                                                </li>
+                                                <li class="technic-catalog__products-about-specifications-item">
+                                                    <p class="technic-catalog__products-about-specifications-item-text">Эксплуатационная масса</p>
+                                                    <p class="technic-catalog__products-about-specifications-item-unit">1662 кг</p>
+                                                </li>
+                                                <li class="technic-catalog__products-about-specifications-item">
+                                                    <p class="technic-catalog__products-about-specifications-item-text">Эксплуатационная масса</p>
+                                                    <p class="technic-catalog__products-about-specifications-item-unit">1662 кг</p>
+                                                </li>
+                                                <li class="technic-catalog__products-about-specifications-item">
+                                                    <p class="technic-catalog__products-about-specifications-item-text">Эксплуатационная масса</p>
+                                                    <p class="technic-catalog__products-about-specifications-item-unit">1662 кг</p>
+                                                </li>
+                                            </ul>
+                                            <ul class="technic-catalog__products-about-dop-list">
+                                                <li class="technic-catalog__products-about-dop-item">наработка не более 1200 часов</li>
+                                                <li class="technic-catalog__products-about-dop-item">прошёл ТО в этом месяце</li>
+                                            </ul>
+                                        </div>
+                                        <div class="technic-catalog__products-price">
+                                            <div class="technic-catalog__products-price-info">
+                                                <p class="technic-catalog__products-price__hour">Цена за час:</p>
+                                                <h3 class="technic-catalog__products-price__hour-title">1 625 ₽</h3>
+                                            </div>
+                                            <div class="technic-catalog__products-price-info">
+                                                <p class="technic-catalog__products-price__day">Цена за смену:</p>
+                                                <h3 class="technic-catalog__products-price__day-title">13 000 ₽</h3>
+                                            </div>
+                                            <a class="technic-catalog__products-price-url" href="#">АРЕНДОВАТЬ</a>
+                                        </div>
+                                    </article>                               
+                            </li>
+                            <li class="technic-catalog__products-item">                                
+                                <article class="technic-catalog__product">
+                                    <img class="technic-catalog__products-img" src="<?=$get_template_directory_uri?>/template-rsg/images/rent-catalog/72d573f0e8bdac24e2c08c668e1c2511.png" alt="Мини-экскаватор JCB 8018 CTS">
+                                    <h3 class="technic-catalog__products-about-title technic-catalog__products-about-title-mobile">Мини-экскаватор JCB 8018 CTS</h3>
+                                    <div class="technic-catalog__products-img__and__price">
+                                        <img class="technic-catalog__products-img" src="<?=$get_template_directory_uri?>/template-rsg/images/rent-catalog/72d573f0e8bdac24e2c08c668e1c2511.png" alt="Мини-экскаватор JCB 8018 CTS">
+                                        <div class="technic-catalog__products-price">
+                                            <div class="technic-catalog__products-price-info">
+                                                <p class="technic-catalog__products-price__hour">Цена за час:</p>
+                                                <h3 class="technic-catalog__products-price__hour-title">1 625 ₽</h3>
+                                            </div>
+                                            <div class="technic-catalog__products-price-info">
+                                                <p class="technic-catalog__products-price__day">Цена за смену:</p>
+                                                <h3 class="technic-catalog__products-price__day-title">13 000 ₽</h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    
+                                    <div class="technic-catalog__products-about">
+                                        <h3 class="technic-catalog__products-about-title">Мини-экскаватор JCB 8018 CTS</h3>
+                                        <ul class="technic-catalog__products-about-specifications-list">
+                                            <li class="technic-catalog__products-about-specifications-item">
+                                                <p class="technic-catalog__products-about-specifications-item-text">Эксплуатационная масса</p>
+                                                <p class="technic-catalog__products-about-specifications-item-unit">1662 кг</p>
+                                            </li>
+                                            <li class="technic-catalog__products-about-specifications-item">
+                                                <p class="technic-catalog__products-about-specifications-item-text">Эксплуатационная масса</p>
+                                                <p class="technic-catalog__products-about-specifications-item-unit">1662 кг</p>
+                                            </li>
+                                            <li class="technic-catalog__products-about-specifications-item">
+                                                <p class="technic-catalog__products-about-specifications-item-text">Эксплуатационная масса</p>
+                                                <p class="technic-catalog__products-about-specifications-item-unit">1662 кг</p>
+                                            </li>
+                                            <li class="technic-catalog__products-about-specifications-item">
+                                                <p class="technic-catalog__products-about-specifications-item-text">Эксплуатационная масса</p>
+                                                <p class="technic-catalog__products-about-specifications-item-unit">1662 кг</p>
+                                            </li>
+                                        </ul>
+                                        <ul class="technic-catalog__products-about-dop-list">
+                                            <li class="technic-catalog__products-about-dop-item">наработка не более 1200 часов</li>
+                                            <li class="technic-catalog__products-about-dop-item">прошёл ТО в этом месяце</li>
+                                        </ul>
+                                    </div>
+                                    <div class="technic-catalog__products-price">
+                                        <div class="technic-catalog__products-price-info">
+                                            <p class="technic-catalog__products-price__hour">Цена за час:</p>
+                                            <h3 class="technic-catalog__products-price__hour-title">1 625 ₽</h3>
+                                        </div>
+                                        <div class="technic-catalog__products-price-info">
+                                            <p class="technic-catalog__products-price__day">Цена за смену:</p>
+                                            <h3 class="technic-catalog__products-price__day-title">13 000 ₽</h3>
+                                        </div>
+                                        <a class="technic-catalog__products-price-url" href="#">АРЕНДОВАТЬ</a>
+                                    </div>
+                                </article>                               
+                            </li>
+                            <li class="technic-catalog__products-item">                                
+                                <article class="technic-catalog__product">
+                                    <img class="technic-catalog__products-img" src="<?=$get_template_directory_uri?>/template-rsg/images/rent-catalog/72d573f0e8bdac24e2c08c668e1c2511.png" alt="Мини-экскаватор JCB 8018 CTS">
+                                    <h3 class="technic-catalog__products-about-title technic-catalog__products-about-title-mobile">Мини-экскаватор JCB 8018 CTS</h3>
+                                    <div class="technic-catalog__products-img__and__price">
+                                        <img class="technic-catalog__products-img" src="<?=$get_template_directory_uri?>/template-rsg/images/rent-catalog/72d573f0e8bdac24e2c08c668e1c2511.png" alt="Мини-экскаватор JCB 8018 CTS">
+                                        <div class="technic-catalog__products-price">
+                                            <div class="technic-catalog__products-price-info">
+                                                <p class="technic-catalog__products-price__hour">Цена за час:</p>
+                                                <h3 class="technic-catalog__products-price__hour-title">1 625 ₽</h3>
+                                            </div>
+                                            <div class="technic-catalog__products-price-info">
+                                                <p class="technic-catalog__products-price__day">Цена за смену:</p>
+                                                <h3 class="technic-catalog__products-price__day-title">13 000 ₽</h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    
+                                    <div class="technic-catalog__products-about">
+                                        <h3 class="technic-catalog__products-about-title">Мини-экскаватор JCB 8018 CTS</h3>
+                                        <ul class="technic-catalog__products-about-specifications-list">
+                                            <li class="technic-catalog__products-about-specifications-item">
+                                                <p class="technic-catalog__products-about-specifications-item-text">Эксплуатационная масса</p>
+                                                <p class="technic-catalog__products-about-specifications-item-unit">1662 кг</p>
+                                            </li>
+                                            <li class="technic-catalog__products-about-specifications-item">
+                                                <p class="technic-catalog__products-about-specifications-item-text">Эксплуатационная масса</p>
+                                                <p class="technic-catalog__products-about-specifications-item-unit">1662 кг</p>
+                                            </li>
+                                            <li class="technic-catalog__products-about-specifications-item">
+                                                <p class="technic-catalog__products-about-specifications-item-text">Эксплуатационная масса</p>
+                                                <p class="technic-catalog__products-about-specifications-item-unit">1662 кг</p>
+                                            </li>
+                                            <li class="technic-catalog__products-about-specifications-item">
+                                                <p class="technic-catalog__products-about-specifications-item-text">Эксплуатационная масса</p>
+                                                <p class="technic-catalog__products-about-specifications-item-unit">1662 кг</p>
+                                            </li>
+                                        </ul>
+                                        <ul class="technic-catalog__products-about-dop-list">
+                                            <li class="technic-catalog__products-about-dop-item">наработка не более 1200 часов</li>
+                                            <li class="technic-catalog__products-about-dop-item">прошёл ТО в этом месяце</li>
+                                        </ul>
+                                    </div>
+                                    <div class="technic-catalog__products-price">
+                                        <div class="technic-catalog__products-price-info">
+                                            <p class="technic-catalog__products-price__hour">Цена за час:</p>
+                                            <h3 class="technic-catalog__products-price__hour-title">1 625 ₽</h3>
+                                        </div>
+                                        <div class="technic-catalog__products-price-info">
+                                            <p class="technic-catalog__products-price__day">Цена за смену:</p>
+                                            <h3 class="technic-catalog__products-price__day-title">13 000 ₽</h3>
+                                        </div>
+                                        <a class="technic-catalog__products-price-url" href="#">АРЕНДОВАТЬ</a>
+                                    </div>
+                                </article>                               
+                            </li>
+                            <li class="technic-catalog__products-item">                                
+                                <article class="technic-catalog__product">
+                                    <img class="technic-catalog__products-img" src="<?=$get_template_directory_uri?>/template-rsg/images/rent-catalog/72d573f0e8bdac24e2c08c668e1c2511.png" alt="Мини-экскаватор JCB 8018 CTS">
+                                    <h3 class="technic-catalog__products-about-title technic-catalog__products-about-title-mobile">Мини-экскаватор JCB 8018 CTS</h3>
+                                    <div class="technic-catalog__products-img__and__price">
+                                        <img class="technic-catalog__products-img" src="<?=$get_template_directory_uri?>/template-rsg/images/rent-catalog/72d573f0e8bdac24e2c08c668e1c2511.png" alt="Мини-экскаватор JCB 8018 CTS">
+                                        <div class="technic-catalog__products-price">
+                                            <div class="technic-catalog__products-price-info">
+                                                <p class="technic-catalog__products-price__hour">Цена за час:</p>
+                                                <h3 class="technic-catalog__products-price__hour-title">1 625 ₽</h3>
+                                            </div>
+                                            <div class="technic-catalog__products-price-info">
+                                                <p class="technic-catalog__products-price__day">Цена за смену:</p>
+                                                <h3 class="technic-catalog__products-price__day-title">13 000 ₽</h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    
+                                    <div class="technic-catalog__products-about">
+                                        <h3 class="technic-catalog__products-about-title">Мини-экскаватор JCB 8018 CTS</h3>
+                                        <ul class="technic-catalog__products-about-specifications-list">
+                                            <li class="technic-catalog__products-about-specifications-item">
+                                                <p class="technic-catalog__products-about-specifications-item-text">Эксплуатационная масса</p>
+                                                <p class="technic-catalog__products-about-specifications-item-unit">1662 кг</p>
+                                            </li>
+                                            <li class="technic-catalog__products-about-specifications-item">
+                                                <p class="technic-catalog__products-about-specifications-item-text">Эксплуатационная масса</p>
+                                                <p class="technic-catalog__products-about-specifications-item-unit">1662 кг</p>
+                                            </li>
+                                            <li class="technic-catalog__products-about-specifications-item">
+                                                <p class="technic-catalog__products-about-specifications-item-text">Эксплуатационная масса</p>
+                                                <p class="technic-catalog__products-about-specifications-item-unit">1662 кг</p>
+                                            </li>
+                                            <li class="technic-catalog__products-about-specifications-item">
+                                                <p class="technic-catalog__products-about-specifications-item-text">Эксплуатационная масса</p>
+                                                <p class="technic-catalog__products-about-specifications-item-unit">1662 кг</p>
+                                            </li>
+                                        </ul>
+                                        <ul class="technic-catalog__products-about-dop-list">
+                                            <li class="technic-catalog__products-about-dop-item">наработка не более 1200 часов</li>
+                                            <li class="technic-catalog__products-about-dop-item">прошёл ТО в этом месяце</li>
+                                        </ul>
+                                    </div>
+                                    <div class="technic-catalog__products-price">
+                                        <div class="technic-catalog__products-price-info">
+                                            <p class="technic-catalog__products-price__hour">Цена за час:</p>
+                                            <h3 class="technic-catalog__products-price__hour-title">1 625 ₽</h3>
+                                        </div>
+                                        <div class="technic-catalog__products-price-info">
+                                            <p class="technic-catalog__products-price__day">Цена за смену:</p>
+                                            <h3 class="technic-catalog__products-price__day-title">13 000 ₽</h3>
+                                        </div>
+                                        <a class="technic-catalog__products-price-url" href="#">АРЕНДОВАТЬ</a>
+                                    </div>
+                                </article>                               
+                            </li>
+                            <li class="technic-catalog__products-item">                                
+                                <article class="technic-catalog__product">
+                                    <img class="technic-catalog__products-img" src="<?=$get_template_directory_uri?>/template-rsg/images/rent-catalog/72d573f0e8bdac24e2c08c668e1c2511.png" alt="Мини-экскаватор JCB 8018 CTS">
+                                    <h3 class="technic-catalog__products-about-title technic-catalog__products-about-title-mobile">Мини-экскаватор JCB 8018 CTS</h3>
+                                    <div class="technic-catalog__products-img__and__price">
+                                        <img class="technic-catalog__products-img" src="<?=$get_template_directory_uri?>/template-rsg/images/rent-catalog/72d573f0e8bdac24e2c08c668e1c2511.png" alt="Мини-экскаватор JCB 8018 CTS">
+                                        <div class="technic-catalog__products-price">
+                                            <div class="technic-catalog__products-price-info">
+                                                <p class="technic-catalog__products-price__hour">Цена за час:</p>
+                                                <h3 class="technic-catalog__products-price__hour-title">1 625 ₽</h3>
+                                            </div>
+                                            <div class="technic-catalog__products-price-info">
+                                                <p class="technic-catalog__products-price__day">Цена за смену:</p>
+                                                <h3 class="technic-catalog__products-price__day-title">13 000 ₽</h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    
+                                    <div class="technic-catalog__products-about">
+                                        <h3 class="technic-catalog__products-about-title">Мини-экскаватор JCB 8018 CTS</h3>
+                                        <ul class="technic-catalog__products-about-specifications-list">
+                                            <li class="technic-catalog__products-about-specifications-item">
+                                                <p class="technic-catalog__products-about-specifications-item-text">Эксплуатационная масса</p>
+                                                <p class="technic-catalog__products-about-specifications-item-unit">1662 кг</p>
+                                            </li>
+                                            <li class="technic-catalog__products-about-specifications-item">
+                                                <p class="technic-catalog__products-about-specifications-item-text">Эксплуатационная масса</p>
+                                                <p class="technic-catalog__products-about-specifications-item-unit">1662 кг</p>
+                                            </li>
+                                            <li class="technic-catalog__products-about-specifications-item">
+                                                <p class="technic-catalog__products-about-specifications-item-text">Эксплуатационная масса</p>
+                                                <p class="technic-catalog__products-about-specifications-item-unit">1662 кг</p>
+                                            </li>
+                                            <li class="technic-catalog__products-about-specifications-item">
+                                                <p class="technic-catalog__products-about-specifications-item-text">Эксплуатационная масса</p>
+                                                <p class="technic-catalog__products-about-specifications-item-unit">1662 кг</p>
+                                            </li>
+                                        </ul>
+                                        <ul class="technic-catalog__products-about-dop-list">
+                                            <li class="technic-catalog__products-about-dop-item">наработка не более 1200 часов</li>
+                                            <li class="technic-catalog__products-about-dop-item">прошёл ТО в этом месяце</li>
+                                        </ul>
+                                    </div>
+                                    <div class="technic-catalog__products-price">
+                                        <div class="technic-catalog__products-price-info">
+                                            <p class="technic-catalog__products-price__hour">Цена за час:</p>
+                                            <h3 class="technic-catalog__products-price__hour-title">1 625 ₽</h3>
+                                        </div>
+                                        <div class="technic-catalog__products-price-info">
+                                            <p class="technic-catalog__products-price__day">Цена за смену:</p>
+                                            <h3 class="technic-catalog__products-price__day-title">13 000 ₽</h3>
+                                        </div>
+                                        <a class="technic-catalog__products-price-url" href="#">АРЕНДОВАТЬ</a>
+                                    </div>
+                                </article>                               
+                            </li>
+                        </ul>
+                        <a class="technic-catalog-button__more" href="#">Показать ещё</a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+
+
+
+      
+
+        <section class="content__vacancy">
+            <div class="vacancy__all rent-technic-catalog-vacancy__all">
+                <h2 class="about__title">Аренда экскаватора в Москве и области</h2>     
+                <div class="rent-technic-catalog-vacancy__all-text">
+                    
+                    <div class="description__vacancy">
+                        <div class="description__vacancy-child">
+                            <p class="description__vacancy-text">
+                                Арендуйте экскаватор для ваших целей на один рабочий день или на весь период строительства. Одна смена спецтехники в Москве и Подмосковье длится 8 рабочих часов. Узнать стоимость аренды экскаватора вы можете с помощью удобного калькулятора на сайте или по телефону.
+                            </p>
+                            <h2 class="description__vacancy-title">Как взять экскаватор в аренду?</h2>
+                            <p class="description__vacancy-text">
+                                Мы работаем как с юридическими, так и с физическими лицами. Условия одинаковые:</br></br>
+                            </p>
+                            <p class="description__vacancy-text">
+                                <ol class="vacancy-text-ul vacancy-text-ol">
+                                    <li class="vacancy-text-ul-item">Оставьте заявку на сайте, отправьте по электронной почте arenda@aksokol.ru или позвонить нам.</li>
+                                    <li class="vacancy-text-ul-item">Менеджер расскажет об условиях аренды и акциях, поможет подобрать технику с учётом ваших нужд и бюджета.</li>
+                                    <li class="vacancy-text-ul-item">Мы отправим договор для согласования и счёт на оплату.</li>      
+                                    <li class="vacancy-text-ul-item">После получения авансового платежа, наш опытный машинист доставит спецтехнику на объект точно к началу вашей рабочей смены. Проследит, чтобы она была правильно заправлена, настроена и укомплектована.</li>                           
+                                </ol>
+                            </p>
+                            <h2 class="description__vacancy-title">Виды экскаваторов</h2>
+                            <p class="description__vacancy-text">
+                                В нашем автопарке вы можете взять в аренду экскаваторы JCB. Это английская спецтехника, которая выделяется на мировом рынке высоким качеством. Вся техника принадлежит компании — мы не берём технику у субподрядчиков, поэтому цены у нас ниже, чем у конкурентов.
+                                </br>В нашем каталоге представлены 4 вида экскаваторов:</br></br>
+                            </p>
+                            <p class="description__vacancy-text">
+                                <ul class="vacancy-text-ul">
+                                    <li class="vacancy-text-ul-item">Официальное трудоустройство с первого дня работы, в соответствии с Трудовым Кодексом Российской Федерации;<br>
+                                    Работу в стабильной, развивающейся компании и уверенность в завтрашнем дне. </li>
+                                    <li class="vacancy-text-ul-item">Стабильность существования компании проверена не одним кризисом;</li>
+                                    <li class="vacancy-text-ul-item">Высокий уровень заработной платы. Готовы открыто обсуждать этот вопрос с финальным кандидатом;</li>
+                                    <li class="vacancy-text-ul-item">Красивый, комфортный офис в районе метро Павелецкая, оборудованный всем необходимы для продуктивной работы, а также развитую инфраструктуру рядом (кафе, магазины, аптеки);</li>
+                                    <li class="vacancy-text-ul-item">Парковочное место, чтобы дорога до работы была ещё приятнее;</li>
+                                    <li class="vacancy-text-ul-item">Команду профессионалов, готовых работать сплочённо и на результат;</li>
+                                    <li class="vacancy-text-ul-item">Возможность влиять на свой уровень дохода и участвовать в развитии отдела и компании.</li>
+                                    <li class="vacancy-text-ul-item">Своевременная выплата заработной платы 2 раза в месяц. Компания гарантирует, что заработная плата будет выплачена всегда и только вовремя, независимо от ситуации в стране.</li>
+                                    <li class="vacancy-text-ul-item">График работы 5/2, гибкое начало дня;</li>
+                                    <li class="vacancy-text-ul-item">Классные корпоративы — мы не только продуктивно работаем, но и весело отдыхаем;</li>
+                                    <li class="vacancy-text-ul-item">Отношение в нашей компании к каждому сотруднику основано на честности и поддержке в любой жизненной ситуации. И мы ожидаем взаимности!</li>
+                                    
+                                </ul>
+                            </p>
+                            <p class="description__vacancy-text">
+                            </br>Цена аренды эвакуатора зависит от модели, срока аренды, количества часов смены и удалённости объекта от МКАД. При этом цена аренды экскаватора в Московской области не всегда выше — техника может находиться рядом с вашим объектом, поэтому доставка займёт меньше времени.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="similar__vacancy ">
+                        <h2 class="similar__vacancy-title rent-technic-catalog-title">Наши преимущества</h2>
+                        <ul class="similar__vacancy-ul">
+                            <li class="similar__vacancy-ul-item  rent-technic-catalog-similar__vacancy-ul-item">
+                                <article class="about__article">
+                                    <img class="about__article-img" src="<?=$get_template_directory_uri?>/template-rsg/icons/about-demolition-crane 2.svg" alt="Изображение крана">
+                                    <div class="border-1px"></div>
+                                    <h3 class="about__article-title">с <span class="large_text">1999</span> года</h3>
+                                    <p class="about__article-text">в сфере сноса и демонтажа</p>
+                                </article>
+                            </li>
+                            <li class="similar__vacancy-ul-item rent-technic-catalog-similar__vacancy-ul-item">
+                                <article class="about__article">
+                                    <img class="about__article-img" src="<?=$get_template_directory_uri?>/template-rsg/icons/about-demolition-casc.svg" alt="Изображение крана">
+                                    <div class="border-1px"></div>
+                                    <h3 class="about__article-title"><span class="large_text">335</span></h3>
+                                    <p class="about__article-text">строительных площадок</p>
+                                </article>
+                            </li>
+                            <li class="similar__vacancy-ul-item rent-technic-catalog-similar__vacancy-ul-item" >
+                                <article class="about__article">
+                                    <img class="about__article-img" src="<?=$get_template_directory_uri?>/template-rsg/icons/about-demolition-crane-3.svg" alt="Изображение крана">
+                                    <div class="border-1px"></div>
+                                    <h3 class="about__article-title">более <span class="large_text">15</span> млн м³</h3>
+                                    <p class="about__article-text">объём снесённых объектов</p>
+                                </article>
+                            </li>
+                            <li class="similar__vacancy-ul-item rent-technic-catalog-similar__vacancy-ul-item">
+                                <article class="about__article">
+                                    <img class="about__article-img" src="<?=$get_template_directory_uri?>/template-rsg/icons/about-demolition-hand.svg" alt="Изображение крана">
+                                    <div class="border-1px"></div>
+                                    <h3 class="about__article-title"><span class="large_text">1000+</span></h3>
+                                    <p class="about__article-text">заключённых контрактов</p>
+                                </article>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="feedback">
+            <div class="feedback__all">
+                <div class="feedback__first">
+                    <div class="feedback__first-top">
+                        <h2 class="feedback__title">Коммерческое предложение на особых условиях</h2>
+                        <p class="feedback__description">за заявку отправленную прямо здесь и сейчас.</p>
+                    </div>
+                    <address class="feedback__first-bot">
+                        <a class="feedback-link mail" href="mailto:info@rsg-grupp.ru">info@rsg-grupp.ru</a>
+                        <a class="feedback-link telephone" href="tel:+74959605051">+7 495 960-50-51</a>
+                    </address>
+                </div>
+                <div class="feedback__second">
+                    <form class="feedback__form" action="#" method="post" enctype="multipart/form-data">
+                        <div class="feedback__form-item feedback__name">
+                            <label class="feedback__label" for="name">Имя*:</label>
+                            <input class="feedback__input" type="text" id="name" name="name" placeholder="Ваше имя" required>
+                        </div>
+                        <div class="feedback__form-item feedback__phone">
+                            <label class="feedback__label" for="phone">Телефон*:</label>
+                            <input class="feedback__input" type="tel" id="phone" name="phone" placeholder="+7 (___) ___-__-__" required>
+                        </div>
+                        <div class="feedback__form-item feedback__mail">
+                            <label class="feedback__label" for="email">Почта*:</label>
+                            <input class="feedback__input" type="email" id="email" name="email" placeholder="___@__" required>
+                        </div>
+                        <div class="feedback__form-item feedback__file-first">
+                            <label class="feedback__label" for="attachment">Прикрепить файл:</label>
+                            <input class="feedback__input feedback__input-file" type="file" id="attachment" name="attachment">
+                        </div>
+                        <div class="feedback__form-textarea ">
+                            <label class="feedback__label feedback__label-message" for="message">Сообщение:</label>
+                            <textarea class="feedback__input feedback__input-textarea" id="message" name="message" placeholder="Ваше сообщение" rows="4"></textarea>
+                        </div>
+                        <div class="feedback__form-button">
+                            <div class="feedback__form-item feedback__file-second">
+                                <input class="feedback__input feedback__input-file" type="file" id="attachment" name="attachment">
+                            </div>
+                            <button class="feedback__form-button-item" type="submit">Отправить</button>
+                            <p class="feedback__form-agree">Нажимая кнопку «Отправить» вы соглашаетесь на обработку персональных данных</p>
+                        </div>
+                      </form>
+                </div>
+            </div>
+        </section> 
+    </main>
+
+
+   
+    <footer class="footer">
+        <div class="footer__all">
+            <div class="footer__main">
+                <div class="footer__address">
+                    <img class="footer__logo-img" src="<?=$get_template_directory_uri?>/template-rsg/images/logo_header.svg">
+                    <address class="footer__address">
+                        <a class="address-mail footer__menu-item-color__url" href="#">info@rsg-grupp.ru</a>
+                        <a class="address-mail footer__menu-item-color__url" href="#">dor@rsg-grupp.ru</a>
+                        <a class="address-phone footer__menu-item-color__url" href="#">+7 495 960-50-51</a>
+                        <div class="footer__social-feedback footer__social-feedback-mobile">
+                            <a class="social-feedback-form__btn open-popup" href="#" data-popup-id="APP-popup">ОТПРАВИТЬ ЗАЯВКУ</a>
+                            <p class="social-feedback-txt">Отправляя заявку я соглашаюсь на <a class="feedback__form-agree-url" href="#">обработку персональных данных</a> и принимаю <a class="feedback__form-agree-url" href="#">условия политики конфиденциальности</a></p>
+                        </div>
+                        <p class="address-address">г. Москва, ул. Красноармейская, д. 11, корп. 2, офис 26</p>
+                    </address>
+                </div>
+                <nav class="footer__menu">
+                    <ul class="footer__menu-items">
+                        <li class="footer__menu-item menu-item-first"> <a class="footer__menu-item-first-color__url" href="#">О КОМПАНИИ</a>
+                            <ul class="footer__menu-items footer__menu-items-second">
+                                <li class="footer__menu-item menu-item-second"><a class="footer__menu-item-color__url" href="#"> О компании</a></li>
+                                <li class="footer__menu-item menu-item-second"><a class="footer__menu-item-color__url" href="#">Команда</a></li>
+                                <li class="footer__menu-item menu-item-second"><a class="footer__menu-item-color__url" href="#">Парк спецтехники</a></li>
+                                <li class="footer__menu-item menu-item-second"><a class="footer__menu-item-color__url" href="#">Дайджест проектов</a></li>
+                                <li class="footer__menu-item menu-item-second"><a class="footer__menu-item-color__url" href="#">Лицензии и сертификаты</a></li>
+                            </ul>
+                        </li>
+                        <li class="footer__menu-item menu-item-first"><a class="footer__menu-item-first-color__url" href="#">ПРОЕКТЫ</a></li>
+                        <li class="footer__menu-item menu-item-first"><a class="footer__menu-item-first-color__url" href="#">ВАКАНСИИ</a></li>
+                    </ul>
+                    <div class="footer__social-links footer__social-links-mobile">
+                        <h3 class="social-links-title">МЫ В СОЦИАЛЬНЫХ СЕТЯХ</h3>
+                        <ul class="social-links">
+                            <li>
+                                <a class="social-links-item" href="#">
+                                    <img class="social-links-item-color" src="<?=$get_template_directory_uri?>/template-rsg/icons/Instagram.svg">
+                                </a>
+                            </li>
+                            <li>
+                                <a class="social-links-item" href="#">
+                                    <img class="social-links-item-color" src="<?=$get_template_directory_uri?>/template-rsg/icons/telegram.svg">
+                                </a>
+                            </li>
+                            <li>
+                                <a class="social-links-item" href="#">
+                                    <img class="social-links-item-color" src="<?=$get_template_directory_uri?>/template-rsg/icons/vk.svg">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+                <div class="footer__social">
+                    <div class="footer__social-links">
+                        <h3 class="social-links-title">МЫ В СОЦИАЛЬНЫХ СЕТЯХ</h3>
+                        <ul class="social-links">
+                            <li>
+                                <a class="social-links-item" href="#">
+                                    <img class="social-links-item-color" src="<?=$get_template_directory_uri?>/template-rsg/icons/Instagram.svg">
+                                </a>
+                            </li>
+                            <li>
+                                <a class="social-links-item" href="#">
+                                    <img class="social-links-item-color" src="<?=$get_template_directory_uri?>/template-rsg/icons/telegram.svg">
+                                </a>
+                            </li>
+                            <li>
+                                <a class="social-links-item" href="#">
+                                    <img class="social-links-item-color" src="<?=$get_template_directory_uri?>/template-rsg/icons/vk.svg">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer__social-feedback">
+                        <a class="social-feedback-form__btn open-popup" href="#" data-popup-id="APP-popup">ОТПРАВИТЬ ЗАЯВКУ</a>
+                        <p class="social-feedback-txt">Отправляя заявку я соглашаюсь на <a class="feedback__form-agree-url" href="#">обработку персональных данных</a> и принимаю <a class="feedback__form-agree-url" href="#">условия политики конфиденциальности</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__copyright">
+                <ul class="footer__copyright-items">
+                    <li class="footer__copyright-item">
+                        <p class="copyright-name">© RSG Group - 2023</p>
+                    </li>
+                    <li class="footer__copyright-item">
+                        <a class="footer-documents" href="#">Политика конфиденциальности</a>
+                        <a class="footer-documents footer-documents-mobile" href="#">Пользовательское соглашение</a>
+                    </li>
+                    <li class="footer__copyright-item footer__copyright-item-desktop">
+                        <a class="footer-documents" href="#">Пользовательское соглашение</a>
+                    </li>
+                    <li class="footer__copyright-item">
+                        <img class="technofix-logo" src="<?=$get_template_directory_uri?>/template-rsg/images/technofix-logo.svg">
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+
+   
+
+    <script src="<?=$get_template_directory_uri?>/template-rsg/scripts/test.js"></script>
+</body>
+
+</html>

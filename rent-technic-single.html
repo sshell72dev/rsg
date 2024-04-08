@@ -1,0 +1,764 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Страница машины</title>
+    <link rel="stylesheet" type="text/css" href="<?=$get_template_directory_uri?>/template-rsg/styles/slick.css">
+    <link rel="stylesheet" type="text/css" href="<?=$get_template_directory_uri?>/template-rsg/styles/slick-theme.css"/>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script type="text/javascript" src="<?=$get_template_directory_uri?>/template-rsg/scripts/slick.js"></script> 
+    <script src="https://unpkg.com/imask"></script>    
+    <link rel="stylesheet" href="<?=$get_template_directory_uri?>/template-rsg/fonts/fonts.css" />
+    <link rel="stylesheet" href="<?=$get_template_directory_uri?>/template-rsg/styles/style.css" />
+</head>
+<body>
+    <header class="header">
+        <div class="header__all">
+            <a class="header__logo" href="#">
+                <img class="header__logo-img" src="<?=$get_template_directory_uri?>/template-rsg/images/logo_header.svg" alt="Логотип РСГ ГРУПП" />
+                <img class="header__logo-img header__logo-img-blue" src="<?=$get_template_directory_uri?>/template-rsg/images/logo_header-blue.svg" alt="Логотип РСГ ГРУПП" />
+            </a>
+            <nav class="header__menu">
+                <ul class="header__links-list level_1">
+                    <li class="header__links-list-item level_1 header__links-list-item-arrow">
+                        <a class="header__link level_1">услуги</a>
+                        <div class="header__links-dropdown level_2">
+                            <ul class="header__links-list level_2">
+                                <li class="header__links-list-item level_2">
+                                    <a class="header__link level_2">Снос и демонтаж «под ключ»</a>
+                                </li>
+                                <li class="header__links-list-item level_2">
+                                    <a class="header__link level_2">Земляные работы</a>
+                                </li>
+                                <li class="header__links-list-item level_2">
+                                    <a class="header__link level_2">Разработка проектной документации</a>
+                                </li>
+                                <li class="header__links-list-item level_2">
+                                    <a class="header__link level_2">Металлоконструкции</a>
+                                </li>
+                                <li class="header__links-list-item level_2">
+                                    <a class="header__link level_2">Благоустройство территорий</a>
+                                </li>
+                                <li class="header__links-list-item level_2">
+                                    <a class="header__link level_2">Рециклинг</a>
+                                </li>
+                                <li class="header__links-list-item level_2">
+                                    <a class="header__link level_2">Транспортная логистика</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="header__links-list-item level_1 header__links-list-item-arrow">
+                        <a class="header__link level_1">аренда техники</a>
+                        <div class="header__links-dropdown level_2">
+                            <ul class="header__links-list level_2">
+                                <li class="header__links-list-item level_2 header__links-list-item-arrow-right">
+                                    <a class="header__link level_2 ">Аренда техники</a>
+                                    <div class="header__links-dropdown level_3">
+                                        <ul class="header__links-list level_3">
+                                            <li class="header__links-list-item level_3">
+                                                <a class="header__link level_3">Экскаваторы</a>
+                                            </li>
+                                            <li class="header__links-list-item level_3">
+                                                <a class="header__link level_3">Специализированное навесное оборудование</a>
+                                            </li>
+                                            <li class="header__links-list-item level_3">
+                                                <a class="header__link level_3">Погрузчики</a>
+                                            </li>
+                                            <li class="header__links-list-item level_3">
+                                                <a class="header__link level_3">Бульдозеры и катки</a>
+                                            </li>
+                                            <li class="header__links-list-item level_3">
+                                                <a class="header__link level_3">Машины и спецтехника</a>
+                                            </li>
+                                            <li class="header__links-list-item level_3">
+                                                <a class="header__link level_3">Сортировочное оборудование</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="header__links-list-item level_2">
+                                    <a class="header__link level_2">Транспортная логистика</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="header__links-list-item level_1 header__links-list-item-mobile__hiden">
+                        <a class="header__link level_1">дайджест</a>
+                    </li>
+                    <li class="header__links-list-item level_1 header__links-list-item-arrow header__links-list-item-mobile__hiden">
+                        <a class="header__link level_1">о компании</a>
+                        <div class="header__links-dropdown level_2">
+                            <ul class="header__links-list level_2">
+                                <li class="header__links-list-item level_2">
+                                    <a class="header__link level_2">О компании</a>
+                                </li>
+                                <li class="header__links-list-item level_2">
+                                    <a class="header__link level_2">Парк техники</a>
+                                </li>
+                                <li class="header__links-list-item level_2">
+                                    <a class="header__link level_2">Наша команда</a>
+                                </li>
+                                <li class="header__links-list-item level_2">
+                                    <a class="header__link level_2">Лицензии и сертификаты</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="header__links-list-item level_1 header__links-list-item-mobile__hiden">
+                        <a class="header__link level_1">вакансии</a>
+                    </li>
+                    <li class="header__links-list-item level_1">
+                        <a class="header__link level_1">контакты</a>
+                    </li>
+                </ul>
+            </nav>
+            <address class="address">
+                <a class="address-link" href="tel:+74959605051">+7 495 960-50-51</a>
+            </address>
+        </div>
+    </header>
+
+
+    <main class="main">
+        <section class="breadcrumbs">
+            <div class="my_breadcrumbs">
+                <span property="itemListElement" typeof="ListItem" class="taxonomy">
+                    <a property="item" typeof="WebPage" title="Перейти к главной" href="#" class="taxonomy-link">
+                        <span property="name">Главная</span>
+                    </a>
+                </span>
+                <i class="breadcrumbs-line"></i>
+                <span property="itemListElement" typeof="ListItem" class="taxonomy">
+                    <a property="item" typeof="WebPage" title="Перейти к вакансии" href="#" class="taxonomy-link">
+                        <span property="name">Контакты</span>
+                    </a>
+                </span>
+            </div>
+        </section>
+
+        <section class="about">
+            <div class="about__all rent__technic__all">
+                <h1 class="about__title">Аренда мини-экскаватора JCB 8018 CTS</h1>
+                
+                <div class="rent__single">
+                    <div class="rent__single-foto__and__small-har">
+                        <div class="rent__single-foto-slide">
+                            <div class="project__info-gallery project__info-gallery-rent__single"> 
+                                <div class="slider slider-nav-rent">
+                                    <div class="project__slide-nav">
+                                        <img src="<?=$get_template_directory_uri?>/template-rsg/images/project-gallery/first.jpg">
+                                    </div>
+                                    <div class="project__slide-nav">
+                                        <img src="<?=$get_template_directory_uri?>/template-rsg/images/project-gallery/first.jpg">
+                                    </div>
+                                    <div class="project__slide-nav">
+                                        <img src="<?=$get_template_directory_uri?>/template-rsg/images/project-gallery/first.jpg">
+                                    </div>
+                                    <div class="project__slide-nav">
+                                        <img src="<?=$get_template_directory_uri?>/template-rsg/images/project-gallery/first.jpg">
+                                    </div>
+                                    <div class="project__slide-nav">
+                                        <img src="<?=$get_template_directory_uri?>/template-rsg/images/project-gallery/first.jpg">
+                                    </div>
+                                    <div class="project__slide-nav">
+                                        <img src="<?=$get_template_directory_uri?>/template-rsg/images/project-gallery/first.jpg">
+                                    </div>
+                                    <div class="project__slide-nav">
+                                        <img src="<?=$get_template_directory_uri?>/template-rsg/images/project-gallery/first.jpg">
+                                    </div>
+                                    <div class="project__slide-nav">
+                                        <img src="<?=$get_template_directory_uri?>/template-rsg/images/project-gallery/first.jpg">
+                                    </div>
+                                    <div class="project__slide-nav">
+                                        <img src="<?=$get_template_directory_uri?>/template-rsg/images/project-gallery/first.jpg">
+                                    </div>
+                                    <div class="project__slide-nav">
+                                        <img src="<?=$get_template_directory_uri?>/template-rsg/images/project-gallery/first.jpg">
+                                    </div>  
+                                </div>
+                                <div class="slider slider-for-rent">
+                                    <div class="project__slide">
+                                      <img src="<?=$get_template_directory_uri?>/template-rsg/images/project-gallery/first.jpg">
+                                    </div>
+                                    <div class="project__slide">
+                                        <img src="<?=$get_template_directory_uri?>/template-rsg/images/project-gallery/first.jpg">
+                                    </div>
+                                    <div class="project__slide">
+                                        <img src="<?=$get_template_directory_uri?>/template-rsg/images/project-gallery/first.jpg">
+                                    </div>
+                                    <div class="project__slide">
+                                        <img src="<?=$get_template_directory_uri?>/template-rsg/images/project-gallery/first.jpg">
+                                    </div>
+                                    <div class="project__slide">
+                                        <img src="<?=$get_template_directory_uri?>/template-rsg/images/project-gallery/first.jpg">
+                                    </div>
+                                    <div class="project__slide">
+                                        <img src="<?=$get_template_directory_uri?>/template-rsg/images/project-gallery/first.jpg">
+                                    </div>
+                                    <div class="project__slide">
+                                        <img src="<?=$get_template_directory_uri?>/template-rsg/images/project-gallery/first.jpg">
+                                    </div>
+                                    <div class="project__slide">
+                                        <img src="<?=$get_template_directory_uri?>/template-rsg/images/project-gallery/first.jpg">
+                                    </div>
+                                    <div class="project__slide">
+                                        <img src="<?=$get_template_directory_uri?>/template-rsg/images/project-gallery/first.jpg">
+                                    </div>
+                                    <div class="project__slide">
+                                        <img src="<?=$get_template_directory_uri?>/template-rsg/images/project-gallery/first.jpg">
+                                    </div>                            
+                                </div> 
+                            </div>
+                        </div>
+
+                        
+
+                        <div class="rent__single-foto-har">
+                            <p class="rent__single-foto-har-text">
+                                Мини-экскаватор JCB 8018 CTS — российская девелоперская и строительная компания, крупнейший девелопер России. Штаб-квартира — в Москве. Полное наименование — публичное акционерное общество «ПИК-специализированный застройщик».
+                            </p>
+                            <ul class="technic-catalog__products-about-dop-list">
+                                <li class="technic-catalog__products-about-dop-item">наработка не более 1200 часов</li>
+                                <li class="technic-catalog__products-about-dop-item">прошёл ТО в этом месяце</li>
+                            </ul>
+                            <div class="rent__single-foto-har-specifications">
+                                <h3 class="rent__single-foto-har-specifications-title">Краткие характеристики</h3>
+                                <ul class="technic-catalog__products-about-specifications-list">
+                                    <li class="technic-catalog__products-about-specifications-item">
+                                        <p class="technic-catalog__products-about-specifications-item-text single-foto-har-item-text">Эксплуатационная масса</p>
+                                        <p class="technic-catalog__products-about-specifications-item-unit single-foto-har-item-unit">1662 кг</p>
+                                    </li>
+                                    <li class="technic-catalog__products-about-specifications-item">
+                                        <p class="technic-catalog__products-about-specifications-item-text single-foto-har-item-text">Эксплуатационная масса</p>
+                                        <p class="technic-catalog__products-about-specifications-item-unit single-foto-har-item-unit">1662 кг</p>
+                                    </li>
+                                    <li class="technic-catalog__products-about-specifications-item">
+                                        <p class="technic-catalog__products-about-specifications-item-text single-foto-har-item-text">Эксплуатационная масса</p>
+                                        <p class="technic-catalog__products-about-specifications-item-unit single-foto-har-item-unit">1662 кг</p>
+                                    </li>
+                                    <li class="technic-catalog__products-about-specifications-item">
+                                        <p class="technic-catalog__products-about-specifications-item-text single-foto-har-item-text">Эксплуатационная масса</p>
+                                        <p class="technic-catalog__products-about-specifications-item-unit single-foto-har-item-unit">1662 кг</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="rent__single-foto-price">
+                            <div class="technic-catalog__products-price rent__single-foto-price__products-price">
+                                <div class="technic-catalog__products-price-info">
+                                    <p class="technic-catalog__products-price__hour">Цена за час:</p>
+                                    <h3 class="technic-catalog__products-price__hour-title">1 625 ₽</h3>
+                                </div>
+                                <div class="technic-catalog__products-price-info">
+                                    <p class="technic-catalog__products-price__day">Цена за смену:</p>
+                                    <h3 class="technic-catalog__products-price__day-title">13 000 ₽</h3>
+                                </div>
+                                
+                            </div>
+                            <div class="rent__single-foto-price-buttons">
+                                <a class="technic-catalog__products-price-url" href="#">АРЕНДОВАТЬ</a>
+                                <a class="technic-catalog__products-price-url rechnic-catalog__products-price-url-color" href="#">ЗАКАЗАТЬ ЗВОНОК</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="rent__single-all__har">
+                        <div class="rent__single__har"></div>
+                        <div class="rent__single__price"></div>
+                    </div>
+                </div>
+
+
+
+
+                <div class="rent__info-text">
+                    <div class="rent__info-text-info">
+                        <div class="privacy__documents-buttons">
+                            <div id="privacy__documents-buttons-buttons">
+                                <button class="privacy__documents-button documents-button-small active" onclick="showText('text1')">Описание</button>
+                                <button class="privacy__documents-button documents-button-big" onclick="showText('text2')">Характеристики</button>
+                                <button class="privacy__documents-button documents-button-small" onclick="showText('text3')">Спецификации</button>
+                                <button class="privacy__documents-button documents-button-big" onclick="showText('text4')">Видео</button>
+                            </div>
+                              
+                            <div class="privacy__documents-text" id="text1">   
+                                <p class="rent__info-text-about">
+                                    Эксплуатационные параметры экскаватора JS200 от британского производителя JCB предназначены для использования машины в разных сферах — строительная, горнодобывающая, коммунальная, дорожной
+                                </p>
+                                <p class="rent__info-text-about">
+                                    Аренда экскаватора на гусеничном ходу JCB JS200 подойдёт для монтажа или демонтажа железобетонных конструкций, погрузочно — разгрузочных операций сыпучих материалов, прокладки коммуникаций, подготовительных работ на стройплощадках.
+                                </p>
+                                <p class="rent__info-text-about">
+                                    У гусеничного экскаватора JCB JS 200 сравнительно небольшие размеры, поэтому он часто используется при работе в стеснённых условиях. При том, что габаритные параметры машины невелики, Джей Си Би JS200 относится к классу техники с высокой грузоподъёмностью
+                                </p>
+                                <p class="rent__info-text-about">
+                                    Аренда JCB JS200 в Москве и Московской области
+                                </p>
+                                <p class="rent__info-text-about">
+                                    Надёжность конструкции гусянки JCB достигается за счёт устойчивых к повреждению элементов, которые оборудованы дополнительной защитой от механических воздействий. К тому же, в МАСК Групп работают техники, и если возникнут повреждения машины, выезжают на объект для устранения неполадок. Эта услуга уже включена в стоимость и не требует дополнительной оплаты.
+                                </p>
+                                <p class="rent__info-text-about">
+                                    Работа на экскаваторе JCB эффективна в любых режимах, переключение которых происходит вручную. А благодаря опыту наших машинистов, имеющих большой стаж работы, эта процедура не вызывает никаких трудностей. Таким образом, аренда экскаватора JCB в Москве и Московской области — выполнение задач в максимально короткие сроки.
+                                </p>
+                            </div>
+                            <div class="privacy__documents-text" id="text2">
+                                <ul class="rent__info-text-specifications-list">
+                                    <li class="rent__info-text-specifications-item">
+                                        <span class="rent__info-text-specifications-item-title">Эксплуатационная масса</span>
+                                        <span class="rent__info-text-specifications-item-unit">1662 кг</span>
+                                    </li>
+                                    
+                                    <li class="rent__info-text-specifications-item">
+                                        <span class="rent__info-text-specifications-item-title">Эксплуатационная масса</span>
+                                        <span class="rent__info-text-specifications-item-unit">1662 кг</span>
+                                    </li>
+                                    
+                                    <li class="rent__info-text-specifications-item">
+                                        <span class="rent__info-text-specifications-item-title">Эксплуатационная масса</span>
+                                        <span class="rent__info-text-specifications-item-unit">1662 кг</span>
+                                    </li>
+                                    
+                                    <li class="rent__info-text-specifications-item">
+                                        <span class="rent__info-text-specifications-item-title">Эксплуатационная масса</span>
+                                        <span class="rent__info-text-specifications-item-unit">1662 кг</span>
+                                    </li>
+                                    
+                                    <li class="rent__info-text-specifications-item">
+                                        <span class="rent__info-text-specifications-item-title">Эксплуатационная масса</span>
+                                        <span class="rent__info-text-specifications-item-unit">1662 кг</span>
+                                    </li>
+
+                                </ul>
+                            </div>
+                            <div class="privacy__documents-text" id="text3">
+                                <img class="rent__info-text-img-spec" src="<?=$get_template_directory_uri?>/template-rsg/images/rent-single/3592281d6b1393d92088cd0b6535553e.png" alt="Картинка к *название техники*">
+                            </div>
+                            <div class="privacy__documents-text" id="text4">
+                                <div class="project__video__all">
+                                    <iframe width="100%" height="905px" src="https://www.youtube.com/embed/2gAVESpGpqs?si=gLu_ulE-eBK7cfKI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+
+                    <div class="rent__info-text-calc">
+                        <div class="rent__info-text-calc-title-all">
+                            <div class="rent__info-text-calc-title-item">
+                                <h3 class="rent__info-text-calc-title">Калькулятор аренды</h3>
+                                <p class="rent__info-text-calc-span">за смену 7+1</p>
+                            </div>
+                            <h3 class="rent__info-text-calc-price">13 000 ₽</h3>
+                        </div>
+                        <div class="border-1px rent__info-text-border"></div>
+                        <div class="calculate__breake-form-item-numbers-container calculate__breake-form-rent__info">
+                            <h4 class="title-rent__info">Количество смен</h4>
+                            <div class="form-numbers-container rent__info-text-calc-smeni">
+                                <input class="form-numbers-container-number" type="number" id="decimalInput2" step="0.1" min="1" max="20" placeholder="Введите число">
+                                <input class="form-numbers-container-range" type="range" id="rangeInput2" step="0.1" min="1" max="20">
+
+                            </div>
+                        </div>
+                        <div class="calculate__breake-form-item-numbers-container calculate__breake-form-rent__info">
+                            <h4 class="title-rent__info">Количество смен</h4>
+                            <div class="rent__info-text-calc-km">
+                                <form>
+                                    <select class="rent__info-text-calc-km-variations" id="km" name="km">
+                                      <option value="MKAD">внутри МКАД</option>
+                                      <option value="1-10">1–10 км от МКАД</option>
+                                      <option value="11-30">11–30 км от МКАД</option>
+                                      <option value="31-45">31–45 км от МКАД</option>
+                                    </select>
+                                  </form>
+                                  <span class="rent__info-text-km__price">=</span>
+                                  <p class="rent__info-text-km__price">400 ₽</p>
+                            </div>
+                        </div>
+                        <div class="border-1px rent__info-text-border"></div>
+                        <div class="rent__info-text-calc-sale">                            
+                            <div class="rent__info-text-calc-sale-item">
+                                <h4 class="rent__info-text-calc-sale-title">Ваша экономия</h4>
+                                <p class="rent__info-text-calc-sale-price">— 0 ₽</p>
+                            </div>                                                           
+                            <p class="rent__info-text-calc-sale-text">А при оплате сразу за 4 смены стоимость аренды с доставкой техники выйдет дешевле на 2 000 ₽</p>                            
+                        </div>
+                        <div class="rent__info-text-calc-sale">
+                            <h4 class="title-rent__info">Количество смен</h4>
+                            <p class="rent__info-text-calc-sale-text">1 смена х (13 000 аренда техники) + доставка 400 = 13 400 ₽</p>                            
+                        </div>
+                        <div class="rent__info-text-calc-sale">
+                            <h3 class="rent__info-text-calc-title">Итого: 13 400 ₽</h3>         
+                        </div>
+                        <a class="rent__info-text-button" href="#">АРЕНДОВАТЬ</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <script>
+             function setupInputAndOutput(decimalInput, rangeInput) {
+                                decimalInput.addEventListener('input', function() {
+                                    rangeInput.value = this.value;
+                                });
+                    
+                                rangeInput.addEventListener('input', function() {
+                                    decimalInput.value = this.value;
+                                });
+                            }
+                    
+                    
+                            const decimalInput2 = document.getElementById('decimalInput2');
+                            const rangeInput2 = document.getElementById('rangeInput2');
+                            setupInputAndOutput(decimalInput2, rangeInput2);
+        </script>
+
+        <style>
+            
+        </style>
+
+
+        <section class="rent-technic__form">
+            <div class="rent-technic__form__all">
+                <div class="rent-technic__form-about">
+                    <h2 class="rent-technic__form-title">Необходимо собрать <br> комплект техники?</h2>
+                    <p class="rent-technic__form-text">Подберём идеальный перечень под вашу задачу</p>
+                </div>
+                <div class="rent-technic__form-button">                    
+                    <p class="rent-technic__form-text">Перевозка негабаритных грузов является сложной технической задачей. В парке предприятия есть весь необходимый набор специализированной техники. Работы выполняют водители и специалисты высших категорий, сохранность груза и соблюдения всех сроков гарантированы.</p>
+                    <a class="rent-technic__form__button" href="#">ЗАКАЗАТЬ ПОДБОР КОМПЛЕКТА ТЕХНИКИ</a>
+                    <a class="rent-technic__form__button rent-technic__form__button-mobile" href="#">ЗАКАЗАТЬ ПОДБОР КОМПЛЕКТА</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="about">
+            <div class="about__all rent__technic__all">
+                <h2 class="about__title">Лучшие предложения аренды техники</h2>
+                <p class="about__description">РСГ ГРУПП сегодня — девелоперская компания полного цикла,наша миссия: воплощать в жизнь мечты современного человека. Высокотехнологичная реализация проектов.</p>
+                
+                <div class="rent-technic__info-gallery"> 
+                    <div class="slider slider-rent__cart">
+                        <div>
+                            <div class="slider-rent__cart-item">
+                            <a class="slider-rent__cart-url" href="#">
+                                <article class="slider-rent__cart-cart">
+                                    <img class="slider-rent__cart-img" src="<?=$get_template_directory_uri?>/template-rsg/images/rent/slider-rent__cart-ex.svg">
+                                    <h3 class="slider-rent__cart-title">Мини-экскаватор JCB 8035 ZTS</h3>
+                                    <div class="slider-rent__cart-full__price">
+                                        <div class="slider-rent__cart-hour__price">
+                                            <p class="slider-rent__cart-hour__price-text">Цена за час:</p>
+                                            <h4 class="slider-rent__cart-hour__price-title">1 750 ₽</h4>
+                                        </div>
+                                        <div class="slider-rent__cart-day__price">
+                                            <p class="slider-rent__cart-hour__day-text-small">Цена за смену:</p>
+                                            <h4 class="slider-rent__cart-hour__day-title-small">14 000 ₽</h4>
+                                        </div>
+                                    </div>
+                                    <a class="slider-rent__cart-rent__button">АРЕНДОВАТЬ</a>
+                                    <ul class="slider-rent__cart-text-list">
+                                        <li class="slider-rent__cart-text-item">
+                                            <p class="slider-rent__cart-text-about">наработка не более 1200 часов</p>
+                                        </li>
+                                        <li class="slider-rent__cart-text-item">
+                                            <p class="slider-rent__cart-text-about">прошёл ТО в этом месяце</p>
+                                        </li>
+                                    </ul>
+                                </article>
+                            </a>
+                            </div>
+                        </div> 
+                        <div>      
+                            <div class="slider-rent__cart-item">
+                                <a class="slider-rent__cart-url" href="#">
+                                <article class="slider-rent__cart-cart">
+                                    <img class="slider-rent__cart-img" src="<?=$get_template_directory_uri?>/template-rsg/images/rent/slider-rent__cart-ex.svg">
+                                    <h3 class="slider-rent__cart-title">Мини-экскаватор JCB 8035 ZTS</h3>
+                                    <div class="slider-rent__cart-full__price">
+                                        <div class="slider-rent__cart-hour__price">
+                                            <p class="slider-rent__cart-hour__price-text">Цена за час:</p>
+                                            <h4 class="slider-rent__cart-hour__price-title">1 750 ₽</h4>
+                                        </div>
+                                        <div class="slider-rent__cart-day__price">
+                                            <p class="slider-rent__cart-hour__day-text-small">Цена за смену:</p>
+                                            <h4 class="slider-rent__cart-hour__day-title-small">14 000 ₽</h4>
+                                        </div>
+                                    </div>
+                                    <a class="slider-rent__cart-rent__button">АРЕНДОВАТЬ</a>
+                                    <ul class="slider-rent__cart-text-list">
+                                        <li class="slider-rent__cart-text-item">
+                                            <p class="slider-rent__cart-text-about">наработка не более 1200 часов</p>
+                                        </li>
+                                        <li class="slider-rent__cart-text-item">
+                                            <p class="slider-rent__cart-text-about">прошёл ТО в этом месяце</p>
+                                        </li>
+                                    </ul>
+                                </article>
+                                </a>
+                            </div>
+                        </div> 
+                        <div>
+                            <div class="slider-rent__cart-item">
+                                <a class="slider-rent__cart-url" href="#">
+                                <article class="slider-rent__cart-cart">
+                                    <img class="slider-rent__cart-img" src="<?=$get_template_directory_uri?>/template-rsg/images/rent/slider-rent__cart-ex.svg">
+                                    <h3 class="slider-rent__cart-title">Мини-экскаватор JCB 8035 ZTS</h3>
+                                    <div class="slider-rent__cart-full__price">
+                                        <div class="slider-rent__cart-hour__price">
+                                            <p class="slider-rent__cart-hour__price-text">Цена за час:</p>
+                                            <h4 class="slider-rent__cart-hour__price-title">1 750 ₽</h4>
+                                        </div>
+                                        <div class="slider-rent__cart-day__price">
+                                            <p class="slider-rent__cart-hour__day-text-small">Цена за смену:</p>
+                                            <h4 class="slider-rent__cart-hour__day-title-small">14 000 ₽</h4>
+                                        </div>
+                                    </div>
+                                    <a class="slider-rent__cart-rent__button">АРЕНДОВАТЬ</a>
+                                    <ul class="slider-rent__cart-text-list">
+                                        <li class="slider-rent__cart-text-item">
+                                            <p class="slider-rent__cart-text-about">наработка не более 1200 часов</p>
+                                        </li>
+                                        <li class="slider-rent__cart-text-item">
+                                            <p class="slider-rent__cart-text-about">прошёл ТО в этом месяце</p>
+                                        </li>
+                                    </ul>
+                                </article>
+                                </a>
+                            </div>
+                        </div>  
+                        <div> 
+                            <div class="slider-rent__cart-item">
+                                <a class="slider-rent__cart-url" href="#">
+                                <article class="slider-rent__cart-cart">
+                                    <img class="slider-rent__cart-img" src="<?=$get_template_directory_uri?>/template-rsg/images/rent/slider-rent__cart-ex.svg">
+                                    <h3 class="slider-rent__cart-title">Мини-экскаватор JCB 8035 ZTS</h3>
+                                    <div class="slider-rent__cart-full__price">
+                                        <div class="slider-rent__cart-hour__price">
+                                            <p class="slider-rent__cart-hour__price-text">Цена за час:</p>
+                                            <h4 class="slider-rent__cart-hour__price-title">1 750 ₽</h4>
+                                        </div>
+                                        <div class="slider-rent__cart-day__price">
+                                            <p class="slider-rent__cart-hour__day-text-small">Цена за смену:</p>
+                                            <h4 class="slider-rent__cart-hour__day-title-small">14 000 ₽</h4>
+                                        </div>
+                                    </div>
+                                    <a class="slider-rent__cart-rent__button">АРЕНДОВАТЬ</a>
+                                    <ul class="slider-rent__cart-text-list">
+                                        <li class="slider-rent__cart-text-item">
+                                            <p class="slider-rent__cart-text-about">наработка не более 1200 часов</p>
+                                        </li>
+                                        <li class="slider-rent__cart-text-item">
+                                            <p class="slider-rent__cart-text-about">прошёл ТО в этом месяце</p>
+                                        </li>
+                                    </ul>
+                                </article>
+                                </a>
+                            </div>
+                        </div>  
+                        <div>
+                            <div class="slider-rent__cart-item">
+                                <a class="slider-rent__cart-url" href="#">
+                                <article class="slider-rent__cart-cart">
+                                    <img class="slider-rent__cart-img" src="<?=$get_template_directory_uri?>/template-rsg/images/rent/slider-rent__cart-ex.svg">
+                                    <h3 class="slider-rent__cart-title">Мини-экскаватор JCB 8035 ZTS</h3>
+                                    <div class="slider-rent__cart-full__price">
+                                        <div class="slider-rent__cart-hour__price">
+                                            <p class="slider-rent__cart-hour__price-text">Цена за час:</p>
+                                            <h4 class="slider-rent__cart-hour__price-title">1 750 ₽</h4>
+                                        </div>
+                                        <div class="slider-rent__cart-day__price">
+                                            <p class="slider-rent__cart-hour__day-text-small">Цена за смену:</p>
+                                            <h4 class="slider-rent__cart-hour__day-title-small">14 000 ₽</h4>
+                                        </div>
+                                    </div>
+                                    <a class="slider-rent__cart-rent__button">АРЕНДОВАТЬ</a>
+                                    <ul class="slider-rent__cart-text-list">
+                                        <li class="slider-rent__cart-text-item">
+                                            <p class="slider-rent__cart-text-about">наработка не более 1200 часов</p>
+                                        </li>
+                                        <li class="slider-rent__cart-text-item">
+                                            <p class="slider-rent__cart-text-about">прошёл ТО в этом месяце</p>
+                                        </li>
+                                    </ul>
+                                </article>
+                                </a>
+                            </div>
+                        </div>    
+                    </div>
+
+                    <div class="slider-rent-navigations">
+                        <div class="news__slick-arrow">
+                            <div class="new-slick-dots"></div>
+                        </div>
+                    </div>    
+                </div>
+            </div>
+        </section>
+
+        <section class="feedback">
+            <div class="feedback__all">
+                <div class="feedback__first">
+                    <div class="feedback__first-top">
+                        <h2 class="feedback__title">Коммерческое предложение на особых условиях</h2>
+                        <p class="feedback__description">за заявку отправленную прямо здесь и сейчас.</p>
+                    </div>
+                    <address class="feedback__first-bot">
+                        <a class="feedback-link mail" href="mailto:info@rsg-grupp.ru">info@rsg-grupp.ru</a>
+                        <a class="feedback-link telephone" href="tel:+74959605051">+7 495 960-50-51</a>
+                    </address>
+                </div>
+                <div class="feedback__second">
+                    <form class="feedback__form" action="#" method="post" enctype="multipart/form-data">
+                        <div class="feedback__form-item feedback__name">
+                            <label class="feedback__label" for="name">Имя*:</label>
+                            <input class="feedback__input" type="text" id="name" name="name" placeholder="Ваше имя" required>
+                        </div>
+                        <div class="feedback__form-item feedback__phone">
+                            <label class="feedback__label" for="phone">Телефон*:</label>
+                            <input class="feedback__input" type="tel" id="phone" name="phone" placeholder="+7 (___) ___-__-__" required>
+                        </div>
+                        <div class="feedback__form-item feedback__mail">
+                            <label class="feedback__label" for="email">Почта*:</label>
+                            <input class="feedback__input" type="email" id="email" name="email" placeholder="___@__" required>
+                        </div>
+                        <div class="feedback__form-item feedback__file-first">
+                            <label class="feedback__label feedback__label-input__file-visible" for="attachment">Прикрепить файл</label>
+                            <input class="feedback__input feedback__input-file" type="file" id="input__file" name="file">
+
+
+                            <label for="input__file" class="input__file-button">
+                                <span class="input__file-icon-wrapper"><img class="input__file-icon" src="<?=$get_template_directory_uri?>/template-rsg/icons/feedback-file-icon.svg" alt="Выбрать файл" width="25"></span>
+                                <span class="input__file-button-text">Прикрепить файл</span>
+                             </label>
+                        </div>
+                        <div class="feedback__form-textarea ">
+                            <label class="feedback__label feedback__label-message" for="message">Сообщение:</label>
+                            <textarea class="feedback__input feedback__input-textarea" id="message" name="message" placeholder="Ваше сообщение" rows="4"></textarea>
+                        </div>
+                        <div class="feedback__form-button">
+                            <div class="feedback__form-item feedback__file-second">
+                                <input class="feedback__input feedback__input-file" type="file" id="input__file" name="file">
+
+
+                                <label for="input__file" class="input__file-button">
+                                    <span class="input__file-icon-wrapper"><img class="input__file-icon" src="<?=$get_template_directory_uri?>/template-rsg/icons/feedback-file-icon.svg" alt="Выбрать файл" width="25"></span>
+                                    <span class="input__file-button-text">Прикрепить файл</span>
+                                 </label>
+                            </div>
+                            <button class="feedback__form-button-item" type="submit">Отправить</button>
+                            <p class="feedback__form-agree">Нажимая кнопку «Отправить» вы соглашаетесь на обработку персональных данных</p>
+                        </div>
+                      </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <footer class="footer">
+        <div class="footer__all">
+            <div class="footer__main">
+                <div class="footer__address">
+                    <img class="footer__logo-img" src="<?=$get_template_directory_uri?>/template-rsg/images/logo_header.svg">
+                    <address class="footer__address">
+                        <a class="address-mail footer__menu-item-color__url" href="#">info@rsg-grupp.ru</a>
+                        <a class="address-mail footer__menu-item-color__url" href="#">dor@rsg-grupp.ru</a>
+                        <a class="address-phone footer__menu-item-color__url" href="#">+7 495 960-50-51</a>
+                        <div class="footer__social-feedback footer__social-feedback-mobile">
+                            <a class="social-feedback-form__btn open-popup" href="#" data-popup-id="APP-popup">ОТПРАВИТЬ ЗАЯВКУ</a>
+                            <p class="social-feedback-txt">Отправляя заявку я соглашаюсь на <a class="feedback__form-agree-url" href="#">обработку персональных данных</a> и принимаю <a class="feedback__form-agree-url" href="#">условия политики конфиденциальности</a></p>
+                        </div>
+                        <p class="address-address">г. Москва, ул. Красноармейская, д. 11, корп. 2, офис 26</p>
+                    </address>
+                </div>
+                <nav class="footer__menu">
+                    <ul class="footer__menu-items">
+                        <li class="footer__menu-item menu-item-first"> <a class="footer__menu-item-first-color__url" href="#">О КОМПАНИИ</a>
+                            <ul class="footer__menu-items footer__menu-items-second">
+                                <li class="footer__menu-item menu-item-second"><a class="footer__menu-item-color__url" href="#"> О компании</a></li>
+                                <li class="footer__menu-item menu-item-second"><a class="footer__menu-item-color__url" href="#">Команда</a></li>
+                                <li class="footer__menu-item menu-item-second"><a class="footer__menu-item-color__url" href="#">Парк спецтехники</a></li>
+                                <li class="footer__menu-item menu-item-second"><a class="footer__menu-item-color__url" href="#">Дайджест проектов</a></li>
+                                <li class="footer__menu-item menu-item-second"><a class="footer__menu-item-color__url" href="#">Лицензии и сертификаты</a></li>
+                            </ul>
+                        </li>
+                        <li class="footer__menu-item menu-item-first"><a class="footer__menu-item-first-color__url" href="#">ПРОЕКТЫ</a></li>
+                        <li class="footer__menu-item menu-item-first"><a class="footer__menu-item-first-color__url" href="#">ВАКАНСИИ</a></li>
+                    </ul>
+                    <div class="footer__social-links footer__social-links-mobile">
+                        <h3 class="social-links-title">МЫ В СОЦИАЛЬНЫХ СЕТЯХ</h3>
+                        <ul class="social-links">
+                            <li>
+                                <a class="social-links-item" href="#">
+                                    <img class="social-links-item-color" src="<?=$get_template_directory_uri?>/template-rsg/icons/Instagram.svg">
+                                </a>
+                            </li>
+                            <li>
+                                <a class="social-links-item" href="#">
+                                    <img class="social-links-item-color" src="<?=$get_template_directory_uri?>/template-rsg/icons/telegram.svg">
+                                </a>
+                            </li>
+                            <li>
+                                <a class="social-links-item" href="#">
+                                    <img class="social-links-item-color" src="<?=$get_template_directory_uri?>/template-rsg/icons/vk.svg">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+                <div class="footer__social">
+                    <div class="footer__social-links">
+                        <h3 class="social-links-title">МЫ В СОЦИАЛЬНЫХ СЕТЯХ</h3>
+                        <ul class="social-links">
+                            <li>
+                                <a class="social-links-item" href="#">
+                                    <img class="social-links-item-color" src="<?=$get_template_directory_uri?>/template-rsg/icons/Instagram.svg">
+                                </a>
+                            </li>
+                            <li>
+                                <a class="social-links-item" href="#">
+                                    <img class="social-links-item-color" src="<?=$get_template_directory_uri?>/template-rsg/icons/telegram.svg">
+                                </a>
+                            </li>
+                            <li>
+                                <a class="social-links-item" href="#">
+                                    <img class="social-links-item-color" src="<?=$get_template_directory_uri?>/template-rsg/icons/vk.svg">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer__social-feedback">
+                        <a class="social-feedback-form__btn open-popup" href="#" data-popup-id="APP-popup">ОТПРАВИТЬ ЗАЯВКУ</a>
+                        <p class="social-feedback-txt">Отправляя заявку я соглашаюсь на <a class="feedback__form-agree-url" href="#">обработку персональных данных</a> и принимаю <a class="feedback__form-agree-url" href="#">условия политики конфиденциальности</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__copyright">
+                <ul class="footer__copyright-items">
+                    <li class="footer__copyright-item">
+                        <p class="copyright-name">© RSG Group - 2023</p>
+                    </li>
+                    <li class="footer__copyright-item">
+                        <a class="footer-documents" href="#">Политика конфиденциальности</a>
+                        <a class="footer-documents footer-documents-mobile" href="#">Пользовательское соглашение</a>
+                    </li>
+                    <li class="footer__copyright-item footer__copyright-item-desktop">
+                        <a class="footer-documents" href="#">Пользовательское соглашение</a>
+                    </li>
+                    <li class="footer__copyright-item">
+                        <img class="technofix-logo" src="<?=$get_template_directory_uri?>/template-rsg/images/technofix-logo.svg">
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+  
+
+
+    <script src="<?=$get_template_directory_uri?>/template-rsg/scripts/test.js"></script>
+</body>
+</html>

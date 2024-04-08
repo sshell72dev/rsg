@@ -1,0 +1,463 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Все попапы</title>
+    <link rel="stylesheet" type="text/css" href="<?=$get_template_directory_uri?>/template-rsg/styles/slick.css">
+    <link rel="stylesheet" type="text/css" href="<?=$get_template_directory_uri?>/template-rsg/styles/slick-theme.css"/>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script type="text/javascript" src="<?=$get_template_directory_uri?>/template-rsg/scripts/slick.js"></script>    
+    
+    <link rel="stylesheet" href="<?=$get_template_directory_uri?>/template-rsg/fonts/fonts.css">
+    <link rel="stylesheet" href="<?=$get_template_directory_uri?>/template-rsg/styles/style.css">
+    <style>
+        .popup-buttons-all{
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+            margin-top: 100px;
+        }
+
+
+        .popup-buttons-all-click{
+            background-color: #28558B;
+            color: #fff;
+            font-family: "Akzidenz-Grotesk Pro", Arial, Roboto, sans-serif;
+            font-size: 18px;
+            font-weight: 500;
+            line-height: 22.73px;
+            text-align: left;
+            padding: 20px 120px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>  
+
+    <div class="popup-buttons-all">
+
+        <div class="footer__social-feedback">
+            <a class="popup-buttons-all-click open-popup" href="#" data-popup-id="KP-popup">Получить КП</a>
+            </div>
+
+        <div class="footer__social-feedback">
+            <a class="popup-buttons-all-click open-popup" href="#" data-popup-id="APP-popup">ОТПРАВИТЬ ЗАЯВКУ</a>
+        </div>
+
+        <div class="footer__social-feedback">
+            <a class="popup-buttons-all-click open-popup" href="#" data-popup-id="SUC-popup">ОТПРАВИТЬ ЗАЯВКУ</a>
+        </div>
+
+        <div class="footer__social-feedback">
+            <a class="popup-buttons-all-click open-popup" href="#" data-popup-id="RENT-popup">АРЕНДА МАШИНЫ</a>
+        </div>
+
+        <h2>Дальше формы калькуляторы</h2>
+
+        <div class="footer__social-feedback">
+            <a class="popup-buttons-all-click open-popup" href="#" data-popup-id="DEM-popup">ЗАЯВКА НА ДЕМОНТАЖ</a>
+        </div>
+
+        <div class="footer__social-feedback">
+            <a class="popup-buttons-all-click open-popup" href="#" data-popup-id="RENT-CAR-popup">ЗАЯВКА НА АРЕНДУ</a>
+        </div>
+
+        <div class="footer__social-feedback">
+            <a class="popup-buttons-all-click open-popup" href="#" data-popup-id="TRAN-popup">ЗАЯВКА НА ТРАНСПОРТ</a>
+        </div>
+    </div>
+
+
+
+
+
+    <div class="KP-popup popup-container " id="KP-popup" data-popup>
+        <div class="popup-content popup-content_feedback__second">
+            <h2 class="popup__title">Подготовим индивидуальное коммерческое предложение</h2>
+            <p class="popup__description">Предоставим коммерческое предложение на особых условиях за заявку оставленную здесь и сейчас</p>
+                
+          <span class="close-btn" id="closePopup"></span>
+          <div class="feedback__second  popup__feedback__second-KP">
+            <form class="feedback__form popup__form-KP" action="#" method="post" enctype="multipart/form-data">
+                <div class="feedback__form-item feedback__name">
+                    <label class="feedback__label" for="name">Имя*:</label>
+                    <input class="feedback__input" type="text" id="name" name="name" placeholder="Ваше имя" required>
+                </div>
+                <div class="feedback__form-item feedback__phone">
+                    <label class="feedback__label" for="phone">Телефон*:</label>
+                    <input class="feedback__input" type="tel" id="phone" name="phone" placeholder="+7 (___) ___-__-__" required>
+                </div>
+                <div class="feedback__form-item feedback__mail">
+                    <label class="feedback__label" for="email">Почта*:</label>
+                    <input class="feedback__input" type="email" id="email" name="email" placeholder="___@__" required>
+                </div>
+                <div class="feedback__form-item feedback__file-first">
+                    <label class="feedback__label feedback__label-input__file-visible" for="attachment">Прикрепить файл</label>
+                    <input class="feedback__input feedback__input-file" type="file" id="input__file" name="file">
+    
+    
+                    <label for="input__file" class="input__file-button">
+                        <span class="input__file-icon-wrapper"><img class="input__file-icon" src="<?=$get_template_directory_uri?>/template-rsg/icons/feedback-file-icon.svg" alt="Выбрать файл" width="25"></span>
+                        <span class="input__file-button-text">Прикрепить файл</span>
+                     </label>
+                </div>
+                <div class="feedback__form-textarea ">
+                    <label class="feedback__label feedback__label-message" for="message">Сообщение:</label>
+                    <textarea class="feedback__input feedback__input-textarea" id="message" name="message" placeholder="Ваше сообщение" rows="4"></textarea>
+                </div>
+                <div class="feedback__form-button">
+                    <div class="feedback__form-item feedback__file-second">
+                        <input class="feedback__input feedback__input-file" type="file" id="input__file" name="file">
+    
+    
+                        <label for="input__file" class="input__file-button">
+                            <span class="input__file-icon-wrapper"><img class="input__file-icon" src="<?=$get_template_directory_uri?>/template-rsg/icons/feedback-file-icon.svg" alt="Выбрать файл" width="25"></span>
+                            <span class="input__file-button-text">Прикрепить файл</span>
+                         </label>
+                    </div>
+                    <button class="feedback__form-button-item" type="submit">Отправить</button>
+                    <p class="feedback__form-agree">Нажимая кнопку «Отправить» вы соглашаетесь на обработку персональных данных</p>
+                </div>
+              </form>
+        </div>
+        </div>
+    </div>
+    
+    
+    <div class="APP-popup popup-container " id="APP-popup" data-popup>
+        <div class="popup-content popup-content_feedback__second">
+            <h2 class="popup__title">Оставить заявку на обратный звонок</h2>
+            <p class="popup__description">Оставьте заявку, и мы перезвоним в течение 60 минут</p>
+                
+          <span class="close-btn" id="closePopup"></span>
+          <div class="feedback__second  popup__feedback__second-KP popup__feedback__second-APP">
+            <form class="feedback__form popup__form-KP popup__form-APP" action="#" method="post" enctype="multipart/form-data">
+                <div class="feedback__form-item feedback__name">
+                    <label class="feedback__label" for="name">Имя*:</label>
+                    <input class="feedback__input" type="text" id="name" name="name" placeholder="Ваше имя" required>
+                </div>
+                <div class="feedback__form-item feedback__phone">
+                    <label class="feedback__label" for="phone">Телефон*:</label>
+                    <input class="feedback__input" type="tel" id="phone" name="phone" placeholder="+7 (___) ___-__-__" required>
+                </div>
+                <div class="feedback__form-item feedback__mail">
+                    <label class="feedback__label" for="email">Почта*:</label>
+                    <input class="feedback__input" type="email" id="email" name="email" placeholder="___@__" required>
+                </div>
+                                
+                <div class="feedback__form-button">                    
+                    <button class="feedback__form-button-item" type="submit">Отправить</button>
+                    <p class="feedback__form-agree">Нажимая кнопку «Отправить» вы соглашаетесь на обработку персональных данных</p>
+                </div>
+              </form>
+        </div>
+        </div>
+    </div>
+    
+    <div class="SUC-popup popup-container " id="SUC-popup" data-popup>
+        <div class="popup-content popup-content_feedback__second">
+            <h2 class="popup__title">Спасибо за заявку</h2>
+            <p class="popup__description">Мы уже получили вашу заявку. В течение 60 минут её обработает наш специалист и перезвонит вам.</p>
+                
+          <span class="close-btn" id="closePopup"></span>
+          <a class="close__button-suc__btn" href="#" id="closePopup">ВЕРНУТЬСЯ НА САЙТ</a>
+    
+        </div>
+    </div>
+    
+    
+    <div class="RENT-popup popup-container " id="RENT-popup" data-popup>
+        <div class="popup-content popup-content_feedback__second">
+            <h2 class="popup__title">Заявка на аренду машины: Экскаватор-погрузчик JCB 5CX</h2>
+            <p class="popup__description">ОПредоставим коммерческое предложение на особых условиях за заявку оставленную здесь и сейчас</p>
+                
+          <span class="close-btn" id="closePopup"></span>
+          <div class="feedback__second  popup__feedback__second-KP popup__feedback__second-APP">
+            <form class="feedback__form popup__form-KP popup__form-RENT" action="#" method="post" enctype="multipart/form-data">
+                <div class="feedback__form-item feedback__name">
+                    <label class="feedback__label" for="name">Имя*:</label>
+                    <input class="feedback__input" type="text" id="name" name="name" placeholder="Ваше имя" required>
+                </div>
+                <div class="feedback__form-item feedback__phone">
+                    <label class="feedback__label" for="phone">Телефон*:</label>
+                    <input class="feedback__input" type="tel" id="phone" name="phone" placeholder="+7 (___) ___-__-__" required>
+                </div>
+
+
+                <div class="feedback__form-item feedback__mail">
+                    <label class="feedback__label" for="email">Почта*:</label>
+                    <input class="feedback__input" type="email" id="email" name="email" placeholder="___@__" required>
+                </div>
+
+
+                <div class="feedback__form-item feedback__model">
+                    <label class="feedback__label" for="email">Модль машины:</label>
+                    <input class="feedback__input" type="text" id="email" name="text" placeholder="Экскаватор-погрузчик JCB 5CX" required>
+                </div>
+                <div class="feedback__form-item feedback__dec">
+                    <label class="feedback__label" for="email">Кол-во смен:</label>
+                    <div class="feedback__quantity">
+                        <button type="button" class="feedback__quantity-btn minus-btn" onclick="decreaseQuantity()">-</button>
+                        <input class="feedback__quantity-input feedback__input" type="text" id="quantity-input" value="1">
+                        <button type="button" class="feedback__quantity-btn plus-btn" onclick="increaseQuantity()">+</button>
+                    </div>
+                </div>
+                                
+                <div class="feedback__form-button">                    
+                    <button class="feedback__form-button-item" type="submit">Отправить</button>
+                    <p class="feedback__form-agree">Нажимая кнопку «Отправить» вы соглашаетесь на обработку персональных данных</p>
+                </div>
+              </form>
+        </div>
+        </div>
+    </div>
+
+
+
+
+
+    <div class="DEM-popup popup-container " id="DEM-popup" data-popup>
+        <div class="popup-content popup-content_feedback__second popup-content-DEM-popup">
+            <h2 class="popup__title">Заявка на демонтаж здания по расчёту</h2>
+            <p class="popup__description">Предоставим коммерческое предложение на особых условиях за заявку оставленную здесь и сейчас.</p>
+                
+          <span class="close-btn" id="closePopup"></span>
+          <div class="feedback__second  popup__feedback__second-KP popup__feedback__second-APP popup__feedback__second-DEM">
+            <form class="feedback__form popup__form-KP popup__form-DEM" action="#" method="post" enctype="multipart/form-data">
+                <div class="feedback__form-item feedback__name">
+                    <label class="feedback__label" for="name">Имя*:</label>
+                    <input class="feedback__input" type="text" id="name" name="name" placeholder="Ваше имя" required>
+                </div>
+                <div class="feedback__form-item feedback__phone">
+                    <label class="feedback__label" for="phone">Телефон*:</label>
+                    <input class="feedback__input" type="tel" id="phone" name="phone" placeholder="+7 (___) ___-__-__" required>
+                </div>
+                <div class="feedback__form-item feedback__mail">
+                    <label class="feedback__label" for="email">Почта*:</label>
+                    <input class="feedback__input" type="email" id="email" name="email" placeholder="___@__" required>
+                </div>
+                                
+                <div class="feedback__form-button">                    
+                    <button class="feedback__form-button-item" type="submit">Отправить</button>
+                    <p class="feedback__form-agree">Нажимая кнопку «Отправить» вы соглашаетесь на обработку персональных данных</p>
+                </div>
+              </form>
+
+            <div class="calculate__info">
+                <div class="calculate__info-information calculate__info-block">
+                    <div class="calculate__info-title-all">
+                        <span class="calculate__info-number">01</span>
+                        <h2 class="calculate__info-title">                        
+                            Информация об объекте
+                        </h2>
+                    </div>
+                    <ul class="calculate__info-info__all">
+                        <li class="calculate__info-info__all-text">
+                            <p class="calculate__info-info__all-title">Материал здания</p>
+                            <p class="calculate__info-info__all-char"><img class="calculate__info-info__all-char-dot" src="<?=$get_template_directory_uri?>/template-rsg/icons/popup-dot.svg">Кирпич + жб</p>
+                        </li>
+                        <li class="calculate__info-info__all-text">
+                            <p class="calculate__info-info__all-title">Тип здания</p>
+                            <p class="calculate__info-info__all-char"><img class="calculate__info-info__all-char-dot" src="<?=$get_template_directory_uri?>/template-rsg/icons/popup-dot.svg">Административное</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="calculate__info-volume calculate__info-block">
+                    <div class="calculate__info-title-all">
+                        <span class="calculate__info-number">02</span>
+                        <h2 class="calculate__info-title">                        
+                            Расчёт строительного объёма
+                        </h2>
+                    </div>
+                    <ul class="calculate__info-info__all">
+                        <li class="calculate__info-info__all-list">
+                            <p class="calculate__info-info__all-title">Высота здания (h)</p>
+                            <p class="calculate__info-info__all-char">1.5 м</p>
+                        </li>
+                        <li class="calculate__info-info__all-list">
+                            <p class="calculate__info-info__all-title">Ширина здания (b)</p>
+                            <p class="calculate__info-info__all-char">2.7 м</p>
+                        </li>
+                        <li class="calculate__info-info__all-list">
+                            <p class="calculate__info-info__all-title">Длина здания (a)</p>
+                            <p class="calculate__info-info__all-char">5 м</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="calculate__info-demolition calculate__info-block">
+                    <div class="calculate__info-title-all">
+                        <span class="calculate__info-number">03</span>
+                        <h2 class="calculate__info-title">                        
+                            Расчёт стоимости демонтажа
+                        </h2>
+                    </div>
+                    <ul class="calculate__info-info__all">
+                        <li class="calculate__info-info__all-text">
+                            <p class="calculate__info-info__all-title">Строительный объём</p>
+                            <p class="calculate__info-info__all-pricev">20.25 м³</p>
+                        </li>
+                        <li class="calculate__info-info__all-text">
+                            <p class="calculate__info-info__all-title">~ Общая стоимость работ</p>
+                            <p class="calculate__info-info__all-pricev">5062.5 ₽</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <div class="RENT-CAR-popup popup-container " id="RENT-CAR-popup" data-popup>
+        <div class="popup-content popup-content_feedback__second popup-content-RENT-CAR-popup">
+            <h2 class="popup__title">Заявка на демонтаж здания по расчёту</h2>
+            <p class="popup__description">Предоставим коммерческое предложение на особых условиях за заявку оставленную здесь и сейчас.</p>
+                
+          <span class="close-btn" id="closePopup"></span>
+          <div class="feedback__second  popup__feedback__second-KP popup__feedback__second-APP popup__feedback__second-RENT-CAR">
+            <form class="feedback__form popup__form-KP popup__form-RENT-CAR" action="#" method="post" enctype="multipart/form-data">
+                <div class="feedback__form-item feedback__name">
+                    <label class="feedback__label" for="name">Имя*:</label>
+                    <input class="feedback__input" type="text" id="name" name="name" placeholder="Ваше имя" required>
+                </div>
+                <div class="feedback__form-item feedback__phone">
+                    <label class="feedback__label" for="phone">Телефон*:</label>
+                    <input class="feedback__input" type="tel" id="phone" name="phone" placeholder="+7 (___) ___-__-__" required>
+                </div>
+                <div class="feedback__form-item feedback__mail">
+                    <label class="feedback__label" for="email">Почта*:</label>
+                    <input class="feedback__input" type="email" id="email" name="email" placeholder="___@__" required>
+                </div>
+                                
+                <div class="feedback__form-button">                    
+                    <button class="feedback__form-button-item" type="submit">Отправить</button>
+                    <p class="feedback__form-agree">Нажимая кнопку «Отправить» вы соглашаетесь на обработку персональных данных</p>
+                </div>
+              </form>
+
+            <div class="calculate__rent">
+                <div class="calculate__rent-information calculate__info-block">
+                    <div class="calculate__rent-title-all">                        
+                        <h2 class="calculate__rent-title">                        
+                            Расчет аренды
+                        </h2>       
+                        <div class="border-1px calculate__rent-border"></div>             
+                        <ul class="calculate__info-info__all">
+                            <li class="calculate__info-info__all-list">
+                                <p class="calculate__info-info__all-title">Количество смен</p>
+                                <p class="calculate__info-info__all-char">3 смены</p>
+                            </li>
+                            <li class="calculate__info-info__all-list">
+                                <p class="calculate__info-info__all-title">Расстояние от МКАД</p>
+                                <p class="calculate__info-info__all-char">31-45 км</p>
+                            </li>
+                        </ul>
+                        <div class="border-1px calculate__rent-border"></div>
+                        <ul class="calculate__info-info__all calculate__info-info__all-color">
+                            <li class="calculate__info-info__all-list">
+                                <p class="calculate__info-info__all-title">Ваша экономия</p>
+                                <p class="calculate__info-info__all-char">— 0 ₽</p>
+                            </li>
+                            <li class="calculate__info-info__all-list">
+                                <p class="calculate__info-info__all-title">Расчёт стоимости</p>
+                                <p class="calculate__info-info__all-char">13 400 ₽</p>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <h2 class="calculate__info-title calculate__rent__car-title">                        
+                        Итого: <span class="calculate__rent__car-price">13 400 </span>₽
+                    </h2> 
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+
+
+    <div class="TRAN-popup popup-container " id="TRAN-popup" data-popup>
+        <div class="popup-content popup-content_feedback__second popup-content-DEM-popup">
+            <h2 class="popup__title">Заявка на транспортировку по расчёту</h2>
+            <p class="popup__description">Предоставим коммерческое предложение на особых условиях за заявку оставленную здесь и сейчас.</p>
+                
+          <span class="close-btn" id="closePopup"></span>
+          <div class="feedback__second  popup__feedback__second-KP popup__feedback__second-APP popup__feedback__second-DEM">
+            <form class="feedback__form popup__form-KP popup__form-DEM" action="#" method="post" enctype="multipart/form-data">
+                <div class="feedback__form-item feedback__name">
+                    <label class="feedback__label" for="name">Имя*:</label>
+                    <input class="feedback__input" type="text" id="name" name="name" placeholder="Ваше имя" required>
+                </div>
+                <div class="feedback__form-item feedback__phone">
+                    <label class="feedback__label" for="phone">Телефон*:</label>
+                    <input class="feedback__input" type="tel" id="phone" name="phone" placeholder="+7 (___) ___-__-__" required>
+                </div>
+                <div class="feedback__form-item feedback__mail">
+                    <label class="feedback__label" for="email">Почта*:</label>
+                    <input class="feedback__input" type="email" id="email" name="email" placeholder="___@__" required>
+                </div>
+                                
+                <div class="feedback__form-button">                    
+                    <button class="feedback__form-button-item" type="submit">Отправить</button>
+                    <p class="feedback__form-agree">Нажимая кнопку «Отправить» вы соглашаетесь на обработку персональных данных</p>
+                </div>
+              </form>
+
+            <div class="calculate__info">
+                <div class="calculate__info-information calculate__info-block">
+                    <div class="calculate__info-title-all">
+                        <span class="calculate__info-number">01</span>
+                        <h2 class="calculate__info-title">                        
+                            Длительность маршрута
+                        </h2>
+                    </div>
+                    <ul class="calculate__info-info__all">
+                        <li class="calculate__info-info__all-list">
+                            <p class="calculate__info-info__all-title">Маршрут</p>
+                            <p class="calculate__info-info__all-char">5 км</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="calculate__info-volume calculate__info-block">
+                    <div class="calculate__info-title-all">
+                        <span class="calculate__info-number">02</span>
+                        <h2 class="calculate__info-title">                        
+                            Объём материалов
+                        </h2>
+                    </div>
+                    <ul class="calculate__info-info__all">
+                        <li class="calculate__info-info__all-list">
+                            <p class="calculate__info-info__all-title">Объем материалов</p>
+                            <p class="calculate__info-info__all-char">20 м³</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="calculate__info-demolition calculate__info-block">
+                    <div class="calculate__info-title-all">
+                        <span class="calculate__info-number">03</span>
+                        <h2 class="calculate__info-title">                        
+                            Расчёт стоимости перевозки
+                        </h2>
+                    </div>
+                    <ul class="calculate__info-info__all">
+                        <li class="calculate__info-info__all-text">
+                            <p class="calculate__info-info__all-title">Количество машин</p>
+                            <p class="calculate__info-info__all-pricev">5 шт</p>
+                        </li>
+                        <li class="calculate__info-info__all-text">
+                            <p class="calculate__info-info__all-title">~ Общая стоимость перевозки</p>
+                            <p class="calculate__info-info__all-pricev">15 000 ₽</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <script src="<?=$get_template_directory_uri?>/template-rsg/scripts/test.js"></script>
+</body>
+</html>

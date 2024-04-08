@@ -1,0 +1,1060 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Снос и демонтаж</title>
+    <link rel="stylesheet" type="text/css" href="<?=$get_template_directory_uri?>/template-rsg/styles/slick.css">
+    <link rel="stylesheet" type="text/css" href="<?=$get_template_directory_uri?>/template-rsg/styles/slick-theme.css"/>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script type="text/javascript" src="<?=$get_template_directory_uri?>/template-rsg/scripts/slick.js"></script>
+    <script src="https://unpkg.com/imask"></script>    
+    <link rel="stylesheet" href="<?=$get_template_directory_uri?>/template-rsg/fonts/fonts.css" />
+    <link rel="stylesheet" href="<?=$get_template_directory_uri?>/template-rsg/styles/style.css" />
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="header__all">
+            <a class="header__logo" href="#">
+                <img class="header__logo-img" src="<?=$get_template_directory_uri?>/template-rsg/images/logo_header.svg" alt="Логотип РСГ ГРУПП" />
+                <img class="header__logo-img header__logo-img-blue" src="<?=$get_template_directory_uri?>/template-rsg/images/logo_header-blue.svg" alt="Логотип РСГ ГРУПП" />
+            </a>
+            <nav class="header__menu">
+                <ul class="header__links-list level_1">
+                    <li class="header__links-list-item level_1 header__links-list-item-arrow">
+                        <a class="header__link level_1">услуги</a>
+                        <div class="header__links-dropdown level_2">
+                            <ul class="header__links-list level_2">
+                                <li class="header__links-list-item level_2">
+                                    <a class="header__link level_2">Снос и демонтаж «под ключ»</a>
+                                </li>
+                                <li class="header__links-list-item level_2">
+                                    <a class="header__link level_2">Земляные работы</a>
+                                </li>
+                                <li class="header__links-list-item level_2">
+                                    <a class="header__link level_2">Разработка проектной документации</a>
+                                </li>
+                                <li class="header__links-list-item level_2">
+                                    <a class="header__link level_2">Металлоконструкции</a>
+                                </li>
+                                <li class="header__links-list-item level_2">
+                                    <a class="header__link level_2">Благоустройство территорий</a>
+                                </li>
+                                <li class="header__links-list-item level_2">
+                                    <a class="header__link level_2">Рециклинг</a>
+                                </li>
+                                <li class="header__links-list-item level_2">
+                                    <a class="header__link level_2">Транспортная логистика</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="header__links-list-item level_1 header__links-list-item-arrow">
+                        <a class="header__link level_1">аренда техники</a>
+                        <div class="header__links-dropdown level_2">
+                            <ul class="header__links-list level_2">
+                                <li class="header__links-list-item level_2 header__links-list-item-arrow-right">
+                                    <a class="header__link level_2 ">Аренда техники</a>
+                                    <div class="header__links-dropdown level_3">
+                                        <ul class="header__links-list level_3">
+                                            <li class="header__links-list-item level_3">
+                                                <a class="header__link level_3">Экскаваторы</a>
+                                            </li>
+                                            <li class="header__links-list-item level_3">
+                                                <a class="header__link level_3">Специализированное навесное оборудование</a>
+                                            </li>
+                                            <li class="header__links-list-item level_3">
+                                                <a class="header__link level_3">Погрузчики</a>
+                                            </li>
+                                            <li class="header__links-list-item level_3">
+                                                <a class="header__link level_3">Бульдозеры и катки</a>
+                                            </li>
+                                            <li class="header__links-list-item level_3">
+                                                <a class="header__link level_3">Машины и спецтехника</a>
+                                            </li>
+                                            <li class="header__links-list-item level_3">
+                                                <a class="header__link level_3">Сортировочное оборудование</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="header__links-list-item level_2">
+                                    <a class="header__link level_2">Транспортная логистика</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="header__links-list-item level_1 header__links-list-item-mobile__hiden">
+                        <a class="header__link level_1">дайджест</a>
+                    </li>
+                    <li class="header__links-list-item level_1 header__links-list-item-arrow header__links-list-item-mobile__hiden">
+                        <a class="header__link level_1">о компании</a>
+                        <div class="header__links-dropdown level_2">
+                            <ul class="header__links-list level_2">
+                                <li class="header__links-list-item level_2">
+                                    <a class="header__link level_2">О компании</a>
+                                </li>
+                                <li class="header__links-list-item level_2">
+                                    <a class="header__link level_2">Парк техники</a>
+                                </li>
+                                <li class="header__links-list-item level_2">
+                                    <a class="header__link level_2">Наша команда</a>
+                                </li>
+                                <li class="header__links-list-item level_2">
+                                    <a class="header__link level_2">Лицензии и сертификаты</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="header__links-list-item level_1 header__links-list-item-mobile__hiden">
+                        <a class="header__link level_1">вакансии</a>
+                    </li>
+                    <li class="header__links-list-item level_1">
+                        <a class="header__link level_1">контакты</a>
+                    </li>
+                </ul>
+            </nav>
+            <address class="address">
+                <a class="address-link" href="tel:+74959605051">+7 495 960-50-51</a>
+            </address>
+        </div>
+    </header>
+
+
+<body>
+
+    <main class="main">
+
+        <section class="breadcrumbs">
+            <div class="my_breadcrumbs">
+                <span property="itemListElement" typeof="ListItem" class="taxonomy">
+                    <a property="item" typeof="WebPage" title="Перейти к главной" href="#" class="taxonomy-link">
+                        <span property="name">Главная</span>
+                    </a>
+                </span>
+                <i class="breadcrumbs-line"></i>
+                <span property="itemListElement" typeof="ListItem" class="taxonomy">
+                    <a property="item" typeof="WebPage" title="Перейти к вакансии" href="#" class="taxonomy-link">
+                        <span property="name">Изготовление и монтаж металлоконструкций</span>
+                    </a>
+                </span>
+            </div>
+        </section>
+        <section class="about">
+            <div class="about__all rent__technic__all">
+                <h1 class="about__title">Изготовление и монтаж металлоконструкций</h1>
+                <p class="about__description">«ПИК» — российская девелоперская и строительная компания, крупнейший девелопер России. Штаб-квартира — в Москве. Полное наименование — публичное акционерное общество «ПИК-специализированный застройщик».</p>                
+            
+                <ul class="recycling__card-list metal__structures-list">
+                    <li class="recycling__card-item">
+                        <article class="recycling__card-about">
+                            <h3 class="recycling__card-title">Изготовление из вторичного и нового материала</h3>
+                            <p class="recycling__card-text">Новые материалы соотвествуют ГОСТ 24297–2013, а вторичные материалы перерабатываются и соотвествуют стандартам ГОСТ 2787–2019. Проектирование согласовано с ГОСТ 21.502–2007.</p>
+                        </article>
+                    </li>
+                    <li class="recycling__card-item">
+                        <article class="recycling__card-about">
+                            <h3 class="recycling__card-title">Производство в соответствии с ГОСТ 23118–99</h3>
+                            <p class="recycling__card-text">Точность выполнения элементов, способы образования отверстий, антикоррозийная защита и маркировка готовых металлоконструкций строго соответствуют государственным техническим стандартам.</p>
+                        </article>
+                    </li>
+                    
+                </ul>
+
+                <h3 class="project__doc-documents-categoty-title">Небольшие конструкции</h3>
+                <ul class="recycling__material-list">
+                    <li class="recycling__material-item">
+                        <article class="recycling__material-about">
+                            <div class="digest-cover__image-container">
+                                <img class="digest-cover__image" src="<?=$get_template_directory_uri?>/template-rsg/images/digest/background-1.jpg">
+                            </div>
+                            <div class="recycling__material-top">
+                                <p class="recycling__material-text">Небольшие конструкции</p>
+                                <h3 class="recycling__material-title">Заборы</h3>
+                            </div>
+                            <div class="recycling__material-bottom">
+                                <img class="recycling__material-icon" src="<?=$get_template_directory_uri?>/template-rsg/icons/recycling-kirpich.svg" alt="Иконка кирпича">
+                            </div>
+                        </article>
+                    </li>
+                    <li class="recycling__material-item">
+                        <article class="recycling__material-about">
+                            <div class="digest-cover__image-container">
+                                <img class="digest-cover__image" src="<?=$get_template_directory_uri?>/template-rsg/images/digest/background-1.jpg">
+                            </div>
+                            <div class="recycling__material-top">
+                                <p class="recycling__material-text">Небольшие конструкции</p>
+                                <h3 class="recycling__material-title">Ограждения</h3>
+                            </div>
+                            <div class="recycling__material-bottom">
+                                <img class="recycling__material-icon" src="<?=$get_template_directory_uri?>/template-rsg/icons/recycling-okno.svg" alt="Иконка кирпича">
+                            </div>
+                        </article>
+                    </li>
+                    <li class="recycling__material-item">
+                        <article class="recycling__material-about">
+                            <div class="digest-cover__image-container">
+                                <img class="digest-cover__image" src="<?=$get_template_directory_uri?>/template-rsg/images/digest/background-1.jpg">
+                            </div>
+                            <div class="recycling__material-top">
+                                <p class="recycling__material-text">Небольшие конструкции</p>
+                                <h3 class="recycling__material-title">Тротуарные столбики</h3>
+                            </div>
+                            <div class="recycling__material-bottom">
+                                <img class="recycling__material-icon" src="<?=$get_template_directory_uri?>/template-rsg/icons/recycling-stena.svg" alt="Иконка кирпича">
+                            </div>
+                        </article>
+                    </li>
+                    <li class="recycling__material-item">
+                        <article class="recycling__material-about">
+                            <div class="digest-cover__image-container">
+                                <img class="digest-cover__image" src="<?=$get_template_directory_uri?>/template-rsg/images/digest/background-1.jpg">
+                            </div>
+                            <div class="recycling__material-top">
+                                <p class="recycling__material-text">Небольшие конструкции</p>
+                                <h3 class="recycling__material-title">Информационные стенды</h3>
+                            </div>
+                            <div class="recycling__material-bottom">
+                                <img class="recycling__material-icon" src="<?=$get_template_directory_uri?>/template-rsg/icons/recycling-balka.svg" alt="Иконка кирпича">
+                            </div>
+                        </article>
+                    </li>
+                    <li class="recycling__material-item">
+                        <article class="recycling__material-about">
+                            <div class="digest-cover__image-container">
+                                <img class="digest-cover__image" src="<?=$get_template_directory_uri?>/template-rsg/images/digest/background-1.jpg">
+                            </div>
+                            <div class="recycling__material-top">
+                                <p class="recycling__material-text">Небольшие конструкции</p>
+                                <h3 class="recycling__material-title">Рекламные щиты</h3>
+                            </div>
+                            <div class="recycling__material-bottom">
+                                <img class="recycling__material-icon" src="<?=$get_template_directory_uri?>/template-rsg/icons/recycling-krisha.svg" alt="Иконка кирпича">
+                            </div>
+                        </article>
+                    </li>
+                </ul>
+                
+                
+                <h3 class="project__doc-documents-categoty-title project__doc-documents-categoty-title-color">Отдельные металлические элементы и несущие конструкции</h3>
+                <ul class="recycling__material-list">
+                    <li class="recycling__material-item">
+                        <article class="recycling__material-about">
+                            <div class="digest-cover__image-container">
+                                <img class="digest-cover__image" src="<?=$get_template_directory_uri?>/template-rsg/images/digest/background-1.jpg">
+                            </div>
+                            <div class="recycling__material-top">
+                                <p class="recycling__material-text">Несущие конструкции</p>
+                                <h3 class="recycling__material-title">Колонны и балки</h3>
+                            </div>
+                            <div class="recycling__material-bottom">
+                                <img class="recycling__material-icon" src="<?=$get_template_directory_uri?>/template-rsg/icons/recycling-kirpich.svg" alt="Иконка кирпича">
+                            </div>
+                        </article>
+                    </li>
+                    <li class="recycling__material-item">
+                        <article class="recycling__material-about">
+                            <div class="digest-cover__image-container">
+                                <img class="digest-cover__image" src="<?=$get_template_directory_uri?>/template-rsg/images/digest/background-1.jpg">
+                            </div>
+                            <div class="recycling__material-top">
+                                <p class="recycling__material-text">Отдельные элементы</p>
+                                <h3 class="recycling__material-title">Площадки и лестницы</h3>
+                            </div>
+                            <div class="recycling__material-bottom">
+                                <img class="recycling__material-icon" src="<?=$get_template_directory_uri?>/template-rsg/icons/recycling-okno.svg" alt="Иконка кирпича">
+                            </div>
+                        </article>
+                    </li>
+                    <li class="recycling__material-item">
+                        <article class="recycling__material-about">
+                            <div class="digest-cover__image-container">
+                                <img class="digest-cover__image" src="<?=$get_template_directory_uri?>/template-rsg/images/digest/background-1.jpg">
+                            </div>
+                            <div class="recycling__material-top">
+                                <p class="recycling__material-text">Несущие конструкции</p>
+                                <h3 class="recycling__material-title">Эстакады трубопроводов</h3>
+                            </div>
+                            <div class="recycling__material-bottom">
+                                <img class="recycling__material-icon" src="<?=$get_template_directory_uri?>/template-rsg/icons/recycling-stena.svg" alt="Иконка кирпича">
+                            </div>
+                        </article>
+                    </li>
+                    <li class="recycling__material-item">
+                        <article class="recycling__material-about">
+                            <div class="digest-cover__image-container">
+                                <img class="digest-cover__image" src="<?=$get_template_directory_uri?>/template-rsg/images/digest/background-1.jpg">
+                            </div>
+                            <div class="recycling__material-top">
+                                <p class="recycling__material-text">Несущие конструкции</p>
+                                <h3 class="recycling__material-title">Мосты</h3>
+                            </div>
+                            <div class="recycling__material-bottom">
+                                <img class="recycling__material-icon" src="<?=$get_template_directory_uri?>/template-rsg/icons/recycling-balka.svg" alt="Иконка кирпича">
+                            </div>
+                        </article>
+                    </li>
+                    <li class="recycling__material-item">
+                        <article class="recycling__material-about">
+                            <div class="digest-cover__image-container">
+                                <img class="digest-cover__image" src="<?=$get_template_directory_uri?>/template-rsg/images/digest/background-1.jpg">
+                            </div>
+                            <div class="recycling__material-top">
+                                <p class="recycling__material-text">Небольшие конструкции</p>
+                                <h3 class="recycling__material-title">Стропильные фермы</h3>
+                            </div>
+                            <div class="recycling__material-bottom">
+                                <img class="recycling__material-icon" src="<?=$get_template_directory_uri?>/template-rsg/icons/recycling-krisha.svg" alt="Иконка кирпича">
+                            </div>
+                        </article>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+
+
+        <section class="project__video">
+            <div class="about__all project__video-all">
+                <h2 class="track__title">Технологичное производство с современным оборудованием</h2>
+                <p class="track__description">Мы можем изготовить практически любую конструкцию из чёрного металла. Для этого установлено: 2 ленточнопильных станка, машина термической резки с ЧПУ, 2 валицы профилегибочные, 12 сварочных полуавтоматов, 2 радиально-сверлильных станка, 4 сверлильных магнитных станка, машины плазменной резки с ЧПУ и др.</p>
+                
+                <div class="about__privilege">
+                    <article class="about__article">
+                        <img class="about__article-img" src="<?=$get_template_directory_uri?>/template-rsg/icons/about-demolition-crane 2.svg" alt="Изображение крана">
+                        <div class="border-1px"></div>
+                        <h3 class="about__article-title">с <span class="large_text">1999</span> года</h3>
+                        <p class="about__article-text">в сфере сноса и демонтажа</p>
+                    </article>
+                    <article class="about__article">
+                        <img class="about__article-img" src="<?=$get_template_directory_uri?>/template-rsg/icons/about-demolition-casc.svg" alt="Изображение крана">
+                        <div class="border-1px"></div>
+                        <h3 class="about__article-title"><span class="large_text">335</span></h3>
+                        <p class="about__article-text">строительных площадок</p>
+                    </article>
+                    <article class="about__article">
+                        <img class="about__article-img" src="<?=$get_template_directory_uri?>/template-rsg/icons/about-demolition-crane-3.svg" alt="Изображение крана">
+                        <div class="border-1px"></div>
+                        <h3 class="about__article-title">более <span class="large_text">15</span> млн м³</h3>
+                        <p class="about__article-text">объём снесённых объектов</p>
+                    </article>
+                    <article class="about__article">
+                        <img class="about__article-img" src="<?=$get_template_directory_uri?>/template-rsg/icons/about-demolition-hand.svg" alt="Изображение крана">
+                        <div class="border-1px"></div>
+                        <h3 class="about__article-title"><span class="large_text">1000+</span></h3>
+                        <p class="about__article-text">заключённых контрактов</p>
+                    </article>
+                </div>
+
+                <div class="project__video__all">
+                    <iframe width="100%" height="905px" src="https://www.youtube.com/embed/p0KABORQpAA?si=f6yo9mbW_WgCMdIV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="about">
+            <div class="about__all rent__technic__all">
+                <h2 class="about__title">Разработка проектной документации</h2>
+                <p class="about__description">«ПИК» — российская девелоперская и строительная компания, крупнейший девелопер России. Штаб-квартира — в Москве. Полное наименование — публичное акционерное общество «ПИК-специализированный застройщик».</p>                
+            
+                <div class="metal__structures-doc">
+                    <div class="metal__structures-item-doc">
+                        <div class="metal__structures-item-doc-list">
+                            <h3 class="project__doc-documents-categoty-title">Строительство, снос и демонтаж</h3>
+                            <ul class="project__doc-documents-list">
+                                <li class="project__doc-documents-item">
+                                    <a class="project__doc-documents-item-url" href="#">
+                                        <article class="project__doc-documents-about">
+                                            <img class="project__doc-documents-img" src="<?=$get_template_directory_uri?>/template-rsg/icons/file-png.svg">
+                                            <div class="project__doc-documents-text">
+                                                <h4 class="project__doc-documents-title">Проект организации строительства</h4>
+                                                <p class="project__doc-documents-p">Объект производственного и непроизводственного назначения</p>
+                                            </div>    
+                                        </article>
+                                    </a>
+                                </li>                    
+                            </ul>
+                        </div>
+
+                        <div class="metal__structures-item-doc-list">
+                            <h3 class="project__doc-documents-categoty-title project__doc-documents-categoty-title-color">Строительство, снос и демонтаж</h3>
+                            <ul class="project__doc-documents-list">
+                                <li class="project__doc-documents-item">
+                                    <a class="project__doc-documents-item-url" href="#">
+                                        <article class="project__doc-documents-about">
+                                            <img class="project__doc-documents-img" src="<?=$get_template_directory_uri?>/template-rsg/icons/file-png.svg">
+                                            <div class="project__doc-documents-text">
+                                                <h4 class="project__doc-documents-title">Проект организации строительства</h4>
+                                                <p class="project__doc-documents-p">Объект производственного и непроизводственного назначения</p>
+                                            </div>    
+                                        </article>
+                                    </a>
+                                </li>                    
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <ul class="metal__structures-item-table-list">
+                        <li class="metal__structures-item-table-item">
+                            <article class="metal__structures-item-table-about">
+                                <div class="metal__structures-item-table-about-item">
+                                    <p class="metal__structures-item-table-text">Наши технологии</p>
+                                    <h4 class="metal__structures-item-table-title">Механизированная рубка</h4>
+                                </div>
+                                <img class="metal__structures-item-table-img" src="<?=$get_template_directory_uri?>/template-rsg/icons/metal__structures-item-table-lazer.svg">
+                            </article>    
+                        </li>
+                        <li class="metal__structures-item-table-item">
+                                <article class="metal__structures-item-table-about">
+                                    <div class="metal__structures-item-table-about-item">
+                                        <p class="metal__structures-item-table-text">Наши технологии</p>
+                                        <h4 class="metal__structures-item-table-title">Лазерная резка</h4>
+                                    </div>
+                                    <img class="metal__structures-item-table-img" src="<?=$get_template_directory_uri?>/template-rsg/icons/metal__structures-item-table-lazer.svg">
+                                </article>
+                        </li>
+                        <li class="metal__structures-item-table-item">
+                                <article class="metal__structures-item-table-about">
+                                    <div class="metal__structures-item-table-about-item">
+                                        <p class="metal__structures-item-table-text">Наши технологии</p>
+                                        <h4 class="metal__structures-item-table-title">Автоматизированная гибка</h4>
+                                    </div>
+                                    <img class="metal__structures-item-table-img" src="<?=$get_template_directory_uri?>/template-rsg/icons/metal__structures-item-table-lazer.svg">
+                                </article>   
+                        </li>
+                        <li class="metal__structures-item-table-item">
+                                <article class="metal__structures-item-table-about">
+                                    <div class="metal__structures-item-table-about-item">
+                                        <p class="metal__structures-item-table-text">Наши технологии</p>
+                                        <h4 class="metal__structures-item-table-title">Техологичная сварка</h4>
+                                    </div>
+                                    <img class="metal__structures-item-table-img" src="<?=$get_template_directory_uri?>/template-rsg/icons/metal__structures-item-table-lazer.svg">
+                                </article>
+                        </li>
+                        <li class="metal__structures-item-table-item">
+                                <article class="metal__structures-item-table-about">
+                                    <div class="metal__structures-item-table-about-item">
+                                        <p class="metal__structures-item-table-text">Наши технологии</p>
+                                        <h4 class="metal__structures-item-table-title">Механическая обработка резанием</h4>
+                                    </div>
+                                    <img class="metal__structures-item-table-img" src="<?=$get_template_directory_uri?>/template-rsg/icons/metal__structures-item-table-lazer.svg">
+                                </article>    
+                        </li>
+                        <li class="metal__structures-item-table-item">
+                                <article class="metal__structures-item-table-about">
+                                    <div class="metal__structures-item-table-about-item">
+                                        <p class="metal__structures-item-table-text">Наши технологии</p>
+                                        <h4 class="metal__structures-item-table-title">Порошковая окраска в цвета RAL</h4>
+                                    </div>
+                                    <img class="metal__structures-item-table-img" src="<?=$get_template_directory_uri?>/template-rsg/icons/metal__structures-item-table-lazer.svg">
+                                </article>    
+                            
+                        </li>
+                    </ul>
+                </div>
+
+                <ul class="recycling__card-list metal__structures-list">
+                    <li class="recycling__card-item">
+                        <a class="project__doc-documents-item-url" href="#">
+                            <article class="recycling__card-about">
+                                <h3 class="recycling__card-title">Снизьте расходы на вывоз мусора на 40%</h3>
+                                <p class="recycling__card-text">Рециклинг помогает переработать до 80% отходов во вторичные строения материалы, пригодные к использованию.</p>
+                            </article>
+                        </a>
+                    </li>
+                    <li class="recycling__card-item">
+                        <a class="project__doc-documents-item-url" href="#">
+                            <article class="recycling__card-about">
+                                <h3 class="recycling__card-title">Компенсируйте до 30% расходов на демонтаж</h3>
+                                <p class="recycling__card-text">Вы можете получить вознаграждение за отходы, которое идёт в счёт стоимости сноса или демонтажа.</p>
+                            </article>
+                        </a>
+                    </li>
+                    
+                </ul>
+
+                <h3 class="project__doc-documents-categoty-title">Строительство, снос и демонтаж</h3>
+                <ul class="project__doc-documents-list">
+                    <li class="project__doc-documents-item">
+                        <a class="project__doc-documents-item-url" href="#">
+                            <article class="project__doc-documents-about">
+                                <img class="project__doc-documents-img" src="<?=$get_template_directory_uri?>/template-rsg/icons/file-png.svg">
+                                <div class="project__doc-documents-text">
+                                    <h4 class="project__doc-documents-title">Проект организации строительства</h4>
+                                    <p class="project__doc-documents-p">Объект производственного и непроизводственного назначения</p>
+                                </div>    
+                            </article>
+                        </a>
+                    </li>
+                    <li class="project__doc-documents-item">
+                        <a class="project__doc-documents-item-url" href="#">
+                            <article class="project__doc-documents-about">
+                                <img class="project__doc-documents-img" src="<?=$get_template_directory_uri?>/template-rsg/icons/file-png.svg">
+                                <div class="project__doc-documents-text">
+                                    <h4 class="project__doc-documents-title">Проект организации сноса или демонтажа</h4>
+                                    <p class="project__doc-documents-p">Для объектов капитального строительства</p>
+                                </div>    
+                            </article>
+                        </a>
+                    </li>
+                    <li class="project__doc-documents-item">
+                        <a class="project__doc-documents-item-url" href="#">
+                            <article class="project__doc-documents-about">
+                                <img class="project__doc-documents-img" src="<?=$get_template_directory_uri?>/template-rsg/icons/file-png.svg">
+                                <div class="project__doc-documents-text">
+                                    <h4 class="project__doc-documents-title">Схема организации земельного участка</h4>
+                                    <p class="project__doc-documents-p">Объект производственного и непроизводственного назначения</p>
+                                </div>    
+                            </article>
+                        </a>
+                    </li>
+                    <li class="project__doc-documents-item">
+                        <a class="project__doc-documents-item-url" href="#">
+                            <article class="project__doc-documents-about">
+                                <img class="project__doc-documents-img" src="<?=$get_template_directory_uri?>/template-rsg/icons/file-png.svg">
+                                <div class="project__doc-documents-text">
+                                    <h4 class="project__doc-documents-title">Архитектурные решения</h4>
+                                    <p class="project__doc-documents-p">Объект производственного и непроизводственного назначения</p>
+                                </div>    
+                            </article>
+                        </a>
+                    </li>
+                    
+                </ul>
+            </div>
+        </section>
+
+
+        <section class="recycling__digest">
+            <div class="recycling__digest__all">
+                <h2 class="track__title">Кейсы с использованием вторичных материалов</h2>
+                <p class="track__description">РСГ ГРУПП сегодня — девелоперская компания полного цикла,наша миссия: воплощать в жизнь мечты современного человека. Высокотехнологичная реализация проектов.</p>
+                
+                <div class="digest__cart">
+                    <ul class="digest__cart-items">
+                        <li class="digest__cart-item"> 
+                            <a class="digest__cart-item-url" href="#">
+                                <article class="digest__cart-item__cart">
+                                    <div class="digest-cover__image-container">
+                                        <img class="digest-cover__image" src="<?=$get_template_directory_uri?>/template-rsg/images/digest/background-1.jpg">
+                                    </div>
+                                    <div class="digest__cart-item-heading">
+                                        <p class="digest__cart-item-heading-building">Жилой комплекс</p>
+                                        <h2 class="digest__cart-item-heading-name">«Восточное Бутово»</h2>
+                                    </div>
+                                    <div class="digest__cart-item-about">
+                                        <p class="digest__cart-item-about-date">26.04.2022</p>
+                                        <div class="digest__cart-item-about-volume">
+                                            <p class="digest__cart-item-about-volume-item">Объём работ: 23 275 м3</p>
+                                            <p class="digest__cart-item-about-volume-item">Сроки работ: 3 месяца</p>
+                                        </div>
+                                    </div>
+                                </article>
+                            </a>
+                        </li>
+                        <li class="digest__cart-item">
+                            <a class="digest__cart-item-url" href="#">
+                                <article class="digest__cart-item__cart">
+                                    <div class="digest-cover__image-container">
+                                        <img class="digest-cover__image" src="<?=$get_template_directory_uri?>/template-rsg/images/digest/background-1.jpg">
+                                    </div>
+                                    <div class="digest__cart-item-heading">
+                                        <p class="digest__cart-item-heading-building">Жилой комплекс</p>
+                                        <h2 class="digest__cart-item-heading-name">«Восточное Бутово»</h2>
+                                    </div>
+                                    <div class="digest__cart-item-about">
+                                        <p class="digest__cart-item-about-date">26.04.2022</p>
+                                        <div class="digest__cart-item-about-volume">
+                                            <p class="digest__cart-item-about-volume-item">Объём работ: 23 275 м3</p>
+                                            <p class="digest__cart-item-about-volume-item">Сроки работ: 3 месяца</p>
+                                        </div>
+                                    </div>
+                                </article>
+                            </a>
+                        </li>
+                        <li class="digest__cart-item">
+                            <a class="digest__cart-item-url" href="#">
+                                <article class="digest__cart-item__cart">
+                                    <div class="digest-cover__image-container">
+                                        <img class="digest-cover__image" src="<?=$get_template_directory_uri?>/template-rsg/images/digest/background-1.jpg">
+                                    </div>
+                                    <div class="digest__cart-item-heading">
+                                        <p class="digest__cart-item-heading-building">Жилой комплекс</p>
+                                        <h2 class="digest__cart-item-heading-name">«Восточное Бутово»</h2>
+                                    </div>
+                                    <div class="digest__cart-item-about">
+                                        <p class="digest__cart-item-about-date">26.04.2022</p>
+                                        <div class="digest__cart-item-about-volume">
+                                            <p class="digest__cart-item-about-volume-item">Объём работ: 23 275 м3</p>
+                                            <p class="digest__cart-item-about-volume-item">Сроки работ: 3 месяца</p>
+                                        </div>
+                                    </div>
+                                </article>
+                            </a>
+                        </li>
+                        <li class="digest__cart-item">
+                            <a class="digest__cart-item-url" href="#">
+                                <article class="digest__cart-item__cart">
+                                    <div class="digest-cover__image-container">
+                                        <img class="digest-cover__image" src="<?=$get_template_directory_uri?>/template-rsg/images/digest/background-1.jpg">
+                                    </div>
+                                    <div class="digest__cart-item-heading">
+                                        <p class="digest__cart-item-heading-building">Жилой комплекс</p>
+                                        <h2 class="digest__cart-item-heading-name">«Восточное Бутово»</h2>
+                                    </div>
+                                    <div class="digest__cart-item-about">
+                                        <p class="digest__cart-item-about-date">26.04.2022</p>
+                                        <div class="digest__cart-item-about-volume">
+                                            <p class="digest__cart-item-about-volume-item">Объём работ: 23 275 м3</p>
+                                            <p class="digest__cart-item-about-volume-item">Сроки работ: 3 месяца</p>
+                                        </div>
+                                    </div>
+                                </article>
+                            </a>    
+                        </li>
+                        <li class="digest__cart-item">
+                            <a class="digest__cart-item-url" href="#">
+                                <article class="digest__cart-item__cart">
+                                    <div class="digest-cover__image-container">
+                                        <img class="digest-cover__image" src="<?=$get_template_directory_uri?>/template-rsg/images/digest/background-1.jpg">
+                                    </div>
+                                    <div class="digest__cart-item-heading">
+                                        <p class="digest__cart-item-heading-building">Жилой комплекс</p>
+                                        <h2 class="digest__cart-item-heading-name">«Восточное Бутово»</h2>
+                                    </div>
+                                    <div class="digest__cart-item-about">
+                                        <p class="digest__cart-item-about-date">26.04.2022</p>
+                                        <div class="digest__cart-item-about-volume">
+                                            <p class="digest__cart-item-about-volume-item">Объём работ: 23 275 м3</p>
+                                            <p class="digest__cart-item-about-volume-item">Сроки работ: 3 месяца</p>
+                                        </div>
+                                    </div>
+                                </article>
+                            </a>    
+                        </li>
+                        <li class="digest__cart-item">
+                            <a class="digest__cart-item-url" href="#">
+                                <article class="digest__cart-item__cart">
+                                    <div class="digest-cover__image-container">
+                                        <img class="digest-cover__image" src="<?=$get_template_directory_uri?>/template-rsg/images/digest/background-1.jpg">
+                                    </div>
+                                    <div class="digest__cart-item-heading">
+                                        <p class="digest__cart-item-heading-building">Жилой комплекс</p>
+                                        <h2 class="digest__cart-item-heading-name">«Восточное Бутово»</h2>
+                                    </div>
+                                    <div class="digest__cart-item-about">
+                                        <p class="digest__cart-item-about-date">26.04.2022</p>
+                                        <div class="digest__cart-item-about-volume">
+                                            <p class="digest__cart-item-about-volume-item">Объём работ: 23 275 м3</p>
+                                            <p class="digest__cart-item-about-volume-item">Сроки работ: 3 месяца</p>
+                                        </div>
+                                    </div>
+                                </article>
+                            </a>
+                        </li>                            
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="feedback feedback-blue">
+            <div class="feedback__all">
+                <div class="feedback__first">
+                    <div class="feedback__first-top">
+                        <h2 class="feedback__title">Коммерческое предложение на особых условиях</h2>
+                        <p class="feedback__description">за заявку отправленную прямо здесь и сейчас.</p>
+                    </div>
+                    <address class="feedback__first-bot">
+                        <a class="feedback-link mail" href="mailto:info@rsg-grupp.ru">info@rsg-grupp.ru</a>
+                        <a class="feedback-link telephone" href="tel:+74959605051">+7 495 960-50-51</a>
+                    </address>
+                </div>
+                <div class="feedback__second">
+                    <form class="feedback__form" action="#" method="post" enctype="multipart/form-data">
+                        <div class="feedback__form-item feedback__name">
+                            <label class="feedback__label" for="name">Имя*:</label>
+                            <input class="feedback__input" type="text" id="name" name="name" placeholder="Ваше имя" required>
+                        </div>
+                        <div class="feedback__form-item feedback__phone">
+                            <label class="feedback__label" for="phone">Телефон*:</label>
+                            <input class="feedback__input" type="tel" id="phone" name="phone" placeholder="+7 (___) ___-__-__" required>
+                        </div>
+                        <div class="feedback__form-item feedback__mail">
+                            <label class="feedback__label" for="email">Почта*:</label>
+                            <input class="feedback__input" type="email" id="email" name="email" placeholder="___@__" required>
+                        </div>
+                        <div class="feedback__form-item feedback__file-first">
+                            <label class="feedback__label" for="attachment"></label>
+                            <input class="feedback__input feedback__input-file" type="file" id="input__file" name="file">
+
+                            <label for="input__file" class="input__file-button">
+                                <span class="input__file-icon-wrapper"><img class="input__file-icon" src="<?=$get_template_directory_uri?>/template-rsg/icons/feedback-file-icon-white.svg" alt="Выбрать файл" width="25"></span>
+                                <span class="input__file-button-text">Прикрепить файл</span>
+                            </label>
+
+                        </div>
+                        <div class="feedback__form-textarea ">
+                            <label class="feedback__label feedback__label-message" for="message">Сообщение:</label>
+                            <textarea class="feedback__input feedback__input-textarea" id="message" name="message" placeholder="Ваше сообщение" rows="4"></textarea>
+                        </div>
+                        <div class="feedback__form-button">
+                            <div class="feedback__form-item feedback__file-second">
+                                <input class="feedback__input feedback__input-file" type="file" id="input__file" name="file">
+
+                            <label for="input__file" class="input__file-button">
+                                <span class="input__file-icon-wrapper"><img class="input__file-icon" src="<?=$get_template_directory_uri?>/template-rsg/icons/feedback-file-icon-white.svg" alt="Выбрать файл" width="25"></span>
+                                <span class="input__file-button-text">Прикрепить файл</span>
+                            </label>
+                            </div>
+                            <button class="feedback__form-button-item" type="submit">Отправить</button>
+                            <p class="feedback__form-agree">Нажимая кнопку «Отправить» вы соглашаетесь на обработку персональных данных</p>
+                        </div>
+                      </form>
+                </div>
+            </div>
+        </section>
+
+        <section class="about">
+            <div class="about__all rent__technic__all">
+                <h2 class="about__title">Тарифы сноса и демонтажа объектов «под ключ»</h2>
+                <p class="about__description">РСГ ГРУПП сегодня — девелоперская компания полного цикла,наша миссия: воплощать в жизнь мечты современного человека. Высокотехнологичная реализация проектов.</p>
+            
+
+                <div class="demolition__table">
+                    <div class="demolition__table-main">    
+                        <h3 class="demolition__table-main-title">Основные услуги</h3>                    
+                        <table class="demolition__table-grid">
+                                <thead>
+                                  <tr class="demolition__table-grid-tr-first">
+                                    <th class="demolition__table-grid-item table-grid-item-first" scope="col">Наименование</th>
+                                    <th class="demolition__table-grid-item table-grid-item-second" scope="col">ед. измерения</th>
+                                    <th class="demolition__table-grid-item table-grid-item-third" scope="col">цена</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr class="demolition__table-grid-tr">
+                                    <td class="demolition__table-grid-item table-grid-item-first" data-label="name">Демонтаж и снос жилых домов (реновация)</td>
+                                    <td class="demolition__table-grid-item table-grid-item-second" data-label="unit">м³</td>
+                                    <td class="demolition__table-grid-item table-grid-item-third" data-label="price">от 400 ₽</td>
+                                  </tr>
+                                  <tr class="demolition__table-grid-tr">
+                                    <td class="demolition__table-grid-item table-grid-item-first" scope="row" data-label="Account">Демонтаж опасных объектов</td>
+                                    <td class="demolition__table-grid-item table-grid-item-second" data-label="unit">м³</td>
+                                    <td class="demolition__table-grid-item table-grid-item-third" data-label="price">от 400 ₽</td>
+                                  </tr>
+                                  <tr class="demolition__table-grid-tr">
+                                    <td class="demolition__table-grid-item table-grid-item-first" scope="row" data-label="Account">Снос промышленных зданий</td>
+                                    <td class="demolition__table-grid-item table-grid-item-second" data-label="unit">м³</td>
+                                    <td class="demolition__table-grid-item table-grid-item-third" data-label="price">от 400 ₽</td>
+                                  </tr>
+                                  <tr class="demolition__table-grid-tr">
+                                    <td class="demolition__table-grid-item table-grid-item-first" scope="row" data-label="Acount">Демонтаж высотных зданий</td>
+                                    <td class="demolition__table-grid-item table-grid-item-second" data-label="unit">м³</td>
+                                    <td class="demolition__table-grid-item table-grid-item-third" data-label="price">от 400 ₽</td>
+                                  </tr>
+                                  <tr class="demolition__table-grid-tr">
+                                    <td class="demolition__table-grid-item table-grid-item-first" scope="row" data-label="Acount">Снос самовольных строений</td>
+                                    <td class="demolition__table-grid-item table-grid-item-second" data-label="unit">м³</td>
+                                    <td class="demolition__table-grid-item table-grid-item-third" data-label="price">от 400 ₽</td>
+                                  </tr>
+                                  <tr class="demolition__table-grid-tr">
+                                    <td class="demolition__table-grid-item table-grid-item-first" scope="row" data-label="Acount">Демонтаж мостов и путепроводов</td>
+                                    <td class="demolition__table-grid-item table-grid-item-second" data-label="unit">м³</td>
+                                    <td class="demolition__table-grid-item table-grid-item-third" data-label="price">от 400 ₽</td>
+                                  </tr>
+                                  <tr class="demolition__table-grid-tr">
+                                    <td class="demolition__table-grid-item table-grid-item-first" scope="row" data-label="Acount">Демонтаж внутренних помещений</td>
+                                    <td class="demolition__table-grid-item table-grid-item-second" data-label="unit">м³</td>
+                                    <td class="demolition__table-grid-item table-grid-item-third" data-label="price">от 400 ₽</td>
+                                  </tr>
+                                </tbody>
+                        </table>                        
+                        <p class="demolition__table-text">Профессионально и в кратчайшие сроки проводит демонтаж бетонных конструкций любого типа и сложности. Предлагаем полностью механизированный способ работы с последующей обработкой боя — производим рециклинг. Процедура позволяет раздробить щебень на несколько фракций для последующего применения.</p>
+                    </div>
+                    <div class="demolition__table-main">
+                        <h3 class="demolition__table-main-title">Дополнительные</h3> 
+                        <table class="demolition__table-grid">
+                            <thead>
+                              <tr class="demolition__table-grid-tr-first">
+                                <th class="demolition__table-grid-item table-grid-item-first" scope="col">Наименование</th>
+                                <th class="demolition__table-grid-item table-grid-item-second" scope="col">ед. измерения</th>
+                                <th class="demolition__table-grid-item table-grid-item-third" scope="col">цена</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr class="demolition__table-grid-tr">
+                                <td class="demolition__table-grid-item table-grid-item-first" data-label="name">Демонтаж и снос жилых домов (реновация)</td>
+                                <td class="demolition__table-grid-item table-grid-item-second" data-label="unit">м³</td>
+                                <td class="demolition__table-grid-item table-grid-item-third" data-label="price">от 400 ₽</td>
+                              </tr>
+                              <tr class="demolition__table-grid-tr">
+                                <td class="demolition__table-grid-item table-grid-item-first" scope="row" data-label="Account">Демонтаж опасных объектов</td>
+                                <td class="demolition__table-grid-item table-grid-item-second" data-label="unit">м³</td>
+                                <td class="demolition__table-grid-item table-grid-item-third" data-label="price">от 400 ₽</td>
+                              </tr>
+                              <tr class="demolition__table-grid-tr">
+                                <td class="demolition__table-grid-item table-grid-item-first" scope="row" data-label="Account">Снос промышленных зданий</td>
+                                <td class="demolition__table-grid-item table-grid-item-second" data-label="unit">м³</td>
+                                <td class="demolition__table-grid-item table-grid-item-third" data-label="price">от 400 ₽</td>
+                              </tr>
+                              <tr class="demolition__table-grid-tr">
+                                <td class="demolition__table-grid-item table-grid-item-first" scope="row" data-label="Acount">Демонтаж высотных зданий</td>
+                                <td class="demolition__table-grid-item table-grid-item-second" data-label="unit">м³</td>
+                                <td class="demolition__table-grid-item table-grid-item-third" data-label="price">от 400 ₽</td>
+                              </tr>
+                              <tr class="demolition__table-grid-tr">
+                                <td class="demolition__table-grid-item table-grid-item-first" scope="row" data-label="Acount">Снос самовольных строений</td>
+                                <td class="demolition__table-grid-item table-grid-item-second" data-label="unit">м³</td>
+                                <td class="demolition__table-grid-item table-grid-item-third" data-label="price">от 400 ₽</td>
+                              </tr>
+                              <tr class="demolition__table-grid-tr">
+                                <td class="demolition__table-grid-item table-grid-item-first" scope="row" data-label="Acount">Демонтаж мостов и путепроводов</td>
+                                <td class="demolition__table-grid-item table-grid-item-second" data-label="unit">м³</td>
+                                <td class="demolition__table-grid-item table-grid-item-third" data-label="price">от 400 ₽</td>
+                              </tr>
+                              <tr class="demolition__table-grid-tr">
+                                <td class="demolition__table-grid-item table-grid-item-first" scope="row" data-label="Acount">Демонтаж внутренних помещений</td>
+                                <td class="demolition__table-grid-item table-grid-item-second" data-label="unit">м³</td>
+                                <td class="demolition__table-grid-item table-grid-item-third" data-label="price">от 400 ₽</td>
+                              </tr>
+                            </tbody>
+                        </table>
+                        <p class="demolition__table-text">Профессионально и в кратчайшие сроки проводит демонтаж бетонных конструкций любого типа и сложности. Предлагаем полностью механизированный способ работы с последующей обработкой боя — производим рециклинг. Процедура позволяет раздробить щебень на несколько фракций для последующего применения.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        
+
+        <section class="faq__quest">
+            <div class="faq__all">
+                <h2 class="about__title">Вопрос-ответ</h2>
+                <div class="faq__accordion">
+                    <div class="faq__item">
+                        <button id="faq__item-button-1" aria-expanded="false">
+                            <span class="faq__accordion-title">Какой алгоритм взаимодействия с вашей компанией?</span>
+                            <span class="icon" aria-hidden="true"></span>
+                        </button>
+                        <div class="faq__item-content">
+                            <p>
+                                Алгоритм взаимодействия можно описать последовательностью следующих этапов:
+                            </p><br/>
+                            <ul>                                    
+                                <li>Оформление заявки</li>
+                                <li>Сбор исходной информации и осмотр объекта</li>
+                                <li>Расчёт предварительной цены сроков работ и составление индивидуального коммерческого предложения</li>
+                                <li>Согласование и подписание договора</li>
+                                <li>Разработка и согласование необходимой рабочей и проектной документации</li>
+                                <li>Подготовка площадки</li>
+                                <li>Выполнение сноса или демонтажа</li>
+                                <li>Сбор и вывоз строительных отходов</li>
+                                <li>Сдача объекта</li>
+                            </ul>
+                            
+                        </div>
+                    </div>
+
+                    <div class="faq__item">
+                        <button id="faq__item-button-2" aria-expanded="false">
+                            <span class="faq__accordion-title">Является ли используемая спецтехника арендуемой или в вашей компании есть собственный парк техники?</span>
+                            <span class="icon" aria-hidden="true"></span>
+                        </button>
+                        <div class="faq__item-content">
+                            <p>test test test test test test test test test test test test test test test test test test test test test test </p>
+                        </div>
+                    </div>
+
+                    <div class="faq__item">
+                        <button id="faq__item-button-3" aria-expanded="false">
+                            <span class="faq__accordion-title">Можно ли взять вашу спецтехнику в аренду?</span>
+                            <span class="icon" aria-hidden="true"></span>
+                        </button>
+                        <div class="faq__item-content">
+                            <p>test test test test test test test test test test test test </p>
+                        </div>
+                    </div>
+
+                    <div class="faq__item">
+                        <button id="faq__item-button-4" aria-expanded="false">
+                            <span class="faq__accordion-title">Сколько будет стоить снос здания с вывозом строительного мусора?</span>
+                            <span class="icon" aria-hidden="true"></span>
+                        </button>
+                        <div class="faq__item-content">
+                            <p>test test test test test test test test test test test test </p>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+        </section>
+
+        <section class="feedback">
+            <div class="feedback__all">
+                <div class="feedback__first">
+                    <div class="feedback__first-top">
+                        <h2 class="feedback__title">Коммерческое предложение на особых условиях</h2>
+                        <p class="feedback__description">за заявку отправленную прямо здесь и сейчас.</p>
+                    </div>
+                    <address class="feedback__first-bot">
+                        <a class="feedback-link mail" href="mailto:info@rsg-grupp.ru">info@rsg-grupp.ru</a>
+                        <a class="feedback-link telephone" href="tel:+74959605051">+7 495 960-50-51</a>
+                    </address>
+                </div>
+                <div class="feedback__second">
+                    <form class="feedback__form" action="#" method="post" enctype="multipart/form-data">
+                        <div class="feedback__form-item feedback__name">
+                            <label class="feedback__label" for="name">Имя*:</label>
+                            <input class="feedback__input" type="text" id="name" name="name" placeholder="Ваше имя" required>
+                        </div>
+                        <div class="feedback__form-item feedback__phone">
+                            <label class="feedback__label" for="phone">Телефон*:</label>
+                            <input class="feedback__input" type="tel" id="phone" name="phone" placeholder="+7 (___) ___-__-__" required>
+                        </div>
+                        <div class="feedback__form-item feedback__mail">
+                            <label class="feedback__label" for="email">Почта*:</label>
+                            <input class="feedback__input" type="email" id="email" name="email" placeholder="___@__" required>
+                        </div>
+                        <div class="feedback__form-item feedback__file-first">
+                            <label class="feedback__label feedback__label-input__file-visible" for="attachment">Прикрепить файл</label>
+                            <input class="feedback__input feedback__input-file" type="file" id="input__file" name="file">
+
+
+                            <label for="input__file" class="input__file-button">
+                                <span class="input__file-icon-wrapper"><img class="input__file-icon" src="<?=$get_template_directory_uri?>/template-rsg/icons/feedback-file-icon.svg" alt="Выбрать файл" width="25"></span>
+                                <span class="input__file-button-text">Прикрепить файл</span>
+                             </label>
+                        </div>
+                        <div class="feedback__form-textarea ">
+                            <label class="feedback__label feedback__label-message" for="message">Сообщение:</label>
+                            <textarea class="feedback__input feedback__input-textarea" id="message" name="message" placeholder="Ваше сообщение" rows="4"></textarea>
+                        </div>
+                        <div class="feedback__form-button">
+                            <div class="feedback__form-item feedback__file-second">
+                                <input class="feedback__input feedback__input-file" type="file" id="input__file" name="file">
+
+
+                                <label for="input__file" class="input__file-button">
+                                    <span class="input__file-icon-wrapper"><img class="input__file-icon" src="<?=$get_template_directory_uri?>/template-rsg/icons/feedback-file-icon.svg" alt="Выбрать файл" width="25"></span>
+                                    <span class="input__file-button-text">Прикрепить файл</span>
+                                 </label>
+                            </div>
+                            <button class="feedback__form-button-item" type="submit">Отправить</button>
+                            <p class="feedback__form-agree">Нажимая кнопку «Отправить» вы соглашаетесь на обработку персональных данных</p>
+                        </div>
+                      </form>
+                </div>
+            </div>
+        </section> 
+
+    </main>
+
+
+    <footer class="footer">
+        <div class="footer__all">
+            <div class="footer__main">
+                <div class="footer__address">
+                    <img class="footer__logo-img" src="<?=$get_template_directory_uri?>/template-rsg/images/logo_header.svg">
+                    <address class="footer__address">
+                        <a class="address-mail footer__menu-item-color__url" href="#">info@rsg-grupp.ru</a>
+                        <a class="address-mail footer__menu-item-color__url" href="#">dor@rsg-grupp.ru</a>
+                        <a class="address-phone footer__menu-item-color__url" href="#">+7 495 960-50-51</a>
+                        <div class="footer__social-feedback footer__social-feedback-mobile">
+                            <a class="social-feedback-form__btn open-popup" href="#" data-popup-id="APP-popup">ОТПРАВИТЬ ЗАЯВКУ</a>
+                            <p class="social-feedback-txt">Отправляя заявку я соглашаюсь на <a class="feedback__form-agree-url" href="#">обработку персональных данных</a> и принимаю <a class="feedback__form-agree-url" href="#">условия политики конфиденциальности</a></p>
+                        </div>
+                        <p class="address-address">г. Москва, ул. Красноармейская, д. 11, корп. 2, офис 26</p>
+                    </address>
+                </div>
+                <nav class="footer__menu">
+                    <ul class="footer__menu-items">
+                        <li class="footer__menu-item menu-item-first"> <a class="footer__menu-item-first-color__url" href="#">О КОМПАНИИ</a>
+                            <ul class="footer__menu-items footer__menu-items-second">
+                                <li class="footer__menu-item menu-item-second"><a class="footer__menu-item-color__url" href="#"> О компании</a></li>
+                                <li class="footer__menu-item menu-item-second"><a class="footer__menu-item-color__url" href="#">Команда</a></li>
+                                <li class="footer__menu-item menu-item-second"><a class="footer__menu-item-color__url" href="#">Парк спецтехники</a></li>
+                                <li class="footer__menu-item menu-item-second"><a class="footer__menu-item-color__url" href="#">Дайджест проектов</a></li>
+                                <li class="footer__menu-item menu-item-second"><a class="footer__menu-item-color__url" href="#">Лицензии и сертификаты</a></li>
+                            </ul>
+                        </li>
+                        <li class="footer__menu-item menu-item-first"><a class="footer__menu-item-first-color__url" href="#">ПРОЕКТЫ</a></li>
+                        <li class="footer__menu-item menu-item-first"><a class="footer__menu-item-first-color__url" href="#">ВАКАНСИИ</a></li>
+                    </ul>
+                    <div class="footer__social-links footer__social-links-mobile">
+                        <h3 class="social-links-title">МЫ В СОЦИАЛЬНЫХ СЕТЯХ</h3>
+                        <ul class="social-links">
+                            <li>
+                                <a class="social-links-item" href="#">
+                                    <img class="social-links-item-color" src="<?=$get_template_directory_uri?>/template-rsg/icons/Instagram.svg">
+                                </a>
+                            </li>
+                            <li>
+                                <a class="social-links-item" href="#">
+                                    <img class="social-links-item-color" src="<?=$get_template_directory_uri?>/template-rsg/icons/telegram.svg">
+                                </a>
+                            </li>
+                            <li>
+                                <a class="social-links-item" href="#">
+                                    <img class="social-links-item-color" src="<?=$get_template_directory_uri?>/template-rsg/icons/vk.svg">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+                <div class="footer__social">
+                    <div class="footer__social-links">
+                        <h3 class="social-links-title">МЫ В СОЦИАЛЬНЫХ СЕТЯХ</h3>
+                        <ul class="social-links">
+                            <li>
+                                <a class="social-links-item" href="#">
+                                    <img class="social-links-item-color" src="<?=$get_template_directory_uri?>/template-rsg/icons/Instagram.svg">
+                                </a>
+                            </li>
+                            <li>
+                                <a class="social-links-item" href="#">
+                                    <img class="social-links-item-color" src="<?=$get_template_directory_uri?>/template-rsg/icons/telegram.svg">
+                                </a>
+                            </li>
+                            <li>
+                                <a class="social-links-item" href="#">
+                                    <img class="social-links-item-color" src="<?=$get_template_directory_uri?>/template-rsg/icons/vk.svg">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer__social-feedback">
+                        <a class="social-feedback-form__btn open-popup" href="#" data-popup-id="APP-popup">ОТПРАВИТЬ ЗАЯВКУ</a>
+                        <p class="social-feedback-txt">Отправляя заявку я соглашаюсь на <a class="feedback__form-agree-url" href="#">обработку персональных данных</a> и принимаю <a class="feedback__form-agree-url" href="#">условия политики конфиденциальности</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__copyright">
+                <ul class="footer__copyright-items">
+                    <li class="footer__copyright-item">
+                        <p class="copyright-name">© RSG Group - 2023</p>
+                    </li>
+                    <li class="footer__copyright-item">
+                        <a class="footer-documents" href="#">Политика конфиденциальности</a>
+                        <a class="footer-documents footer-documents-mobile" href="#">Пользовательское соглашение</a>
+                    </li>
+                    <li class="footer__copyright-item footer__copyright-item-desktop">
+                        <a class="footer-documents" href="#">Пользовательское соглашение</a>
+                    </li>
+                    <li class="footer__copyright-item">
+                        <img class="technofix-logo" src="<?=$get_template_directory_uri?>/template-rsg/images/technofix-logo.svg">
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="<?=$get_template_directory_uri?>/template-rsg/scripts/test.js"></script>
+</body>
+
+</html>
